@@ -1,0 +1,37 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 25.0.1703.5
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RaceSim", "RaceSim\RaceSim.csproj", "{08647694-615E-4FB1-875F-F2DC759CF411}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Model", "Model\Model\Model.csproj", "{9DD78258-6D19-4933-BF05-4972AB73DC3B}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ControllerTest", "ControllerTest\ControllerTest.csproj", "{93A77AC6-130D-4708-81BB-C494274E250A}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{08647694-615E-4FB1-875F-F2DC759CF411}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{08647694-615E-4FB1-875F-F2DC759CF411}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{08647694-615E-4FB1-875F-F2DC759CF411}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{08647694-615E-4FB1-875F-F2DC759CF411}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9DD78258-6D19-4933-BF05-4972AB73DC3B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9DD78258-6D19-4933-BF05-4972AB73DC3B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9DD78258-6D19-4933-BF05-4972AB73DC3B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9DD78258-6D19-4933-BF05-4972AB73DC3B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{93A77AC6-130D-4708-81BB-C494274E250A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{93A77AC6-130D-4708-81BB-C494274E250A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{93A77AC6-130D-4708-81BB-C494274E250A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{93A77AC6-130D-4708-81BB-C494274E250A}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {68F094F9-15F6-43C3-B58D-EA4051498259}
+	EndGlobalSection
+EndGlobal

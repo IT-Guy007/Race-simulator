@@ -1,0 +1,66 @@
+{
+  "version": 3,
+  "targets": {
+    "net6.0": {}
+  },
+  "libraries": {},
+  "projectFileDependencyGroups": {
+    "net6.0": []
+  },
+  "packageFolders": {
+    "/Users/jeroendenotter/.nuget/packages/": {}
+  },
+  "project": {
+    "version": "1.0.0",
+    "restore": {
+      "projectUniqueName": "/Users/jeroendenotter/Documents/3. School/3. Windesheim/Semester 3 - Software Design/3. C#/RaceSim/RaceSim/RaceSim.csproj",
+      "projectName": "RaceSim",
+      "projectPath": "/Users/jeroendenotter/Documents/3. School/3. Windesheim/Semester 3 - Software Design/3. C#/RaceSim/RaceSim/RaceSim.csproj",
+      "packagesPath": "/Users/jeroendenotter/.nuget/packages/",
+      "outputPath": "/Users/jeroendenotter/Documents/3. School/3. Windesheim/Semester 3 - Software Design/3. C#/RaceSim/RaceSim/obj/",
+      "projectStyle": "PackageReference",
+      "configFilePaths": [
+        "/Users/jeroendenotter/.nuget/NuGet/NuGet.Config"
+      ],
+      "originalTargetFrameworks": [
+        "net6.0"
+      ],
+      "sources": {
+        "https://api.nuget.org/v3/index.json": {}
+      },
+      "frameworks": {
+        "net6.0": {
+          "targetAlias": "net6.0",
+          "projectReferences": {}
+        }
+      },
+      "warningProperties": {
+        "warnAsError": [
+          "NU1605"
+        ]
+      }
+    },
+    "frameworks": {
+      "net6.0": {
+        "targetAlias": "net6.0",
+        "imports": [
+          "net461",
+          "net462",
+          "net47",
+          "net471",
+          "net472",
+          "net48",
+          "net481"
+        ],
+        "assetTargetFallback": true,
+        "warn": true,
+        "frameworkReferences": {
+          "Microsoft.NETCore.App": {
+            "privateAssets": "all"
+          }
+        },
+        "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/6.0.401/RuntimeIdentifierGraph.json"
+      }
+    }
+  }
+}

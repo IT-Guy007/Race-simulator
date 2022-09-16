@@ -1,0 +1,15 @@
+/Users/jeroendenotter/Documents/3. School/3. Windesheim/Semester 3 - Software Design/3. C#/RaceSim/RaceSim/bin/Debug/net6.0/RaceSim
+/Users/jeroendenotter/Documents/3. School/3. Windesheim/Semester 3 - Software Design/3. C#/RaceSim/RaceSim/bin/Debug/net6.0/RaceSim.deps.json
+/Users/jeroendenotter/Documents/3. School/3. Windesheim/Semester 3 - Software Design/3. C#/RaceSim/RaceSim/bin/Debug/net6.0/RaceSim.runtimeconfig.json
+/Users/jeroendenotter/Documents/3. School/3. Windesheim/Semester 3 - Software Design/3. C#/RaceSim/RaceSim/bin/Debug/net6.0/RaceSim.dll
+/Users/jeroendenotter/Documents/3. School/3. Windesheim/Semester 3 - Software Design/3. C#/RaceSim/RaceSim/bin/Debug/net6.0/RaceSim.pdb
+/Users/jeroendenotter/Documents/3. School/3. Windesheim/Semester 3 - Software Design/3. C#/RaceSim/RaceSim/obj/Debug/net6.0/RaceSim.csproj.AssemblyReference.cache
+/Users/jeroendenotter/Documents/3. School/3. Windesheim/Semester 3 - Software Design/3. C#/RaceSim/RaceSim/obj/Debug/net6.0/RaceSim.GeneratedMSBuildEditorConfig.editorconfig
+/Users/jeroendenotter/Documents/3. School/3. Windesheim/Semester 3 - Software Design/3. C#/RaceSim/RaceSim/obj/Debug/net6.0/RaceSim.AssemblyInfoInputs.cache
+/Users/jeroendenotter/Documents/3. School/3. Windesheim/Semester 3 - Software Design/3. C#/RaceSim/RaceSim/obj/Debug/net6.0/RaceSim.AssemblyInfo.cs
+/Users/jeroendenotter/Documents/3. School/3. Windesheim/Semester 3 - Software Design/3. C#/RaceSim/RaceSim/obj/Debug/net6.0/RaceSim.csproj.CoreCompileInputs.cache
+/Users/jeroendenotter/Documents/3. School/3. Windesheim/Semester 3 - Software Design/3. C#/RaceSim/RaceSim/obj/Debug/net6.0/RaceSim.dll
+/Users/jeroendenotter/Documents/3. School/3. Windesheim/Semester 3 - Software Design/3. C#/RaceSim/RaceSim/obj/Debug/net6.0/refint/RaceSim.dll
+/Users/jeroendenotter/Documents/3. School/3. Windesheim/Semester 3 - Software Design/3. C#/RaceSim/RaceSim/obj/Debug/net6.0/RaceSim.pdb
+/Users/jeroendenotter/Documents/3. School/3. Windesheim/Semester 3 - Software Design/3. C#/RaceSim/RaceSim/obj/Debug/net6.0/RaceSim.genruntimeconfig.cache
+/Users/jeroendenotter/Documents/3. School/3. Windesheim/Semester 3 - Software Design/3. C#/RaceSim/RaceSim/obj/Debug/net6.0/ref/RaceSim.dll
