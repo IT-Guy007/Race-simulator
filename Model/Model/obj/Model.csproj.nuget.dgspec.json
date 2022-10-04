@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "/Users/jeroendenotter/Documents/6. GitHub/SimRace/Model/Model/Model.csproj": {}
+    "/Users/jeroendenotter/Documents/3. School/3. Windesheim/Semester 3 - Software Design/3. C#/RaceSim/Model/Model/Model.csproj": {}
   },
   "projects": {
-    "/Users/jeroendenotter/Documents/6. GitHub/SimRace/Model/Model/Model.csproj": {
+    "/Users/jeroendenotter/Documents/3. School/3. Windesheim/Semester 3 - Software Design/3. C#/RaceSim/Model/Model/Model.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/Users/jeroendenotter/Documents/6. GitHub/SimRace/Model/Model/Model.csproj",
+        "projectUniqueName": "/Users/jeroendenotter/Documents/3. School/3. Windesheim/Semester 3 - Software Design/3. C#/RaceSim/Model/Model/Model.csproj",
         "projectName": "Model",
-        "projectPath": "/Users/jeroendenotter/Documents/6. GitHub/SimRace/Model/Model/Model.csproj",
+        "projectPath": "/Users/jeroendenotter/Documents/3. School/3. Windesheim/Semester 3 - Software Design/3. C#/RaceSim/Model/Model/Model.csproj",
         "packagesPath": "/Users/jeroendenotter/.nuget/packages/",
-        "outputPath": "/Users/jeroendenotter/Documents/6. GitHub/SimRace/Model/Model/obj/",
+        "outputPath": "/Users/jeroendenotter/Documents/3. School/3. Windesheim/Semester 3 - Software Design/3. C#/RaceSim/Model/Model/obj/",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "/Users/jeroendenotter/.nuget/NuGet/NuGet.Config"

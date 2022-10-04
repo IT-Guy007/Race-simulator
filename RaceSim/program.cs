@@ -1,9 +1,12 @@
-﻿// See https://aka.ms/new-console-template for more information
-using Data;
-namespace RaceSim {
-    public class program {
-        static void Main(string[] args) {
+﻿using Controller;
 
+public class Program {
+    static void Main(string[] args) {
+        Data.Initialize();
+        Console.WriteLine("Current track is: " + Data.currentRace.Track.name);
+
+        for (; ; ) {
+            Thread.Sleep(100);
         }
     }
 }

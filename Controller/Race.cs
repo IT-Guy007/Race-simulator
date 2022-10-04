@@ -1,40 +1,61 @@
-﻿using System;
-using Model;
+﻿using Model;
+using System;
+using System.Collections;
+using System.Collections.Generic;
+using System.Linq;
+using System.Reflection;
+using System.Security.Cryptography.X509Certificates;
+using System.Text;
+using System.Threading;
+using System.Threading.Tasks;
+using System.Timers;
+using static System.Net.Mime.MediaTypeNames;
 
-namespace Controller {
-    public class Race {
-        public Track track { get; set; }
-        public List<IParticipant> participants { get; set;}
-        public DateTime startTime { get; set; }
+
+namespace Controller
+{
+    public class Race
+    {
+        public Track Track { get; set; } = new Track();
+        public List<IParticipant> Participants { get; set; }
+        public DateTime StartTime { get; set; }
         private Random _random;
-        private Dictionary<Section, SectionData> _positions;
+        private Dictionary<Section, SectionData> _positions = new Dictionary<Section, SectionData>();
+        private System.Timers.Timer Rondetijd;
+        public event EventHandler DriverChanged;
+        public int gehaald = 0;
 
-        public SectionData GetSectionData(Section section) {
-            var result = _positions[section];
-            Section newSection = new Section();
-            SectionData newSectionData = new SectionData();
+        public Race(Track track, List<IParticipant> participants)
+        {
+            Track = track;
+            Participants = participants;
+        }
 
-            if (result == null) {
-                _positions.Add(newSection,newSectionData);
+        public void Start() {
+            Rondetijd.Enabled = true;
+        }
+
+        public SectionData GetSectionData(Section sectie)
+        {
+            SectionData returnstring = new SectionData();
+            foreach (KeyValuePair<Section, SectionData> kvp in _positions)
+            {
+                if (kvp.Key == sectie)
+                {
+                    returnstring = kvp.Value;
+                }
             }
-
-            return result;
+            return returnstring;
         }
-
-        public Race(Track track, List<IParticipant> participants) {
-            this.track = track;
-            this.participants = participants;
-            this._random = new Random(DateTime.Now.Millisecond);
-
-        }
-
-        public void RandomizeEquipment() {
-            foreach (IParticipant participant in this.participants) {
-                participant.Equipment.Quality = _random.Next();
-                participant.Equipment.Performance = _random.Next();
+        
+        
+        public void RandomizeEquipment()
+        {
+            foreach (IEquipment auto in Participants)
+            {
+                auto.quality = _random.Next();
+                auto.performance = _random.Next();
             }
         }
-
     }
 }
-

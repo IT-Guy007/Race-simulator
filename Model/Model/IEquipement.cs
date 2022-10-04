@@ -1,10 +1,10 @@
 ﻿using System;
 namespace Model {
     public interface IEquipment {
-        public int Quality { get; set; }
-        public int Speed { get; set; }
-        public int Performance { get; set; }
-        public bool IsBroken { get; set; }
+        public int quality { get; set; }
+        public int speed { get; set; }
+        public int performance { get; set; }
+        public bool isBroken { get; set; }
     }
 }
 
