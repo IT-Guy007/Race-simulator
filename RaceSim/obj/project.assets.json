@@ -2,6 +2,31 @@
   "version": 3,
   "targets": {
     "net6.0": {
+      "Spectre.Console/0.45.1-preview.0.19": {
+        "type": "package",
+        "dependencies": {
+          "System.Memory": "4.5.5"
+        },
+        "compile": {
+          "lib/net6.0/Spectre.Console.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net6.0/Spectre.Console.dll": {
+            "related": ".xml"
+          }
+        }
+      },
+      "System.Memory/4.5.5": {
+        "type": "package",
+        "compile": {
+          "ref/netcoreapp2.1/_._": {}
+        },
+        "runtime": {
+          "lib/netcoreapp2.1/_._": {}
+        }
+      },
       "Controller/1.0.0": {
         "type": "project",
         "framework": ".NETCoreApp,Version=v6.0",
@@ -28,6 +53,45 @@
     }
   },
   "libraries": {
+    "Spectre.Console/0.45.1-preview.0.19": {
+      "sha512": "Lw9knBvj+9HlvFX+fux1cAuNS0f2GhN9nVp1R9KvKVhzafIZRNHa1tUhv9bttzQ+uCw/CMqVFcoQoxIpEy0PaQ==",
+      "type": "package",
+      "path": "spectre.console/0.45.1-preview.0.19",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "lib/net6.0/Spectre.Console.dll",
+        "lib/net6.0/Spectre.Console.xml",
+        "lib/netstandard2.0/Spectre.Console.dll",
+        "lib/netstandard2.0/Spectre.Console.xml",
+        "small-logo.png",
+        "spectre.console.0.45.1-preview.0.19.nupkg.sha512",
+        "spectre.console.nuspec"
+      ]
+    },
+    "System.Memory/4.5.5": {
+      "sha512": "XIWiDvKPXaTveaB7HVganDlOCRoj03l+jrwNvcge/t8vhGYKvqV+dMv6G4SAX2NoNmN0wZfVPTAlFwZcZvVOUw==",
+      "type": "package",
+      "path": "system.memory/4.5.5",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "LICENSE.TXT",
+        "THIRD-PARTY-NOTICES.TXT",
+        "lib/net461/System.Memory.dll",
+        "lib/net461/System.Memory.xml",
+        "lib/netcoreapp2.1/_._",
+        "lib/netstandard1.1/System.Memory.dll",
+        "lib/netstandard1.1/System.Memory.xml",
+        "lib/netstandard2.0/System.Memory.dll",
+        "lib/netstandard2.0/System.Memory.xml",
+        "ref/netcoreapp2.1/_._",
+        "system.memory.4.5.5.nupkg.sha512",
+        "system.memory.nuspec",
+        "useSharedDesignerContext.txt",
+        "version.txt"
+      ]
+    },
     "Controller/1.0.0": {
       "type": "project",
       "path": "../Controller/Controller.csproj",
@@ -42,7 +106,8 @@
   "projectFileDependencyGroups": {
     "net6.0": [
       "Controller >= 1.0.0",
-      "Model >= 1.0.0"
+      "Model >= 1.0.0",
+      "Spectre.Console >= 0.45.1-preview.0.19"
     ]
   },
   "packageFolders": {
@@ -51,11 +116,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "/Users/jeroendenotter/Documents/3. School/3. Windesheim/Semester 3 - Software Design/3. C#/RaceSim/RaceSim/RaceSim.csproj",
+      "projectUniqueName": "/Users/jeroendenotter/Documents/6. GitHub/SimRace/RaceSim/RaceSim.csproj",
       "projectName": "RaceSim",
-      "projectPath": "/Users/jeroendenotter/Documents/3. School/3. Windesheim/Semester 3 - Software Design/3. C#/RaceSim/RaceSim/RaceSim.csproj",
+      "projectPath": "/Users/jeroendenotter/Documents/6. GitHub/SimRace/RaceSim/RaceSim.csproj",
       "packagesPath": "/Users/jeroendenotter/.nuget/packages/",
-      "outputPath": "/Users/jeroendenotter/Documents/3. School/3. Windesheim/Semester 3 - Software Design/3. C#/RaceSim/RaceSim/obj/",
+      "outputPath": "/Users/jeroendenotter/Documents/6. GitHub/SimRace/RaceSim/obj/",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "/Users/jeroendenotter/.nuget/NuGet/NuGet.Config"
@@ -70,11 +135,11 @@
         "net6.0": {
           "targetAlias": "net6.0",
           "projectReferences": {
-            "/Users/jeroendenotter/Documents/3. School/3. Windesheim/Semester 3 - Software Design/3. C#/RaceSim/Controller/Controller.csproj": {
-              "projectPath": "/Users/jeroendenotter/Documents/3. School/3. Windesheim/Semester 3 - Software Design/3. C#/RaceSim/Controller/Controller.csproj"
+            "/Users/jeroendenotter/Documents/6. GitHub/SimRace/Controller/Controller.csproj": {
+              "projectPath": "/Users/jeroendenotter/Documents/6. GitHub/SimRace/Controller/Controller.csproj"
             },
-            "/Users/jeroendenotter/Documents/3. School/3. Windesheim/Semester 3 - Software Design/3. C#/RaceSim/Model/Model/Model.csproj": {
-              "projectPath": "/Users/jeroendenotter/Documents/3. School/3. Windesheim/Semester 3 - Software Design/3. C#/RaceSim/Model/Model/Model.csproj"
+            "/Users/jeroendenotter/Documents/6. GitHub/SimRace/Model/Model/Model.csproj": {
+              "projectPath": "/Users/jeroendenotter/Documents/6. GitHub/SimRace/Model/Model/Model.csproj"
             }
           }
         }
@@ -88,6 +153,12 @@
     "frameworks": {
       "net6.0": {
         "targetAlias": "net6.0",
+        "dependencies": {
+          "Spectre.Console": {
+            "target": "Package",
+            "version": "[0.45.1-preview.0.19, )"
+          }
+        },
         "imports": [
           "net461",
           "net462",

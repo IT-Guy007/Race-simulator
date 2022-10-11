@@ -1,10 +1,17 @@
 ﻿using Controller;
+using RaceSim;
 
 public class Program {
     static void Main(string[] args) {
+        
+        //Initialise
         Data.Initialize();
-        Console.WriteLine("Current track is: " + Data.currentRace.Track.name);
-
+        Visualisation.Initialize();
+        
+        //Run
+        Visualisation.DrawTrack(Data.currentRace.Track);
+        
+        //Keeping it running
         for (; ; ) {
             Thread.Sleep(100);
         }

@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "/Users/jeroendenotter/Documents/3. School/3. Windesheim/Semester 3 - Software Design/3. C#/RaceSim/RaceSim/RaceSim.csproj": {}
+    "/Users/jeroendenotter/Documents/6. GitHub/SimRace/RaceSim/RaceSim.csproj": {}
   },
   "projects": {
-    "/Users/jeroendenotter/Documents/3. School/3. Windesheim/Semester 3 - Software Design/3. C#/RaceSim/Controller/Controller.csproj": {
+    "/Users/jeroendenotter/Documents/6. GitHub/SimRace/Controller/Controller.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/Users/jeroendenotter/Documents/3. School/3. Windesheim/Semester 3 - Software Design/3. C#/RaceSim/Controller/Controller.csproj",
+        "projectUniqueName": "/Users/jeroendenotter/Documents/6. GitHub/SimRace/Controller/Controller.csproj",
         "projectName": "Controller",
-        "projectPath": "/Users/jeroendenotter/Documents/3. School/3. Windesheim/Semester 3 - Software Design/3. C#/RaceSim/Controller/Controller.csproj",
+        "projectPath": "/Users/jeroendenotter/Documents/6. GitHub/SimRace/Controller/Controller.csproj",
         "packagesPath": "/Users/jeroendenotter/.nuget/packages/",
-        "outputPath": "/Users/jeroendenotter/Documents/3. School/3. Windesheim/Semester 3 - Software Design/3. C#/RaceSim/Controller/obj/",
+        "outputPath": "/Users/jeroendenotter/Documents/6. GitHub/SimRace/Controller/obj/",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "/Users/jeroendenotter/.nuget/NuGet/NuGet.Config"
@@ -26,8 +26,8 @@
           "net6.0": {
             "targetAlias": "net6.0",
             "projectReferences": {
-              "/Users/jeroendenotter/Documents/3. School/3. Windesheim/Semester 3 - Software Design/3. C#/RaceSim/Model/Model/Model.csproj": {
-                "projectPath": "/Users/jeroendenotter/Documents/3. School/3. Windesheim/Semester 3 - Software Design/3. C#/RaceSim/Model/Model/Model.csproj"
+              "/Users/jeroendenotter/Documents/6. GitHub/SimRace/Model/Model/Model.csproj": {
+                "projectPath": "/Users/jeroendenotter/Documents/6. GitHub/SimRace/Model/Model/Model.csproj"
               }
             }
           }
@@ -61,14 +61,14 @@
         }
       }
     },
-    "/Users/jeroendenotter/Documents/3. School/3. Windesheim/Semester 3 - Software Design/3. C#/RaceSim/Model/Model/Model.csproj": {
+    "/Users/jeroendenotter/Documents/6. GitHub/SimRace/Model/Model/Model.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/Users/jeroendenotter/Documents/3. School/3. Windesheim/Semester 3 - Software Design/3. C#/RaceSim/Model/Model/Model.csproj",
+        "projectUniqueName": "/Users/jeroendenotter/Documents/6. GitHub/SimRace/Model/Model/Model.csproj",
         "projectName": "Model",
-        "projectPath": "/Users/jeroendenotter/Documents/3. School/3. Windesheim/Semester 3 - Software Design/3. C#/RaceSim/Model/Model/Model.csproj",
+        "projectPath": "/Users/jeroendenotter/Documents/6. GitHub/SimRace/Model/Model/Model.csproj",
         "packagesPath": "/Users/jeroendenotter/.nuget/packages/",
-        "outputPath": "/Users/jeroendenotter/Documents/3. School/3. Windesheim/Semester 3 - Software Design/3. C#/RaceSim/Model/Model/obj/",
+        "outputPath": "/Users/jeroendenotter/Documents/6. GitHub/SimRace/Model/Model/obj/",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "/Users/jeroendenotter/.nuget/NuGet/NuGet.Config"
@@ -114,14 +114,14 @@
         }
       }
     },
-    "/Users/jeroendenotter/Documents/3. School/3. Windesheim/Semester 3 - Software Design/3. C#/RaceSim/RaceSim/RaceSim.csproj": {
+    "/Users/jeroendenotter/Documents/6. GitHub/SimRace/RaceSim/RaceSim.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/Users/jeroendenotter/Documents/3. School/3. Windesheim/Semester 3 - Software Design/3. C#/RaceSim/RaceSim/RaceSim.csproj",
+        "projectUniqueName": "/Users/jeroendenotter/Documents/6. GitHub/SimRace/RaceSim/RaceSim.csproj",
         "projectName": "RaceSim",
-        "projectPath": "/Users/jeroendenotter/Documents/3. School/3. Windesheim/Semester 3 - Software Design/3. C#/RaceSim/RaceSim/RaceSim.csproj",
+        "projectPath": "/Users/jeroendenotter/Documents/6. GitHub/SimRace/RaceSim/RaceSim.csproj",
         "packagesPath": "/Users/jeroendenotter/.nuget/packages/",
-        "outputPath": "/Users/jeroendenotter/Documents/3. School/3. Windesheim/Semester 3 - Software Design/3. C#/RaceSim/RaceSim/obj/",
+        "outputPath": "/Users/jeroendenotter/Documents/6. GitHub/SimRace/RaceSim/obj/",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "/Users/jeroendenotter/.nuget/NuGet/NuGet.Config"
@@ -136,11 +136,11 @@
           "net6.0": {
             "targetAlias": "net6.0",
             "projectReferences": {
-              "/Users/jeroendenotter/Documents/3. School/3. Windesheim/Semester 3 - Software Design/3. C#/RaceSim/Controller/Controller.csproj": {
-                "projectPath": "/Users/jeroendenotter/Documents/3. School/3. Windesheim/Semester 3 - Software Design/3. C#/RaceSim/Controller/Controller.csproj"
+              "/Users/jeroendenotter/Documents/6. GitHub/SimRace/Controller/Controller.csproj": {
+                "projectPath": "/Users/jeroendenotter/Documents/6. GitHub/SimRace/Controller/Controller.csproj"
               },
-              "/Users/jeroendenotter/Documents/3. School/3. Windesheim/Semester 3 - Software Design/3. C#/RaceSim/Model/Model/Model.csproj": {
-                "projectPath": "/Users/jeroendenotter/Documents/3. School/3. Windesheim/Semester 3 - Software Design/3. C#/RaceSim/Model/Model/Model.csproj"
+              "/Users/jeroendenotter/Documents/6. GitHub/SimRace/Model/Model/Model.csproj": {
+                "projectPath": "/Users/jeroendenotter/Documents/6. GitHub/SimRace/Model/Model/Model.csproj"
               }
             }
           }
@@ -154,6 +154,12 @@
       "frameworks": {
         "net6.0": {
           "targetAlias": "net6.0",
+          "dependencies": {
+            "Spectre.Console": {
+              "target": "Package",
+              "version": "[0.45.1-preview.0.19, )"
+            }
+          },
           "imports": [
             "net461",
             "net462",
