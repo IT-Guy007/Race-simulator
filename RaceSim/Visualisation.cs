@@ -255,16 +255,16 @@ public static class Visualisation
                         break;
                     //Side of the track
                     case '═':
-                        color = Color.White;
+                        color = Color.Orange1;
                         break;
                     //Track
                     case ' ':
-                        color = Color.Black;
+                        color = Color.White;
                         break;
 
                     //Driver
-                    case '┃':
-                        color = Color.Red;
+                    case '|':
+                        color = Color.Blue;
                         break;
                     //Finish
                     case 'f':
@@ -432,13 +432,13 @@ public static class Visualisation
         
         private static string[] StartUp =
         {
-            "║     ║",
+            "║ | | ║",
             "║     ║", 
-            "║ _ _ ║", 
+            "║ | | ║", 
             "║     ║", 
-            "║ _ _ ║",
+            "║ | | ║",
             "║     ║",
-            "║ _ _ ║",
+            "║ | | ║",
 
         };
 
