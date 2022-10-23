@@ -2,7 +2,7 @@
   "version": 3,
   "targets": {
     "net6.0": {
-      "Spectre.Console/0.45.1-preview.0.19": {
+      "Spectre.Console/0.45.1-preview.0.27": {
         "type": "package",
         "dependencies": {
           "System.Memory": "4.5.5"
@@ -43,6 +43,9 @@
       "Model/1.0.0": {
         "type": "project",
         "framework": ".NETCoreApp,Version=v6.0",
+        "dependencies": {
+          "Spectre.Console": "0.45.1-preview.0.27"
+        },
         "compile": {
           "bin/placeholder/Model.dll": {}
         },
@@ -53,10 +56,10 @@
     }
   },
   "libraries": {
-    "Spectre.Console/0.45.1-preview.0.19": {
-      "sha512": "Lw9knBvj+9HlvFX+fux1cAuNS0f2GhN9nVp1R9KvKVhzafIZRNHa1tUhv9bttzQ+uCw/CMqVFcoQoxIpEy0PaQ==",
+    "Spectre.Console/0.45.1-preview.0.27": {
+      "sha512": "7PwkxPjUDijehfW+MO3kWPLgiTScvGV4sbZNxgh5ad3/blUmWLrwla/5Xo/bVsXrDDNKD1w7xUnYbvQskSSuVw==",
       "type": "package",
-      "path": "spectre.console/0.45.1-preview.0.19",
+      "path": "spectre.console/0.45.1-preview.0.27",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
@@ -65,7 +68,7 @@
         "lib/netstandard2.0/Spectre.Console.dll",
         "lib/netstandard2.0/Spectre.Console.xml",
         "small-logo.png",
-        "spectre.console.0.45.1-preview.0.19.nupkg.sha512",
+        "spectre.console.0.45.1-preview.0.27.nupkg.sha512",
         "spectre.console.nuspec"
       ]
     },
@@ -106,8 +109,7 @@
   "projectFileDependencyGroups": {
     "net6.0": [
       "Controller >= 1.0.0",
-      "Model >= 1.0.0",
-      "Spectre.Console >= 0.45.1-preview.0.19"
+      "Model >= 1.0.0"
     ]
   },
   "packageFolders": {
@@ -153,12 +155,6 @@
     "frameworks": {
       "net6.0": {
         "targetAlias": "net6.0",
-        "dependencies": {
-          "Spectre.Console": {
-            "target": "Package",
-            "version": "[0.45.1-preview.0.19, )"
-          }
-        },
         "imports": [
           "net461",
           "net462",

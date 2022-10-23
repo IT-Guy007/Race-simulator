@@ -8,18 +8,25 @@ public static class Visualisation
 {
 
     private static int tileSize;
+    private static Table table;
     private static Canvas canvas;
     private static Direction direction;
 
     public static void Initialize() {
         direction = Data.currentRace.Track.startDirection;
-        tileSize = Straight.Length;
+        tileSize = Straight.Length; //Which is always 7
+        table = new Table();
+    }
+    
+    //Events
+    public static void DriversChanged(object sender, DriversChanged e) {
+        DrawTrack();
     }
 
-    public static void DrawTrack(Track track) {    
+    public static void DrawTrack() {    
         //Start position
-        int x = 3;
-        int y = 3;
+        int x = 5;
+        int y = 5;
         
         //Canvas
         int xSize;
@@ -29,6 +36,7 @@ public static class Visualisation
         int xMin = x;
         int yMin = y;
         
+        //Calculate canvas size
         foreach (var varSection in Data.currentRace.Track.Sections)
         {
             setDirection(varSection);
@@ -70,23 +78,22 @@ public static class Visualisation
         ySize = yMax - yMin + 1;
         
         //Create canvas
-
         canvas = new Canvas(xSize * tileSize, ySize * tileSize);
+        canvas.Scale = false;
         direction = Data.currentRace.Track.startDirection;
-        x = 3 - xMin;
-        y = 3 - yMin;
+        x = 5 - xMin;
+        y = 5 - yMin;
         
         //Background
-        for (int i = 0; i < xSize; i++)
+        for (int i = 0; i < xSize * tileSize; i++)
         {
-            for (int j = 0; j < ySize; j++)
+            for (int j = 0; j < ySize * tileSize; j++)
             {
-                canvas.SetPixel(i, j, Color.Green);
+                canvas.SetPixel(i, j, Data.currentRace.Track.backgroundColor);
             }
         }
-        
-        //Create track
-        // draw all tiles
+
+        //Draw tiles
         foreach (Section section in Data.currentRace.Track.Sections)
         {
             DrawSection(section, x, y);
@@ -105,26 +112,41 @@ public static class Visualisation
                 case Direction.West:
                     x--;
                     break;
-
-                
             }
         }
         
-        canvas.Scale = false;
         // write screen
+        //TABLES DON'T WORK, MAYBLE LATER
         AnsiConsole.Clear();
-        Table screen = new();
-        screen.RoundedBorder();
-        screen.AddColumn($"Track: {Data.currentRace.Track.name} | Laps: {Data.currentRace.Track.laps}");
-        screen.AddRow(canvas);
-        AnsiConsole.Write(screen);
+        // table.RoundedBorder();
+        // table.Alignment(Justify.Left);
+        
+        //Create row data
+        // string positions = "1\n2\n3\n4\n5\n6\n7\n8";
+        // string participants = "";
+        // foreach (var driver in Data.currentRace.Participants) {
+        //     participants = participants + (driver.DriverNumber + " " + driver.Name + "\n");
+        // }
+        
+        //Create column
+        // table.Title("Track: " + Data.currentRace.Track.name);
+        // table.AddColumn("Laps: " + Data.currentRace.Track.laps).Centered();
+        // table.AddColumn(new TableColumn("Position").Centered());
+        // table.AddColumn(new TableColumn("Racers").Alignment(Justify.Left));
+
+        // Create row
+        // table.AddRow(canvas);
+        //table.AddRow(canvas,positions, participants);
+
+        //Print to console
+        AnsiConsole.Write(canvas);
     }
 
-    public static void DrawSection(Section section, int x, int y)
-    {
+    public static void DrawSection(Section section, int x, int y) {
 
         string[] tile = new string[tileSize];
 
+        //Get graphic for section
         switch (section.sectionType)
         {
             case SectionTypes.Straight:
@@ -231,9 +253,12 @@ public static class Visualisation
 
                 break;
         }
+        
+        //Add drivers to it
+        tile = addDrivers(tile, Data.currentRace.Positions[section].Left,
+            Data.currentRace.Positions[section].Right);
 
-        //tile = addDrivers(tile,Data.currentRace.Positions[section].Left,Data.currentRace.Positions[section].Right);
-
+        //Draw the tile
         for (int i = 0; i < tile.Length; i++)
         {
             for (int j = 0; j < tile[i].Length; j++)
@@ -257,22 +282,75 @@ public static class Visualisation
                     case '═':
                         color = Color.Orange1;
                         break;
+                    
                     //Track
                     case ' ':
                         color = Color.White;
                         break;
+                    
+                    //Positions
+                    case '1':
+                        color = Color.White;
+                        break;
+                    case '2':
+                        color = Color.White;
+                        break;
+                    case 'A':
+                        color = Color.White;
+                        break;
+                    case 'B':
+                        color = Color.White;
+                        break;
+                    case 'C':
+                        color = Color.White;
+                        break;
+                    case 'D':
+                        color = Color.White;
+                        break;
+                    case 'E':
+                        color = Color.White;
+                        break;
+                    case 'F':
+                        color = Color.White;
+                        break;
+                    case 'G':
+                        color = Color.White;
+                        break;
+                    case 'H':
+                        color = Color.White;
+                        break;
 
                     //Driver
-                    case '|':
+                    case 'r':
+                        color = Color.Red;
+                        break;
+                    case 'b':
                         color = Color.Blue;
+                        break;
+                    case 'g':
+                        color = Color.Green;
+                        break;
+                    case 'y':
+                        color = Color.Yellow;
+                        break;
+                    case 'o':
+                        color = Color.Orange1;
+                        break;
+                    case 'h':
+                        color = Color.Grey;
                         break;
                     //Finish
                     case 'f':
                         color = Color.Red;
                         break;
                     //Finish
-                    case 'g':
-                        color = Color.White;
+                    case '-':
+                        color = Color.Wheat1;
+                        break;
+                    
+                    //Broken car
+                    case '#':
+                        color = Color.SandyBrown;
                         break;
 
                 }
@@ -282,47 +360,7 @@ public static class Visualisation
             }
         }
     }
-    
-    private static string[] addDrivers(string[] tiles, IParticipant pos1, IParticipant pos2)
-    {
-        string[] tile = new string[tiles.Length];
-
-        tiles.CopyTo(tile, 0);
-
-        for (int i = 0; i < tile.Length; i++)
-        {
-            string line = tile[i];
-
-            if (pos1 != null)
-            {
-                if (!pos1.Equipment.isBroken)
-                {
-                    line = line.Replace('1', 'z');
-                }
-                else
-                {
-                    line = line.Replace('1', '#');
-                }
-            }
-
-            if (pos2 != null)
-            {
-                if (!pos2.Equipment.isBroken)
-                {
-                    line = line.Replace('2', 'z');
-                }
-                else
-                {
-                    line = line.Replace('2', '#');
-                }
-            }
-
-            tile[i] = line;
-        }
-
-        return tile;
-    }
-
+    //Set new direction for next section
     private static void setDirection(Section section)
     {
         switch (section.sectionType) {
@@ -368,6 +406,50 @@ public static class Visualisation
         }
     }
 
+    //Add drivers to section
+    private static string[] addDrivers(string[] givenSize, IParticipant driverLeft, IParticipant driverRight)  {
+        
+        string[] tile = new string[givenSize.Length];
+        
+        givenSize.CopyTo(tile,0);
+
+        for (int i = 0; i < tile.Length; i++)
+        {
+            string line = tile[i];
+
+            if (driverLeft != null)
+            {
+                if (!driverLeft.Equipment.IsBroken)
+                {
+                    line = line.Replace('1', TeamColorToChar(driverLeft.TeamColor));
+                    line = line.Replace('3', TeamColorToChar(driverLeft.TeamColor));
+                    line = line.Replace('5', TeamColorToChar(driverLeft.TeamColor));
+                    line = line.Replace('7', TeamColorToChar(driverLeft.TeamColor));
+                }
+                else {
+                    line = line.Replace('1', '#');
+                }
+            }
+
+            if (driverRight != null)
+            {
+                if (!driverRight.Equipment.IsBroken)
+                {
+                    line = line.Replace('2', TeamColorToChar(driverRight.TeamColor));
+                    line = line.Replace('4', TeamColorToChar(driverRight.TeamColor));
+                    line = line.Replace('6', TeamColorToChar(driverRight.TeamColor));
+                    line = line.Replace('8', TeamColorToChar(driverRight.TeamColor));
+                }
+                else
+                {
+                    line = line.Replace('2', '#');
+                }
+            }
+            tile[i] = line;
+        }
+
+        return tile;
+    }
     #region graphics
         // Create the trackTypes
         
@@ -375,9 +457,9 @@ public static class Visualisation
         {
             "║║║║║║║",
             "       ", 
+            "   2   ", 
             "       ", 
-            "       ", 
-            "       ",
+            "   1   ",
             "       ",
             "║║║║║║║",
 
@@ -388,7 +470,7 @@ public static class Visualisation
             "║     ║",
             "║     ║", 
             "║     ║", 
-            "║     ║", 
+            "║ 1 2 ║", 
             "║     ║",
             "║     ║",
             "║     ║",
@@ -398,11 +480,11 @@ public static class Visualisation
         private static string[] Finish =
         {
             "║║║║║║║",
-            "     fg", 
-            "     gf", 
-            "     fg", 
-            "     gf",
-            "     fg",
+            "     f-", 
+            "   1 -f", 
+            "     f-", 
+            "   2 -f",
+            "     f-",
             "║║║║║║║",
 
         };
@@ -412,19 +494,19 @@ public static class Visualisation
             "║     ║", 
             "║     ║",
             "║     ║",
+            "║ 1 2 ║",
             "║     ║",
-            "║     ║",
-            "║fgfgf║", 
-            "║gfgfg║"
+            "║f-f-f║", 
+            "║-f-f-║"
 
         };
         private static string[] Start =
         {
             "║║║║║║║",
             "       ", 
-            "| | | |", 
+            "B D F H", 
             "       ", 
-            "| | | |",
+            "A C E G",
             "       ",
             "║║║║║║║",
 
@@ -432,13 +514,13 @@ public static class Visualisation
         
         private static string[] StartUp =
         {
-            "║ | | ║",
+            "║ A B ║",
             "║     ║", 
-            "║ | | ║", 
+            "║ C D ║", 
             "║     ║", 
-            "║ | | ║",
+            "║ E F ║",
             "║     ║",
-            "║ | | ║",
+            "║ G H ║",
 
         };
 
@@ -446,9 +528,9 @@ public static class Visualisation
         {
             "║     ║",
             "      ═", 
-            "      ║", 
+            "  1   ║", 
             "      ═", 
-            "      ║",
+            "   2  ║",
             "      ═",
             "║═║═║═║",
 
@@ -458,9 +540,9 @@ public static class Visualisation
         {
             "║═║═║═║",
             "      ═", 
-            "      ║", 
+            "   2  ║", 
             "      ═", 
-            "      ║",
+            "  1   ║",
             "      ═",
             "║     ║",
 
@@ -470,9 +552,9 @@ public static class Visualisation
         {
             "║═║═║═║",
             "═      ", 
-            "║      ", 
+            "║  2   ", 
             "═      ", 
-            "║      ",
+            "║   1  ",
             "═      ",
             "║     ║",
 
@@ -482,13 +564,32 @@ public static class Visualisation
         {
             "║     ║",
             "═      ", 
-            "║      ", 
+            "║   1  ", 
             "═      ", 
-            "║      ",
+            "║  2   ",
             "═      ",
             "║═║═║═║",
 
         };
         #endregion
 
+        private static char TeamColorToChar(TeamColors teamColor) {
+            switch (teamColor)
+            {
+                case TeamColors.Red:
+                    return 'r';
+                case TeamColors.Blue:
+                    return 'b';
+                case TeamColors.Green:
+                    return 'g';
+                case TeamColors.Yellow:
+                    return 'y';
+                case TeamColors.Orange:
+                    return 'o';
+                case TeamColors.Grey:
+                    return 'h';
+                default:
+                    return ' ';
+            }
+        }
 }

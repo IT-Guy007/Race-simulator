@@ -1,4 +1,5 @@
 ﻿using Controller;
+using Model;
 using RaceSim;
 
 public class Program {
@@ -6,14 +7,22 @@ public class Program {
         
         //Initialise
         Data.Initialize();
+        Data.NextRace();
         Visualisation.Initialize();
+        Data.currentRace.DriversChanged += Visualisation.DriversChanged;
+        Data.currentRace.RaceEnded += RaceEnded;
+            
         
-        //Run
-        Visualisation.DrawTrack(Data.currentRace.Track);
-        
-        //Keeping it running
-        for (; ; ) {
-            Thread.Sleep(100);
-        }
+        // Loop
+        while (Data.currentRace.Participants.Count > 0) { for (;;) { } }
+         
+    }
+    
+    //Race ended, start new race if exists
+    private static void RaceEnded(object sender, EventArgs eventArgs) {
+        Data.NextRace();
+        Data.currentRace.DriversChanged += Visualisation.DriversChanged;
+        Data.currentRace.RaceEnded += RaceEnded;
+        Visualisation.Initialize();
     }
 }

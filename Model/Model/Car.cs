@@ -1,10 +1,24 @@
 ﻿using System;
 namespace Model {
-    public class Car : IEquipment {
-        public int quality { get; set; }
-        public int speed { get; set; }
-        public bool isBroken { get; set; }
-        public int performance { get; set; }
+    public class Car : IEquipment
+    {
+        public int Quality { get; set; }
+        public int Speed { get; set; }
+        public bool IsBroken { get; set; }
+        public int Performance { get; set; }
+        
+        public int Distance() {
+            return Speed * Performance;
+        }
+
+
+        public Car(int quality, int performance, int speed, bool isBroken)
+        {
+            Quality = quality;
+            Performance = performance;
+            Speed = speed;
+            IsBroken = isBroken;
+        }
     }
 }
 

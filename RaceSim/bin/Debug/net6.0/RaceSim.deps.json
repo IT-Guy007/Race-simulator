@@ -9,14 +9,13 @@
       "RaceSim/1.0.0": {
         "dependencies": {
           "Controller": "1.0.0",
-          "Model": "1.0.0",
-          "Spectre.Console": "0.45.1-preview.0.19"
+          "Model": "1.0.0"
         },
         "runtime": {
           "RaceSim.dll": {}
         }
       },
-      "Spectre.Console/0.45.1-preview.0.19": {
+      "Spectre.Console/0.45.1-preview.0.27": {
         "dependencies": {
           "System.Memory": "4.5.5"
         },
@@ -37,6 +36,9 @@
         }
       },
       "Model/1.0.0": {
+        "dependencies": {
+          "Spectre.Console": "0.45.1-preview.0.27"
+        },
         "runtime": {
           "Model.dll": {}
         }
@@ -49,12 +51,12 @@
       "serviceable": false,
       "sha512": ""
     },
-    "Spectre.Console/0.45.1-preview.0.19": {
+    "Spectre.Console/0.45.1-preview.0.27": {
       "type": "package",
       "serviceable": true,
-      "sha512": "sha512-Lw9knBvj+9HlvFX+fux1cAuNS0f2GhN9nVp1R9KvKVhzafIZRNHa1tUhv9bttzQ+uCw/CMqVFcoQoxIpEy0PaQ==",
-      "path": "spectre.console/0.45.1-preview.0.19",
-      "hashPath": "spectre.console.0.45.1-preview.0.19.nupkg.sha512"
+      "sha512": "sha512-7PwkxPjUDijehfW+MO3kWPLgiTScvGV4sbZNxgh5ad3/blUmWLrwla/5Xo/bVsXrDDNKD1w7xUnYbvQskSSuVw==",
+      "path": "spectre.console/0.45.1-preview.0.27",
+      "hashPath": "spectre.console.0.45.1-preview.0.27.nupkg.sha512"
     },
     "System.Memory/4.5.5": {
       "type": "package",
