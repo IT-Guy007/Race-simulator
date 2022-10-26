@@ -361,6 +361,17 @@
       },
       "NUnit.Analyzers/3.3.0": {},
       "NUnit3TestAdapter/4.2.1": {},
+      "Spectre.Console/0.45.1-preview.0.27": {
+        "dependencies": {
+          "System.Memory": "4.5.5"
+        },
+        "runtime": {
+          "lib/net6.0/Spectre.Console.dll": {
+            "assemblyVersion": "0.0.0.0",
+            "fileVersion": "0.45.1.0"
+          }
+        }
+      },
       "System.Collections/4.0.11": {
         "dependencies": {
           "Microsoft.NETCore.Platforms": "1.1.0",
@@ -464,6 +475,7 @@
           "System.Threading": "4.0.11"
         }
       },
+      "System.Memory/4.5.5": {},
       "System.ObjectModel/4.0.12": {
         "dependencies": {
           "System.Collections": "4.0.11",
@@ -654,6 +666,9 @@
         }
       },
       "Model/1.0.0": {
+        "dependencies": {
+          "Spectre.Console": "0.45.1-preview.0.27"
+        },
         "runtime": {
           "Model.dll": {}
         }
@@ -764,6 +779,13 @@
       "path": "nunit3testadapter/4.2.1",
       "hashPath": "nunit3testadapter.4.2.1.nupkg.sha512"
     },
+    "Spectre.Console/0.45.1-preview.0.27": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-7PwkxPjUDijehfW+MO3kWPLgiTScvGV4sbZNxgh5ad3/blUmWLrwla/5Xo/bVsXrDDNKD1w7xUnYbvQskSSuVw==",
+      "path": "spectre.console/0.45.1-preview.0.27",
+      "hashPath": "spectre.console.0.45.1-preview.0.27.nupkg.sha512"
+    },
     "System.Collections/4.0.11": {
       "type": "package",
       "serviceable": true,
@@ -833,6 +855,13 @@
       "sha512": "sha512-I+y02iqkgmCAyfbqOmSDOgqdZQ5tTj80Akm5BPSS8EeB0VGWdy6X1KCoYe8Pk6pwDoAKZUOdLVxnTJcExiv5zw==",
       "path": "system.linq.expressions/4.1.0",
       "hashPath": "system.linq.expressions.4.1.0.nupkg.sha512"
+    },
+    "System.Memory/4.5.5": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-XIWiDvKPXaTveaB7HVganDlOCRoj03l+jrwNvcge/t8vhGYKvqV+dMv6G4SAX2NoNmN0wZfVPTAlFwZcZvVOUw==",
+      "path": "system.memory/4.5.5",
+      "hashPath": "system.memory.4.5.5.nupkg.sha512"
     },
     "System.ObjectModel/4.0.12": {
       "type": "package",

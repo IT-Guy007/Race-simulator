@@ -1,34 +1,18 @@
-﻿<Properties StartupConfiguration="RaceSim">
-  <MonoDevelop.Ide.ItemProperties.Controller FirstBuild="True" />
-  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
-  <MultiItemStartupConfigurations>
-    <MultiItemSolutionRunConfiguration Id="RaceSim" Name="RaceSim">
-      <Items>
-        <StartupItem ItemId="{08647694-615E-4FB1-875F-F2DC759CF411}" ItemName="RaceSim" ConfigurationId="Default" />
-      </Items>
-    </MultiItemSolutionRunConfiguration>
-  </MultiItemStartupConfigurations>
+﻿<Properties StartupConfiguration="{9CBF1116-5680-400A-8C10-C669E01FF379}|Default">
+  <Xamarin.Addins.Core.Project ActiveDebugTarget="MyAppleMacCatalystID" />
+  <MonoDevelop.Ide.ItemProperties.RaceSimulator PreferredExecutionTarget="MyAppleMacCatalystID" />
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
   <MonoDevelop.Ide.ItemProperties.RaceSim PreferredExecutionTarget="MonoDevelop.Default" />
-  <MonoDevelop.Ide.DebuggingService.Breakpoints>
-    <BreakpointStore />
-  </MonoDevelop.Ide.DebuggingService.Breakpoints>
-  <MonoDevelop.Ide.Workbench ActiveDocument="RaceSim/program.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Race Simulator/MauiProgram.cs">
     <Files>
-      <File FileName="RaceSim/Program.cs" Line="9" Column="2" />
-      <File FileName="Model/Model/Car.cs" Line="1" Column="1" />
-      <File FileName="Controller/Data.cs" Line="31" Column="1" />
+      <File FileName="Race Simulator/MauiProgram.cs" Line="16" Column="32" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
         <State name="__root__">
           <Node name="RaceSim" expanded="True">
-            <Node name="Controller" expanded="True">
-              <Node name="Data.cs" selected="True" />
-            </Node>
-            <Node name="ControllerTest" expanded="True" />
-            <Node name="Model" expanded="True" />
-            <Node name="RaceSim" expanded="True" />
+            <Node name="RaceSimulator" selected="True" />
           </Node>
         </State>
       </Pad>
@@ -42,4 +26,14 @@
       </Pad>
     </Pads>
   </MonoDevelop.Ide.Workbench>
+  <MultiItemStartupConfigurations>
+    <MultiItemSolutionRunConfiguration Id="RaceSim" Name="RaceSim">
+      <Items>
+        <StartupItem ItemId="{08647694-615E-4FB1-875F-F2DC759CF411}" ItemName="RaceSim" ConfigurationId="Default" />
+      </Items>
+    </MultiItemSolutionRunConfiguration>
+  </MultiItemStartupConfigurations>
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
 </Properties>

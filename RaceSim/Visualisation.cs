@@ -12,22 +12,25 @@ public static class Visualisation
     private static Canvas canvas;
     private static Direction direction;
 
-    public static void Initialize() {
+    public static void Initialize()
+    {
         direction = Data.currentRace.Track.startDirection;
         tileSize = Straight.Length; //Which is always 7
         table = new Table();
     }
-    
+
     //Events
-    public static void DriversChanged(object sender, DriversChanged e) {
+    public static void DriversChanged(object sender, DriversChanged e)
+    {
         DrawTrack();
     }
 
-    public static void DrawTrack() {    
+    public static void DrawTrack()
+    {
         //Start position
         int x = 5;
         int y = 5;
-        
+
         //Canvas
         int xSize;
         int ySize;
@@ -35,13 +38,14 @@ public static class Visualisation
         int yMax = y;
         int xMin = x;
         int yMin = y;
-        
+
         //Calculate canvas size
         foreach (var varSection in Data.currentRace.Track.Sections)
         {
             setDirection(varSection);
 
-            switch (direction) {
+            switch (direction)
+            {
                 case Direction.North:
                     y--;
                     break;
@@ -60,14 +64,17 @@ public static class Visualisation
             {
                 xMax = x;
             }
+
             if (y > yMax)
             {
                 yMax = y;
             }
+
             if (x < xMin)
             {
                 xMin = x;
             }
+
             if (y < yMin)
             {
                 yMin = y;
@@ -76,14 +83,14 @@ public static class Visualisation
 
         xSize = xMax - xMin + 1;
         ySize = yMax - yMin + 1;
-        
+
         //Create canvas
         canvas = new Canvas(xSize * tileSize, ySize * tileSize);
         canvas.Scale = false;
         direction = Data.currentRace.Track.startDirection;
         x = 5 - xMin;
         y = 5 - yMin;
-        
+
         //Background
         for (int i = 0; i < xSize * tileSize; i++)
         {
@@ -114,35 +121,37 @@ public static class Visualisation
                     break;
             }
         }
-        
-        // write screen
+        /*
+        //Write screen
         //TABLES DON'T WORK, MAYBLE LATER
         AnsiConsole.Clear();
-        // table.RoundedBorder();
-        // table.Alignment(Justify.Left);
+        table.RoundedBorder();
+        table.Alignment(Justify.Left);
         
         //Create row data
-        // string positions = "1\n2\n3\n4\n5\n6\n7\n8";
-        // string participants = "";
-        // foreach (var driver in Data.currentRace.Participants) {
-        //     participants = participants + (driver.DriverNumber + " " + driver.Name + "\n");
-        // }
+        string positions = "1\n2\n3\n4\n5\n6\n7\n8";
+        string participants = "";
+        foreach (var driver in Data.currentRace.Participants) {
+           participants = participants + (driver.DriverNumber + " " + driver.Name + "\n");
+        }
         
         //Create column
-        // table.Title("Track: " + Data.currentRace.Track.name);
-        // table.AddColumn("Laps: " + Data.currentRace.Track.laps).Centered();
-        // table.AddColumn(new TableColumn("Position").Centered());
-        // table.AddColumn(new TableColumn("Racers").Alignment(Justify.Left));
+        table.Title("Track: " + Data.currentRace.Track.name);
+        table.AddColumn("Laps: " + Data.currentRace.Track.laps).Centered();
+        table.AddColumn(new TableColumn("Position").Centered());
+        table.AddColumn(new TableColumn("Racers").Alignment(Justify.Left));
 
         // Create row
-        // table.AddRow(canvas);
-        //table.AddRow(canvas,positions, participants);
+        table.AddRow(canvas);
+        table.AddRow(canvas,positions, participants);
 
         //Print to console
         AnsiConsole.Write(canvas);
+        */
     }
 
-    public static void DrawSection(Section section, int x, int y) {
+    public static void DrawSection(Section section, int x, int y)
+    {
 
         string[] tile = new string[tileSize];
 
@@ -253,7 +262,7 @@ public static class Visualisation
 
                 break;
         }
-        
+
         //Add drivers to it
         tile = addDrivers(tile, Data.currentRace.Positions[section].Left,
             Data.currentRace.Positions[section].Right);
@@ -273,7 +282,7 @@ public static class Visualisation
                 switch (singleTile)
                 {
                     //Track items
-                    
+
                     //Side of the track
                     case '║':
                         color = Color.Red;
@@ -282,12 +291,12 @@ public static class Visualisation
                     case '═':
                         color = Color.Orange1;
                         break;
-                    
+
                     //Track
                     case ' ':
                         color = Color.White;
                         break;
-                    
+
                     //Positions
                     case '1':
                         color = Color.White;
@@ -347,7 +356,7 @@ public static class Visualisation
                     case '-':
                         color = Color.Wheat1;
                         break;
-                    
+
                     //Broken car
                     case '#':
                         color = Color.SandyBrown;
@@ -360,11 +369,13 @@ public static class Visualisation
             }
         }
     }
+
     //Set new direction for next section
     private static void setDirection(Section section)
     {
-        switch (section.sectionType) {
-            
+        switch (section.sectionType)
+        {
+
             case SectionTypes.LeftCorner:
                 if (direction == Direction.North)
                 {
@@ -407,11 +418,12 @@ public static class Visualisation
     }
 
     //Add drivers to section
-    private static string[] addDrivers(string[] givenSize, IParticipant driverLeft, IParticipant driverRight)  {
-        
+    private static string[] addDrivers(string[] givenSize, IParticipant driverLeft, IParticipant driverRight)
+    {
+
         string[] tile = new string[givenSize.Length];
-        
-        givenSize.CopyTo(tile,0);
+
+        givenSize.CopyTo(tile, 0);
 
         for (int i = 0; i < tile.Length; i++)
         {
@@ -426,7 +438,8 @@ public static class Visualisation
                     line = line.Replace('5', TeamColorToChar(driverLeft.TeamColor));
                     line = line.Replace('7', TeamColorToChar(driverLeft.TeamColor));
                 }
-                else {
+                else
+                {
                     line = line.Replace('1', '#');
                 }
             }
@@ -445,151 +458,166 @@ public static class Visualisation
                     line = line.Replace('2', '#');
                 }
             }
+
             tile[i] = line;
         }
 
         return tile;
     }
+
     #region graphics
-        // Create the trackTypes
-        
-        private static string[] Straight =
+
+    // Create the trackTypes
+
+    private static string[] Straight =
+    {
+        "║║║║║║║",
+        "       ",
+        "   2   ",
+        "       ",
+        "   1   ",
+        "       ",
+        "║║║║║║║",
+
+    };
+
+    private static string[] StraightUp =
+    {
+        "║     ║",
+        "║     ║",
+        "║     ║",
+        "║ 1 2 ║",
+        "║     ║",
+        "║     ║",
+        "║     ║",
+
+    };
+
+    private static string[] Finish =
+    {
+        "║║║║║║║",
+        "     f-",
+        "   1 -f",
+        "     f-",
+        "   2 -f",
+        "     f-",
+        "║║║║║║║",
+
+    };
+
+    private static string[] FinishUp =
+    {
+        "║     ║",
+        "║     ║",
+        "║     ║",
+        "║ 1 2 ║",
+        "║     ║",
+        "║f-f-f║",
+        "║-f-f-║"
+
+    };
+
+    private static string[] Start =
+    {
+        "║║║║║║║",
+        "       ",
+        "B D F H",
+        "       ",
+        "A C E G",
+        "       ",
+        "║║║║║║║",
+
+    };
+
+    private static string[] StartUp =
+    {
+        "║ A B ║",
+        "║     ║",
+        "║ C D ║",
+        "║     ║",
+        "║ E F ║",
+        "║     ║",
+        "║ G H ║",
+
+    };
+
+    private static string[] CornerWestToNorth =
+    {
+        "║     ║",
+        "      ═",
+        "  1   ║",
+        "      ═",
+        "   2  ║",
+        "      ═",
+        "║═║═║═║",
+
+    };
+
+    private static string[] CornerWestToSouth =
+    {
+        "║═║═║═║",
+        "      ═",
+        "   2  ║",
+        "      ═",
+        "  1   ║",
+        "      ═",
+        "║     ║",
+
+    };
+
+    private static string[] CornerEastToSouth =
+    {
+        "║═║═║═║",
+        "═      ",
+        "║  2   ",
+        "═      ",
+        "║   1  ",
+        "═      ",
+        "║     ║",
+
+    };
+
+    private static string[] CornerEastToNorth =
+    {
+        "║     ║",
+        "═      ",
+        "║   1  ",
+        "═      ",
+        "║  2   ",
+        "═      ",
+        "║═║═║═║",
+
+    };
+
+    #endregion
+
+    private static char TeamColorToChar(TeamColors teamColor)
+    {
+        switch (teamColor)
         {
-            "║║║║║║║",
-            "       ", 
-            "   2   ", 
-            "       ", 
-            "   1   ",
-            "       ",
-            "║║║║║║║",
-
-        };
-        
-        private static string[] StraightUp =
-        {
-            "║     ║",
-            "║     ║", 
-            "║     ║", 
-            "║ 1 2 ║", 
-            "║     ║",
-            "║     ║",
-            "║     ║",
-
-        };
-        
-        private static string[] Finish =
-        {
-            "║║║║║║║",
-            "     f-", 
-            "   1 -f", 
-            "     f-", 
-            "   2 -f",
-            "     f-",
-            "║║║║║║║",
-
-        };
-        
-        private static string[] FinishUp =
-        {
-            "║     ║", 
-            "║     ║",
-            "║     ║",
-            "║ 1 2 ║",
-            "║     ║",
-            "║f-f-f║", 
-            "║-f-f-║"
-
-        };
-        private static string[] Start =
-        {
-            "║║║║║║║",
-            "       ", 
-            "B D F H", 
-            "       ", 
-            "A C E G",
-            "       ",
-            "║║║║║║║",
-
-        };
-        
-        private static string[] StartUp =
-        {
-            "║ A B ║",
-            "║     ║", 
-            "║ C D ║", 
-            "║     ║", 
-            "║ E F ║",
-            "║     ║",
-            "║ G H ║",
-
-        };
-
-        private static string[] CornerWestToNorth =
-        {
-            "║     ║",
-            "      ═", 
-            "  1   ║", 
-            "      ═", 
-            "   2  ║",
-            "      ═",
-            "║═║═║═║",
-
-        };
-        
-        private static string[] CornerWestToSouth =
-        {
-            "║═║═║═║",
-            "      ═", 
-            "   2  ║", 
-            "      ═", 
-            "  1   ║",
-            "      ═",
-            "║     ║",
-
-        };
-        
-        private static string[] CornerEastToSouth =         
-        {
-            "║═║═║═║",
-            "═      ", 
-            "║  2   ", 
-            "═      ", 
-            "║   1  ",
-            "═      ",
-            "║     ║",
-
-        };
-        
-        private static string[] CornerEastToNorth =         
-        {
-            "║     ║",
-            "═      ", 
-            "║   1  ", 
-            "═      ", 
-            "║  2   ",
-            "═      ",
-            "║═║═║═║",
-
-        };
-        #endregion
-
-        private static char TeamColorToChar(TeamColors teamColor) {
-            switch (teamColor)
-            {
-                case TeamColors.Red:
-                    return 'r';
-                case TeamColors.Blue:
-                    return 'b';
-                case TeamColors.Green:
-                    return 'g';
-                case TeamColors.Yellow:
-                    return 'y';
-                case TeamColors.Orange:
-                    return 'o';
-                case TeamColors.Grey:
-                    return 'h';
-                default:
-                    return ' ';
-            }
+            case TeamColors.Red:
+                return 'r';
+            case TeamColors.Blue:
+                return 'b';
+            case TeamColors.Green:
+                return 'g';
+            case TeamColors.Yellow:
+                return 'y';
+            case TeamColors.Orange:
+                return 'o';
+            case TeamColors.Grey:
+                return 'h';
+            default:
+                return ' ';
         }
+    }
+
+    //Race ended, start new race if exists
+    public static void RaceEnded(object sender, EventArgs eventArgs)
+    {
+        Data.NextRace();
+        Data.currentRace.DriversChanged += Visualisation.DriversChanged;
+        Data.currentRace.RaceEnded += RaceEnded;
+        Visualisation.Initialize();
+    }
 }

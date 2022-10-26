@@ -200,3 +200,4 @@
 /Users/jeroendenotter/Documents/6. GitHub/SimRace/ControllerTest/obj/Debug/net6.0/ControllerTest.pdb
 /Users/jeroendenotter/Documents/6. GitHub/SimRace/ControllerTest/obj/Debug/net6.0/ControllerTest.genruntimeconfig.cache
 /Users/jeroendenotter/Documents/6. GitHub/SimRace/ControllerTest/obj/Debug/net6.0/ref/ControllerTest.dll
+/Users/jeroendenotter/Documents/6. GitHub/SimRace/ControllerTest/bin/Debug/net6.0/Spectre.Console.dll

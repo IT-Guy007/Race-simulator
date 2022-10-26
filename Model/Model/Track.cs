@@ -15,6 +15,8 @@ public class Track {
         this.laps = laps;
         this.backgroundColor = backgroundColor;
     }
+    
+    public Track() {}
 }
 
 public enum Direction {

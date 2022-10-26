@@ -187,7 +187,7 @@ public static class Data
         };
 
         currentCompetition.Tracks.Enqueue(new Track("Zandvoort", createSections(zandvoortSections),Direction.North,3, Spectre.Console.Color.Orange3));
-        currentCompetition.Tracks.Enqueue(new Track("Spa", createSections(spaSections), Direction.South, 2, Spectre.Console.Color.SandyBrown));
+        currentCompetition.Tracks.Enqueue(new Track("Spa", createSections(spaSections), Direction.South, 2, Spectre.Console.Color.DarkGreen));
         currentCompetition.Tracks.Enqueue(new Track("Square", createSections(squareSections),Direction.East,1, Spectre.Console.Color.DarkSlateGray1));
     }
 
