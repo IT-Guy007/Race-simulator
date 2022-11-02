@@ -1,3 +1,4 @@
+/Users/jeroendenotter/Documents/6. GitHub/SimRace/MAUI/bin/Debug/net6.0-ios/iossimulator-x64/publish/../MAUI.app/runtimes/win-x64/native/WebView2Loader.dll
 /Users/jeroendenotter/Documents/6. GitHub/SimRace/MAUI/bin/Debug/net6.0-ios/iossimulator-x64/publish/../MAUI.app/icudt.dat
 /Users/jeroendenotter/Documents/6. GitHub/SimRace/MAUI/bin/Debug/net6.0-ios/iossimulator-x64/publish/../MAUI.app/Microsoft.Extensions.Configuration.dll
 /Users/jeroendenotter/Documents/6. GitHub/SimRace/MAUI/bin/Debug/net6.0-ios/iossimulator-x64/publish/../MAUI.app/Microsoft.Extensions.Configuration.Abstractions.dll
@@ -8,6 +9,13 @@
 /Users/jeroendenotter/Documents/6. GitHub/SimRace/MAUI/bin/Debug/net6.0-ios/iossimulator-x64/publish/../MAUI.app/Microsoft.Extensions.Options.dll
 /Users/jeroendenotter/Documents/6. GitHub/SimRace/MAUI/bin/Debug/net6.0-ios/iossimulator-x64/publish/../MAUI.app/Microsoft.Extensions.Primitives.dll
 /Users/jeroendenotter/Documents/6. GitHub/SimRace/MAUI/bin/Debug/net6.0-ios/iossimulator-x64/publish/../MAUI.app/Microsoft.Maui.Graphics.dll
+/Users/jeroendenotter/Documents/6. GitHub/SimRace/MAUI/bin/Debug/net6.0-ios/iossimulator-x64/publish/../MAUI.app/Microsoft.Web.WebView2.Core.dll
+/Users/jeroendenotter/Documents/6. GitHub/SimRace/MAUI/bin/Debug/net6.0-ios/iossimulator-x64/publish/../MAUI.app/Microsoft.Web.WebView2.WinForms.dll
+/Users/jeroendenotter/Documents/6. GitHub/SimRace/MAUI/bin/Debug/net6.0-ios/iossimulator-x64/publish/../MAUI.app/Microsoft.Web.WebView2.Wpf.dll
+/Users/jeroendenotter/Documents/6. GitHub/SimRace/MAUI/bin/Debug/net6.0-ios/iossimulator-x64/publish/../MAUI.app/Microsoft.Win32.SystemEvents.dll
+/Users/jeroendenotter/Documents/6. GitHub/SimRace/MAUI/bin/Debug/net6.0-ios/iossimulator-x64/publish/../MAUI.app/Spectre.Console.dll
+/Users/jeroendenotter/Documents/6. GitHub/SimRace/MAUI/bin/Debug/net6.0-ios/iossimulator-x64/publish/../MAUI.app/System.Drawing.Common.dll
+/Users/jeroendenotter/Documents/6. GitHub/SimRace/MAUI/bin/Debug/net6.0-ios/iossimulator-x64/publish/../MAUI.app/Model.dll
 /Users/jeroendenotter/Documents/6. GitHub/SimRace/MAUI/bin/Debug/net6.0-ios/iossimulator-x64/publish/../MAUI.app/MAUI.dll
 /Users/jeroendenotter/Documents/6. GitHub/SimRace/MAUI/bin/Debug/net6.0-ios/iossimulator-x64/publish/../MAUI.app/Microsoft.CSharp.dll
 /Users/jeroendenotter/Documents/6. GitHub/SimRace/MAUI/bin/Debug/net6.0-ios/iossimulator-x64/publish/../MAUI.app/Microsoft.VisualBasic.Core.dll
@@ -181,6 +189,7 @@
 /Users/jeroendenotter/Documents/6. GitHub/SimRace/MAUI/bin/Debug/net6.0-ios/iossimulator-x64/publish/../MAUI.app/Microsoft.Maui.Essentials.dll
 /Users/jeroendenotter/Documents/6. GitHub/SimRace/MAUI/bin/Debug/net6.0-ios/iossimulator-x64/publish/../MAUI.app/Microsoft.iOS.dll
 /Users/jeroendenotter/Documents/6. GitHub/SimRace/MAUI/bin/Debug/net6.0-ios/iossimulator-x64/publish/../MAUI.app/MAUI.pdb
+/Users/jeroendenotter/Documents/6. GitHub/SimRace/MAUI/bin/Debug/net6.0-ios/iossimulator-x64/publish/../MAUI.app/Model.pdb
 /Users/jeroendenotter/Documents/6. GitHub/SimRace/MAUI/bin/Debug/net6.0-ios/iossimulator-x64/publish/../MAUI.app/libSystem.IO.Compression.Native.dylib
 /Users/jeroendenotter/Documents/6. GitHub/SimRace/MAUI/bin/Debug/net6.0-ios/iossimulator-x64/publish/../MAUI.app/libSystem.Native.dylib
 /Users/jeroendenotter/Documents/6. GitHub/SimRace/MAUI/bin/Debug/net6.0-ios/iossimulator-x64/publish/../MAUI.app/libSystem.Net.Security.Native.dylib

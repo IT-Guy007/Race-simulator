@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "SlR1x0PisLYDMt+Z3j/72roP4vUeD2HRH3zz7R6xNlm4c4ASI7TCGTYH9p1mqXoGQ9acfTX1E1/Ztf2FuJ9CVg==",
+  "dgSpecHash": "WAk3EBeiSy1pnN1uKXGD223PnC3S/2h3R5mBdlQSDf270zsZCwE6EPpyZAlwRgVHrT67CtSd71mt11b3g3EAeQ==",
   "success": true,
   "projectFilePath": "/Users/jeroendenotter/Documents/6. GitHub/SimRace/MAUI/MAUI.csproj",
   "expectedPackageFiles": [
@@ -16,7 +16,14 @@
     "/Users/jeroendenotter/.nuget/packages/microsoft.maui.dependencies/6.0.541/microsoft.maui.dependencies.6.0.541.nupkg.sha512",
     "/Users/jeroendenotter/.nuget/packages/microsoft.maui.extensions/6.0.541/microsoft.maui.extensions.6.0.541.nupkg.sha512",
     "/Users/jeroendenotter/.nuget/packages/microsoft.maui.graphics/6.0.501/microsoft.maui.graphics.6.0.501.nupkg.sha512",
+    "/Users/jeroendenotter/.nuget/packages/microsoft.ui.xaml/2.8.2-prerelease.220830001/microsoft.ui.xaml.2.8.2-prerelease.220830001.nupkg.sha512",
+    "/Users/jeroendenotter/.nuget/packages/microsoft.web.webview2/1.0.1264.42/microsoft.web.webview2.1.0.1264.42.nupkg.sha512",
+    "/Users/jeroendenotter/.nuget/packages/microsoft.win32.systemevents/7.0.0-rc.2.22472.3/microsoft.win32.systemevents.7.0.0-rc.2.22472.3.nupkg.sha512",
+    "/Users/jeroendenotter/.nuget/packages/spectre.console/0.45.1-preview.0.27/spectre.console.0.45.1-preview.0.27.nupkg.sha512",
+    "/Users/jeroendenotter/.nuget/packages/system.buffers/4.5.1/system.buffers.4.5.1.nupkg.sha512",
     "/Users/jeroendenotter/.nuget/packages/system.diagnostics.diagnosticsource/6.0.0/system.diagnostics.diagnosticsource.6.0.0.nupkg.sha512",
+    "/Users/jeroendenotter/.nuget/packages/system.drawing.common/7.0.0-rc.2.22472.3/system.drawing.common.7.0.0-rc.2.22472.3.nupkg.sha512",
+    "/Users/jeroendenotter/.nuget/packages/system.memory/4.5.5/system.memory.4.5.5.nupkg.sha512",
     "/Users/jeroendenotter/.nuget/packages/system.runtime.compilerservices.unsafe/6.0.0/system.runtime.compilerservices.unsafe.6.0.0.nupkg.sha512",
     "/Users/jeroendenotter/.nuget/packages/system.runtime.interopservices.nfloat.internal/6.0.1/system.runtime.interopservices.nfloat.internal.6.0.1.nupkg.sha512",
     "/Users/jeroendenotter/.nuget/packages/xamarin.android.glide/4.12.0.8/xamarin.android.glide.4.12.0.8.nupkg.sha512",

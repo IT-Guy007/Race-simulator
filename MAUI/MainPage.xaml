@@ -17,13 +17,12 @@
             <Label
                 Text="Welcome to the race simulator"
                 SemanticProperties.HeadingLevel="Level2"
-                SemanticProperties.Description="Welcome to the race simulator"
                 FontSize="18"
                 HorizontalOptions="Center" />
 
             <Button
-                Text="Start competition"
-                Clicked="RaceStart"
+                Text="Start the competition!"
+                Clicked="Clicked"
                 HorizontalOptions="Center" />
 
         </VerticalStackLayout>

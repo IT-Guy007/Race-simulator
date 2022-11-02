@@ -1,3 +1,6 @@
+/Users/jeroendenotter/Documents/6. GitHub/SimRace/MAUI/bin/Debug/net6.0-android/runtimes/win-x86/native/WebView2Loader.dll
+/Users/jeroendenotter/Documents/6. GitHub/SimRace/MAUI/bin/Debug/net6.0-android/runtimes/win-x64/native/WebView2Loader.dll
+/Users/jeroendenotter/Documents/6. GitHub/SimRace/MAUI/bin/Debug/net6.0-android/runtimes/win-arm64/native/WebView2Loader.dll
 /Users/jeroendenotter/Documents/6. GitHub/SimRace/MAUI/bin/Debug/net6.0-android/MAUI.runtimeconfig.json
 /Users/jeroendenotter/Documents/6. GitHub/SimRace/MAUI/bin/Debug/net6.0-android/MAUI.dll
 /Users/jeroendenotter/Documents/6. GitHub/SimRace/MAUI/bin/Debug/net6.0-android/MAUI.pdb
@@ -6,6 +9,8 @@
 /Users/jeroendenotter/Documents/6. GitHub/SimRace/MAUI/bin/Debug/net6.0-android/com.companyname.maui-Signed.aab
 /Users/jeroendenotter/Documents/6. GitHub/SimRace/MAUI/bin/Debug/net6.0-android/com.companyname.maui-Signed.apk
 /Users/jeroendenotter/Documents/6. GitHub/SimRace/MAUI/bin/Debug/net6.0-android/com.companyname.maui-Signed.apk.idsig
+/Users/jeroendenotter/Documents/6. GitHub/SimRace/MAUI/bin/Debug/net6.0-android/Model.dll
+/Users/jeroendenotter/Documents/6. GitHub/SimRace/MAUI/bin/Debug/net6.0-android/Model.pdb
 /Users/jeroendenotter/Documents/6. GitHub/SimRace/MAUI/obj/Debug/net6.0-android/.NETCoreApp,Version=v6.0.AssemblyAttributes.cs
 /Users/jeroendenotter/Documents/6. GitHub/SimRace/MAUI/obj/Debug/net6.0-android/build.props
 /Users/jeroendenotter/Documents/6. GitHub/SimRace/MAUI/obj/Debug/net6.0-android/adb.props
@@ -20,15 +25,12 @@
 /Users/jeroendenotter/Documents/6. GitHub/SimRace/MAUI/obj/Debug/net6.0-android/resizetizer/f/OpenSans-Regular.ttf
 /Users/jeroendenotter/Documents/6. GitHub/SimRace/MAUI/obj/Debug/net6.0-android/resizetizer/f/OpenSans-Semibold.ttf
 /Users/jeroendenotter/Documents/6. GitHub/SimRace/MAUI/obj/Debug/net6.0-android/resizetizer/r/drawable-hdpi/dotnet_bot.png
-/Users/jeroendenotter/Documents/6. GitHub/SimRace/MAUI/obj/Debug/net6.0-android/resizetizer/r/drawable-hdpi/splash.png
 /Users/jeroendenotter/Documents/6. GitHub/SimRace/MAUI/obj/Debug/net6.0-android/resizetizer/r/drawable-mdpi/dotnet_bot.png
-/Users/jeroendenotter/Documents/6. GitHub/SimRace/MAUI/obj/Debug/net6.0-android/resizetizer/r/drawable-mdpi/splash.png
 /Users/jeroendenotter/Documents/6. GitHub/SimRace/MAUI/obj/Debug/net6.0-android/resizetizer/r/drawable-xhdpi/dotnet_bot.png
-/Users/jeroendenotter/Documents/6. GitHub/SimRace/MAUI/obj/Debug/net6.0-android/resizetizer/r/drawable-xhdpi/splash.png
 /Users/jeroendenotter/Documents/6. GitHub/SimRace/MAUI/obj/Debug/net6.0-android/resizetizer/r/drawable-xxhdpi/dotnet_bot.png
-/Users/jeroendenotter/Documents/6. GitHub/SimRace/MAUI/obj/Debug/net6.0-android/resizetizer/r/drawable-xxhdpi/splash.png
 /Users/jeroendenotter/Documents/6. GitHub/SimRace/MAUI/obj/Debug/net6.0-android/resizetizer/r/drawable-xxxhdpi/dotnet_bot.png
-/Users/jeroendenotter/Documents/6. GitHub/SimRace/MAUI/obj/Debug/net6.0-android/resizetizer/r/drawable-xxxhdpi/splash.png
+/Users/jeroendenotter/Documents/6. GitHub/SimRace/MAUI/obj/Debug/net6.0-android/resizetizer/r/drawable/car.png
+/Users/jeroendenotter/Documents/6. GitHub/SimRace/MAUI/obj/Debug/net6.0-android/resizetizer/r/drawable/raceimage.jpg
 /Users/jeroendenotter/Documents/6. GitHub/SimRace/MAUI/obj/Debug/net6.0-android/resizetizer/r/mipmap-anydpi-v26/appicon.xml
 /Users/jeroendenotter/Documents/6. GitHub/SimRace/MAUI/obj/Debug/net6.0-android/resizetizer/r/mipmap-anydpi-v26/appicon_round.xml
 /Users/jeroendenotter/Documents/6. GitHub/SimRace/MAUI/obj/Debug/net6.0-android/resizetizer/r/mipmap-hdpi/appicon.png
@@ -103,6 +105,7 @@
 /Users/jeroendenotter/Documents/6. GitHub/SimRace/MAUI/obj/Debug/net6.0-android/MAUI.AssemblyInfo.cs
 /Users/jeroendenotter/Documents/6. GitHub/SimRace/MAUI/obj/Debug/net6.0-android/MAUI.csproj.CoreCompileInputs.cache
 /Users/jeroendenotter/Documents/6. GitHub/SimRace/MAUI/obj/Debug/net6.0-android/XamlC.stamp
+/Users/jeroendenotter/Documents/6. GitHub/SimRace/MAUI/obj/Debug/net6.0-android/MAUI.csproj.CopyComplete
 /Users/jeroendenotter/Documents/6. GitHub/SimRace/MAUI/obj/Debug/net6.0-android/MAUI.dll
 /Users/jeroendenotter/Documents/6. GitHub/SimRace/MAUI/obj/Debug/net6.0-android/MAUI.pdb
 /Users/jeroendenotter/Documents/6. GitHub/SimRace/MAUI/obj/Debug/net6.0-android/MAUI.genruntimeconfig.cache
@@ -160,13 +163,20 @@
 /Users/jeroendenotter/Documents/6. GitHub/SimRace/MAUI/obj/Debug/net6.0-android/android/assets/Microsoft.Maui.pdb
 /Users/jeroendenotter/Documents/6. GitHub/SimRace/MAUI/obj/Debug/net6.0-android/android/assets/Microsoft.VisualBasic.Core.dll
 /Users/jeroendenotter/Documents/6. GitHub/SimRace/MAUI/obj/Debug/net6.0-android/android/assets/Microsoft.VisualBasic.dll
+/Users/jeroendenotter/Documents/6. GitHub/SimRace/MAUI/obj/Debug/net6.0-android/android/assets/Microsoft.Web.WebView2.Core.dll
+/Users/jeroendenotter/Documents/6. GitHub/SimRace/MAUI/obj/Debug/net6.0-android/android/assets/Microsoft.Web.WebView2.WinForms.dll
+/Users/jeroendenotter/Documents/6. GitHub/SimRace/MAUI/obj/Debug/net6.0-android/android/assets/Microsoft.Web.WebView2.Wpf.dll
 /Users/jeroendenotter/Documents/6. GitHub/SimRace/MAUI/obj/Debug/net6.0-android/android/assets/Microsoft.Win32.Primitives.dll
 /Users/jeroendenotter/Documents/6. GitHub/SimRace/MAUI/obj/Debug/net6.0-android/android/assets/Microsoft.Win32.Registry.dll
+/Users/jeroendenotter/Documents/6. GitHub/SimRace/MAUI/obj/Debug/net6.0-android/android/assets/Microsoft.Win32.SystemEvents.dll
+/Users/jeroendenotter/Documents/6. GitHub/SimRace/MAUI/obj/Debug/net6.0-android/android/assets/Model.dll
+/Users/jeroendenotter/Documents/6. GitHub/SimRace/MAUI/obj/Debug/net6.0-android/android/assets/Model.pdb
 /Users/jeroendenotter/Documents/6. GitHub/SimRace/MAUI/obj/Debug/net6.0-android/android/assets/Mono.Android.dll
 /Users/jeroendenotter/Documents/6. GitHub/SimRace/MAUI/obj/Debug/net6.0-android/android/assets/Mono.Android.Export.dll
 /Users/jeroendenotter/Documents/6. GitHub/SimRace/MAUI/obj/Debug/net6.0-android/android/assets/Mono.Android.Export.pdb
 /Users/jeroendenotter/Documents/6. GitHub/SimRace/MAUI/obj/Debug/net6.0-android/android/assets/Mono.Android.pdb
 /Users/jeroendenotter/Documents/6. GitHub/SimRace/MAUI/obj/Debug/net6.0-android/android/assets/netstandard.dll
+/Users/jeroendenotter/Documents/6. GitHub/SimRace/MAUI/obj/Debug/net6.0-android/android/assets/Spectre.Console.dll
 /Users/jeroendenotter/Documents/6. GitHub/SimRace/MAUI/obj/Debug/net6.0-android/android/assets/System.AppContext.dll
 /Users/jeroendenotter/Documents/6. GitHub/SimRace/MAUI/obj/Debug/net6.0-android/android/assets/System.Buffers.dll
 /Users/jeroendenotter/Documents/6. GitHub/SimRace/MAUI/obj/Debug/net6.0-android/android/assets/System.Collections.dll
@@ -194,6 +204,7 @@
 /Users/jeroendenotter/Documents/6. GitHub/SimRace/MAUI/obj/Debug/net6.0-android/android/assets/System.Diagnostics.Tools.dll
 /Users/jeroendenotter/Documents/6. GitHub/SimRace/MAUI/obj/Debug/net6.0-android/android/assets/System.Diagnostics.TraceSource.dll
 /Users/jeroendenotter/Documents/6. GitHub/SimRace/MAUI/obj/Debug/net6.0-android/android/assets/System.Diagnostics.Tracing.dll
+/Users/jeroendenotter/Documents/6. GitHub/SimRace/MAUI/obj/Debug/net6.0-android/android/assets/System.Drawing.Common.dll
 /Users/jeroendenotter/Documents/6. GitHub/SimRace/MAUI/obj/Debug/net6.0-android/android/assets/System.Drawing.dll
 /Users/jeroendenotter/Documents/6. GitHub/SimRace/MAUI/obj/Debug/net6.0-android/android/assets/System.Drawing.Primitives.dll
 /Users/jeroendenotter/Documents/6. GitHub/SimRace/MAUI/obj/Debug/net6.0-android/android/assets/System.Dynamic.Runtime.dll
@@ -1000,5 +1011,3 @@
 /Users/jeroendenotter/Documents/6. GitHub/SimRace/MAUI/obj/Debug/net6.0-android/stamp/_GenerateJavaStubs.stamp
 /Users/jeroendenotter/Documents/6. GitHub/SimRace/MAUI/obj/Debug/net6.0-android/stamp/_GeneratePackageManagerJava.stamp
 /Users/jeroendenotter/Documents/6. GitHub/SimRace/MAUI/obj/Debug/net6.0-android/stamp/_ResolveLibraryProjectImports.stamp
-/Users/jeroendenotter/Documents/6. GitHub/SimRace/MAUI/obj/Debug/net6.0-android/resizetizer/r/drawable/raceimage.jpg
-/Users/jeroendenotter/Documents/6. GitHub/SimRace/MAUI/obj/Debug/net6.0-android/resizetizer/r/drawable/car.png

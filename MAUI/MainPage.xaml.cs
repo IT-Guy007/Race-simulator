@@ -2,13 +2,14 @@
 
 public partial class MainPage : ContentPage {
 
+    StatisticsPage _statisticsPage;
+    private RacePage _racePage;
     public MainPage()
     {
         InitializeComponent();
     }
 
-    private void RaceStart(object sender, EventArgs e)
-    {
-        Navigation.PushAsync(new RacePage());
+    private void Clicked(object sender, EventArgs e) {
+        Navigation.PushAsync(new CompetitionPage());
     }
 }

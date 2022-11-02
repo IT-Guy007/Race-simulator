@@ -56,10 +56,32 @@
       <Compile Update="RacePage.xaml.cs">
         <DependentUpon>Race.xaml</DependentUpon>
       </Compile>
+      <Compile Update="StatisticsPage.xaml.cs">
+        <DependentUpon>StatisticsPage.xaml</DependentUpon>
+        <SubType>Code</SubType>
+      </Compile>
+      <Compile Update="CompetitionPage.xaml.cs">
+        <DependentUpon>CompetitionPage.xaml</DependentUpon>
+        <SubType>Code</SubType>
+      </Compile>
     </ItemGroup>
 
     <ItemGroup>
       <PackageReference Include="Microsoft.UI.Xaml" Version="2.8.2-prerelease.220830001" />
+      <PackageReference Include="System.Drawing.Common" Version="7.0.0-rc.2.22472.3" />
+    </ItemGroup>
+
+    <ItemGroup>
+      <ProjectReference Include="..\Model\Model\Model.csproj" />
+    </ItemGroup>
+
+    <ItemGroup>
+      <MauiXaml Update="StatisticsPage.xaml">
+        <SubType>Designer</SubType>
+      </MauiXaml>
+      <MauiXaml Update="CompetitionPage.xaml">
+        <SubType>Designer</SubType>
+      </MauiXaml>
     </ItemGroup>
 
 </Project>

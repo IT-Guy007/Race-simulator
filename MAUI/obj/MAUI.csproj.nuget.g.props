@@ -12,4 +12,16 @@
   <ItemGroup Condition=" '$(ExcludeRestorePackageImports)' != 'true' ">
     <SourceRoot Include="/Users/jeroendenotter/.nuget/packages/" />
   </ItemGroup>
+  <PropertyGroup Condition=" '$(TargetFramework)' == 'net6.0-android' AND '$(ExcludeRestorePackageImports)' != 'true' ">
+    <PkgMicrosoft_Web_WebView2 Condition=" '$(PkgMicrosoft_Web_WebView2)' == '' ">/Users/jeroendenotter/.nuget/packages/microsoft.web.webview2/1.0.1264.42</PkgMicrosoft_Web_WebView2>
+    <PkgMicrosoft_UI_Xaml Condition=" '$(PkgMicrosoft_UI_Xaml)' == '' ">/Users/jeroendenotter/.nuget/packages/microsoft.ui.xaml/2.8.2-prerelease.220830001</PkgMicrosoft_UI_Xaml>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(TargetFramework)' == 'net6.0-ios' AND '$(ExcludeRestorePackageImports)' != 'true' ">
+    <PkgMicrosoft_Web_WebView2 Condition=" '$(PkgMicrosoft_Web_WebView2)' == '' ">/Users/jeroendenotter/.nuget/packages/microsoft.web.webview2/1.0.1264.42</PkgMicrosoft_Web_WebView2>
+    <PkgMicrosoft_UI_Xaml Condition=" '$(PkgMicrosoft_UI_Xaml)' == '' ">/Users/jeroendenotter/.nuget/packages/microsoft.ui.xaml/2.8.2-prerelease.220830001</PkgMicrosoft_UI_Xaml>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(TargetFramework)' == 'net6.0-maccatalyst' AND '$(ExcludeRestorePackageImports)' != 'true' ">
+    <PkgMicrosoft_Web_WebView2 Condition=" '$(PkgMicrosoft_Web_WebView2)' == '' ">/Users/jeroendenotter/.nuget/packages/microsoft.web.webview2/1.0.1264.42</PkgMicrosoft_Web_WebView2>
+    <PkgMicrosoft_UI_Xaml Condition=" '$(PkgMicrosoft_UI_Xaml)' == '' ">/Users/jeroendenotter/.nuget/packages/microsoft.ui.xaml/2.8.2-prerelease.220830001</PkgMicrosoft_UI_Xaml>
+  </PropertyGroup>
 </Project>

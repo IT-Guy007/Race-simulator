@@ -10,11 +10,7 @@
 		</data>
 		<key>Resources/Assets.car</key>
 		<data>
-		ihk+NIW3s8345lby6CWgM8SoO8o=
-		</data>
-		<key>Resources/MauiInfo.plist</key>
-		<data>
-		iEtuUGCV6JM3gxS/pO33swhmpp8=
+		3O8Tc3GRZr0QWz0/64jMLRYsB3o=
 		</data>
 		<key>Resources/MonoTouchDebugConfiguration.txt</key>
 		<data>
@@ -30,7 +26,7 @@
 		</data>
 		<key>Resources/appicon.icns</key>
 		<data>
-		vRJm2n/SioVSocWhSQs6LRU/ZrY=
+		L9cHAOVSlaW2jMaBgy7GlIBZdZg=
 		</data>
 		<key>Resources/car.png</key>
 		<data>
@@ -38,19 +34,23 @@
 		</data>
 		<key>Resources/dotnet_bot.png</key>
 		<data>
-		9/GfVa6KCp9St3wOB2IR4/4b7ME=
+		qdYiPSemWrpOK00y89PG6ukhmkA=
 		</data>
 		<key>Resources/dotnet_bot@2x.png</key>
 		<data>
-		q8+ABzmCJHOMw8dZGgjJgS+P4R8=
+		pZcH6LleT/tKpypJoIrgeT5V8z0=
 		</data>
 		<key>Resources/dotnet_bot@3x.png</key>
 		<data>
-		lilXtcIcHOg1m2H2kahMfnG+kR4=
+		AgG9OaBqGlLlSsDbnE/6b1bb0xU=
 		</data>
 		<key>Resources/raceimage.jpg</key>
 		<data>
 		kDeGMCi8Yw9XCJpKHl8qmVh/J+g=
+		</data>
+		<key>Resources/runtimes/win-x64/native/WebView2Loader.dll</key>
+		<data>
+		sYVZ+uM1WXtOKmeSd8TSB/p4SaQ=
 		</data>
 	</dict>
 	<key>files2</key>
@@ -59,14 +59,14 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			9H8ix4FHv8DX15TAof2sXyVyPjVn++LlJuU6ei2tzN0=
+			prTIy++5MDlDbRvQJ2EI82aN1m+yi9lmGcZ2nxzY0lo=
 			</data>
 		</dict>
 		<key>MonoBundle/MAUI.pdb</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			hG7/LLWAPMX/XxJTsRIgEH3qujnz+wAo+SOgDLmUDh8=
+			x4vmU7X09GSsseGPaRaAmvhuEjWmIMnhZe2EIKDnAJk=
 			</data>
 		</dict>
 		<key>MonoBundle/Microsoft.CSharp.dll</key>
@@ -195,6 +195,27 @@
 			lfQlpb42VjujEtG3HVoN9H31CjedNMytpYZlowc+CCc=
 			</data>
 		</dict>
+		<key>MonoBundle/Microsoft.Web.WebView2.Core.dll</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			saOwKlk9ifFMuNawtSdGzX8gAoCJ2ZgQtWN3sklXdwI=
+			</data>
+		</dict>
+		<key>MonoBundle/Microsoft.Web.WebView2.WinForms.dll</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			NP/TR1Vf6CR6SjOsRi3a//cfyW/wnpepU2wHCUtIEM0=
+			</data>
+		</dict>
+		<key>MonoBundle/Microsoft.Web.WebView2.Wpf.dll</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			xxk4r44pVs3sEYVb1vljYCEGqanunSsK50gRx3cxEEw=
+			</data>
+		</dict>
 		<key>MonoBundle/Microsoft.Win32.Primitives.dll</key>
 		<dict>
 			<key>hash2</key>
@@ -207,6 +228,34 @@
 			<key>hash2</key>
 			<data>
 			Psi1GzUzQOwHAmL6kM2cwRJKBTwsOJkGbz+Uf1lFzUw=
+			</data>
+		</dict>
+		<key>MonoBundle/Microsoft.Win32.SystemEvents.dll</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			vwkoh8SJZodAMqYuIn9kiT/GiPdU+4wb1gEkM2rAZPk=
+			</data>
+		</dict>
+		<key>MonoBundle/Model.dll</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			GaW4olN6DeiosYqWNFmM9osXtY0WZI7jFF4Vm2yBPq4=
+			</data>
+		</dict>
+		<key>MonoBundle/Model.pdb</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			O17LjbJ0vziwBTEYseSgd294qxvRmgZ2OqOc7v9ds6Q=
+			</data>
+		</dict>
+		<key>MonoBundle/Spectre.Console.dll</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			OC4PFZWgKOr7u49biv/RUzX6f15pWr3Q2jftsYcbASo=
 			</data>
 		</dict>
 		<key>MonoBundle/System.AppContext.dll</key>
@@ -410,6 +459,13 @@
 			<key>hash2</key>
 			<data>
 			hZqWqedHbvYfDhsuoDtrTRaT601EY70llCb56RciN5g=
+			</data>
+		</dict>
+		<key>MonoBundle/System.Drawing.Common.dll</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			RQsoVMZvL+bi6yuhcml9Q72tc49geJeVOdI98nYTum0=
 			</data>
 		</dict>
 		<key>MonoBundle/System.Drawing.Primitives.dll</key>
@@ -1403,14 +1459,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			zkGvLG6jBoF+f6+vD2zrBUK2/6RlICf+c4GS6D8qC7E=
-			</data>
-		</dict>
-		<key>Resources/MauiInfo.plist</key>
-		<dict>
-			<key>hash2</key>
-			<data>
-			tx0KXqEC+DvcCGyogQTEQWHcCWJYYqH24NtPwhpQEjo=
+			ak/LhCsJ7YxV5lTOi167mmeQLLHmwNuzqB9GKs/AqWo=
 			</data>
 		</dict>
 		<key>Resources/MonoTouchDebugConfiguration.txt</key>
@@ -1438,7 +1487,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			2Fv934Wr3abaEPPd66u5zlupnVQvwj4vCkDcYvonAzE=
+			H4w+DqGNITnXOEy4UxkSBph9BjGxHf/ui2zq6lzv5a0=
 			</data>
 		</dict>
 		<key>Resources/car.png</key>
@@ -1452,21 +1501,21 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			QBfc/2n+hgBMLlJ7ih6VB/qjJoi0Fs9D9EbEUwsJ+CE=
+			nj9w48ATNqlPSMACcu8GOeBxwJ5X0tfo5PhxSbenWuc=
 			</data>
 		</dict>
 		<key>Resources/dotnet_bot@2x.png</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			ktdX9nGrRWbWCz/kzG6o5JSRqNoZNbFmabzY6mE2X80=
+			SOfOgPr5Yk4bVioaDw9goZcPhI1O8+PGNEXqhGrdERo=
 			</data>
 		</dict>
 		<key>Resources/dotnet_bot@3x.png</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			KYloWNEPaiuRgKGUuViGTax4BpymRmXlB8tt3TPNYxk=
+			06Dw48r2qORp1zVQzu1FMEqEQpN18taU/bp0JACYc40=
 			</data>
 		</dict>
 		<key>Resources/raceimage.jpg</key>
@@ -1474,6 +1523,13 @@
 			<key>hash2</key>
 			<data>
 			/SG1TvE/oLvWdk6cEAW4TdEgSYvSBe+AC8Tdnm/Yi44=
+			</data>
+		</dict>
+		<key>Resources/runtimes/win-x64/native/WebView2Loader.dll</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			+4KsCJlj4d7pMqzOL4a6NMEodwzsS2C8/Yb5XSnpcas=
 			</data>
 		</dict>
 	</dict>

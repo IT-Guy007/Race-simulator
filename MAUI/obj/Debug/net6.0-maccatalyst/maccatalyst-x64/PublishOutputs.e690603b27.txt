@@ -1,3 +1,4 @@
+/Users/jeroendenotter/Documents/6. GitHub/SimRace/MAUI/bin/Debug/net6.0-maccatalyst/maccatalyst-x64/publish/../MAUI.app/Contents/Resources/runtimes/win-x64/native/WebView2Loader.dll
 /Users/jeroendenotter/Documents/6. GitHub/SimRace/MAUI/bin/Debug/net6.0-maccatalyst/maccatalyst-x64/publish/../MAUI.app/Contents/MonoBundle/icudt.dat
 /Users/jeroendenotter/Documents/6. GitHub/SimRace/MAUI/bin/Debug/net6.0-maccatalyst/maccatalyst-x64/publish/../MAUI.app/Contents/MonoBundle/Microsoft.Extensions.Configuration.dll
 /Users/jeroendenotter/Documents/6. GitHub/SimRace/MAUI/bin/Debug/net6.0-maccatalyst/maccatalyst-x64/publish/../MAUI.app/Contents/MonoBundle/Microsoft.Extensions.Configuration.Abstractions.dll
@@ -8,6 +9,13 @@
 /Users/jeroendenotter/Documents/6. GitHub/SimRace/MAUI/bin/Debug/net6.0-maccatalyst/maccatalyst-x64/publish/../MAUI.app/Contents/MonoBundle/Microsoft.Extensions.Options.dll
 /Users/jeroendenotter/Documents/6. GitHub/SimRace/MAUI/bin/Debug/net6.0-maccatalyst/maccatalyst-x64/publish/../MAUI.app/Contents/MonoBundle/Microsoft.Extensions.Primitives.dll
 /Users/jeroendenotter/Documents/6. GitHub/SimRace/MAUI/bin/Debug/net6.0-maccatalyst/maccatalyst-x64/publish/../MAUI.app/Contents/MonoBundle/Microsoft.Maui.Graphics.dll
+/Users/jeroendenotter/Documents/6. GitHub/SimRace/MAUI/bin/Debug/net6.0-maccatalyst/maccatalyst-x64/publish/../MAUI.app/Contents/MonoBundle/Microsoft.Web.WebView2.Core.dll
+/Users/jeroendenotter/Documents/6. GitHub/SimRace/MAUI/bin/Debug/net6.0-maccatalyst/maccatalyst-x64/publish/../MAUI.app/Contents/MonoBundle/Microsoft.Web.WebView2.WinForms.dll
+/Users/jeroendenotter/Documents/6. GitHub/SimRace/MAUI/bin/Debug/net6.0-maccatalyst/maccatalyst-x64/publish/../MAUI.app/Contents/MonoBundle/Microsoft.Web.WebView2.Wpf.dll
+/Users/jeroendenotter/Documents/6. GitHub/SimRace/MAUI/bin/Debug/net6.0-maccatalyst/maccatalyst-x64/publish/../MAUI.app/Contents/MonoBundle/Microsoft.Win32.SystemEvents.dll
+/Users/jeroendenotter/Documents/6. GitHub/SimRace/MAUI/bin/Debug/net6.0-maccatalyst/maccatalyst-x64/publish/../MAUI.app/Contents/MonoBundle/Spectre.Console.dll
+/Users/jeroendenotter/Documents/6. GitHub/SimRace/MAUI/bin/Debug/net6.0-maccatalyst/maccatalyst-x64/publish/../MAUI.app/Contents/MonoBundle/System.Drawing.Common.dll
+/Users/jeroendenotter/Documents/6. GitHub/SimRace/MAUI/bin/Debug/net6.0-maccatalyst/maccatalyst-x64/publish/../MAUI.app/Contents/MonoBundle/Model.dll
 /Users/jeroendenotter/Documents/6. GitHub/SimRace/MAUI/bin/Debug/net6.0-maccatalyst/maccatalyst-x64/publish/../MAUI.app/Contents/MonoBundle/MAUI.dll
 /Users/jeroendenotter/Documents/6. GitHub/SimRace/MAUI/bin/Debug/net6.0-maccatalyst/maccatalyst-x64/publish/../MAUI.app/Contents/MonoBundle/Microsoft.CSharp.dll
 /Users/jeroendenotter/Documents/6. GitHub/SimRace/MAUI/bin/Debug/net6.0-maccatalyst/maccatalyst-x64/publish/../MAUI.app/Contents/MonoBundle/Microsoft.VisualBasic.Core.dll
@@ -181,6 +189,7 @@
 /Users/jeroendenotter/Documents/6. GitHub/SimRace/MAUI/bin/Debug/net6.0-maccatalyst/maccatalyst-x64/publish/../MAUI.app/Contents/MonoBundle/Microsoft.Maui.Essentials.dll
 /Users/jeroendenotter/Documents/6. GitHub/SimRace/MAUI/bin/Debug/net6.0-maccatalyst/maccatalyst-x64/publish/../MAUI.app/Contents/MonoBundle/Microsoft.MacCatalyst.dll
 /Users/jeroendenotter/Documents/6. GitHub/SimRace/MAUI/bin/Debug/net6.0-maccatalyst/maccatalyst-x64/publish/../MAUI.app/Contents/MonoBundle/MAUI.pdb
+/Users/jeroendenotter/Documents/6. GitHub/SimRace/MAUI/bin/Debug/net6.0-maccatalyst/maccatalyst-x64/publish/../MAUI.app/Contents/MonoBundle/Model.pdb
 /Users/jeroendenotter/Documents/6. GitHub/SimRace/MAUI/bin/Debug/net6.0-maccatalyst/maccatalyst-x64/publish/../MAUI.app/Contents/MonoBundle/libSystem.IO.Compression.Native.dylib
 /Users/jeroendenotter/Documents/6. GitHub/SimRace/MAUI/bin/Debug/net6.0-maccatalyst/maccatalyst-x64/publish/../MAUI.app/Contents/MonoBundle/libSystem.Native.dylib
 /Users/jeroendenotter/Documents/6. GitHub/SimRace/MAUI/bin/Debug/net6.0-maccatalyst/maccatalyst-x64/publish/../MAUI.app/Contents/MonoBundle/libSystem.Net.Security.Native.dylib

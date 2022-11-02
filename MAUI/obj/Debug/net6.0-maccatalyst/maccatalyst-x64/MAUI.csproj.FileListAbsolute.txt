@@ -1,3 +1,4 @@
+/Users/jeroendenotter/Documents/6. GitHub/SimRace/MAUI/bin/Debug/net6.0-maccatalyst/maccatalyst-x64/runtimes/win-x64/native/WebView2Loader.dll
 /Users/jeroendenotter/Documents/6. GitHub/SimRace/MAUI/bin/Debug/net6.0-maccatalyst/maccatalyst-x64/MAUI.runtimeconfig.json
 /Users/jeroendenotter/Documents/6. GitHub/SimRace/MAUI/bin/Debug/net6.0-maccatalyst/maccatalyst-x64/MAUI.dll
 /Users/jeroendenotter/Documents/6. GitHub/SimRace/MAUI/bin/Debug/net6.0-maccatalyst/maccatalyst-x64/MAUI.pdb
@@ -10,6 +11,12 @@
 /Users/jeroendenotter/Documents/6. GitHub/SimRace/MAUI/bin/Debug/net6.0-maccatalyst/maccatalyst-x64/Microsoft.Extensions.Options.dll
 /Users/jeroendenotter/Documents/6. GitHub/SimRace/MAUI/bin/Debug/net6.0-maccatalyst/maccatalyst-x64/Microsoft.Extensions.Primitives.dll
 /Users/jeroendenotter/Documents/6. GitHub/SimRace/MAUI/bin/Debug/net6.0-maccatalyst/maccatalyst-x64/Microsoft.Maui.Graphics.dll
+/Users/jeroendenotter/Documents/6. GitHub/SimRace/MAUI/bin/Debug/net6.0-maccatalyst/maccatalyst-x64/Microsoft.Web.WebView2.Core.dll
+/Users/jeroendenotter/Documents/6. GitHub/SimRace/MAUI/bin/Debug/net6.0-maccatalyst/maccatalyst-x64/Microsoft.Web.WebView2.WinForms.dll
+/Users/jeroendenotter/Documents/6. GitHub/SimRace/MAUI/bin/Debug/net6.0-maccatalyst/maccatalyst-x64/Microsoft.Web.WebView2.Wpf.dll
+/Users/jeroendenotter/Documents/6. GitHub/SimRace/MAUI/bin/Debug/net6.0-maccatalyst/maccatalyst-x64/Microsoft.Win32.SystemEvents.dll
+/Users/jeroendenotter/Documents/6. GitHub/SimRace/MAUI/bin/Debug/net6.0-maccatalyst/maccatalyst-x64/Spectre.Console.dll
+/Users/jeroendenotter/Documents/6. GitHub/SimRace/MAUI/bin/Debug/net6.0-maccatalyst/maccatalyst-x64/System.Drawing.Common.dll
 /Users/jeroendenotter/Documents/6. GitHub/SimRace/MAUI/bin/Debug/net6.0-maccatalyst/maccatalyst-x64/Microsoft.CSharp.dll
 /Users/jeroendenotter/Documents/6. GitHub/SimRace/MAUI/bin/Debug/net6.0-maccatalyst/maccatalyst-x64/Microsoft.VisualBasic.Core.dll
 /Users/jeroendenotter/Documents/6. GitHub/SimRace/MAUI/bin/Debug/net6.0-maccatalyst/maccatalyst-x64/Microsoft.VisualBasic.dll
@@ -209,6 +216,8 @@
 /Users/jeroendenotter/Documents/6. GitHub/SimRace/MAUI/bin/Debug/net6.0-maccatalyst/maccatalyst-x64/libxamarin-dotnet-debug.dylib
 /Users/jeroendenotter/Documents/6. GitHub/SimRace/MAUI/bin/Debug/net6.0-maccatalyst/maccatalyst-x64/libxamarin-dotnet.a
 /Users/jeroendenotter/Documents/6. GitHub/SimRace/MAUI/bin/Debug/net6.0-maccatalyst/maccatalyst-x64/libxamarin-dotnet.dylib
+/Users/jeroendenotter/Documents/6. GitHub/SimRace/MAUI/bin/Debug/net6.0-maccatalyst/maccatalyst-x64/Model.dll
+/Users/jeroendenotter/Documents/6. GitHub/SimRace/MAUI/bin/Debug/net6.0-maccatalyst/maccatalyst-x64/Model.pdb
 /Users/jeroendenotter/Documents/6. GitHub/SimRace/MAUI/obj/Debug/net6.0-maccatalyst/maccatalyst-x64/mauiimage.inputs
 /Users/jeroendenotter/Documents/6. GitHub/SimRace/MAUI/obj/Debug/net6.0-maccatalyst/maccatalyst-x64/mauifont.inputs
 /Users/jeroendenotter/Documents/6. GitHub/SimRace/MAUI/obj/Debug/net6.0-maccatalyst/maccatalyst-x64/mauisplash.inputs
@@ -228,6 +237,8 @@
 /Users/jeroendenotter/Documents/6. GitHub/SimRace/MAUI/obj/Debug/net6.0-maccatalyst/maccatalyst-x64/resizetizer/r/dotnet_bot.png
 /Users/jeroendenotter/Documents/6. GitHub/SimRace/MAUI/obj/Debug/net6.0-maccatalyst/maccatalyst-x64/resizetizer/r/dotnet_bot@2x.png
 /Users/jeroendenotter/Documents/6. GitHub/SimRace/MAUI/obj/Debug/net6.0-maccatalyst/maccatalyst-x64/resizetizer/r/dotnet_bot@3x.png
+/Users/jeroendenotter/Documents/6. GitHub/SimRace/MAUI/obj/Debug/net6.0-maccatalyst/maccatalyst-x64/resizetizer/r/Resources/car.png
+/Users/jeroendenotter/Documents/6. GitHub/SimRace/MAUI/obj/Debug/net6.0-maccatalyst/maccatalyst-x64/resizetizer/r/Resources/raceimage.jpg
 /Users/jeroendenotter/Documents/6. GitHub/SimRace/MAUI/obj/Debug/net6.0-maccatalyst/maccatalyst-x64/mauiimage.stamp
 /Users/jeroendenotter/Documents/6. GitHub/SimRace/MAUI/obj/Debug/net6.0-maccatalyst/maccatalyst-x64/resizetizer/f/MauiInfo.plist
 /Users/jeroendenotter/Documents/6. GitHub/SimRace/MAUI/obj/Debug/net6.0-maccatalyst/maccatalyst-x64/mauifont.stamp
@@ -253,5 +264,3 @@
 /Users/jeroendenotter/Documents/6. GitHub/SimRace/MAUI/obj/Debug/net6.0-maccatalyst/maccatalyst-x64/MAUI.pdb
 /Users/jeroendenotter/Documents/6. GitHub/SimRace/MAUI/obj/Debug/net6.0-maccatalyst/maccatalyst-x64/MAUI.genruntimeconfig.cache
 /Users/jeroendenotter/Documents/6. GitHub/SimRace/MAUI/obj/Debug/net6.0-maccatalyst/maccatalyst-x64/ref/MAUI.dll
-/Users/jeroendenotter/Documents/6. GitHub/SimRace/MAUI/obj/Debug/net6.0-maccatalyst/maccatalyst-x64/resizetizer/r/Resources/raceimage.jpg
-/Users/jeroendenotter/Documents/6. GitHub/SimRace/MAUI/obj/Debug/net6.0-maccatalyst/maccatalyst-x64/resizetizer/r/Resources/car.png

@@ -28,15 +28,27 @@
         "frameworks": {
           "net6.0-android31.0": {
             "targetAlias": "net6.0-android",
-            "projectReferences": {}
+            "projectReferences": {
+              "/Users/jeroendenotter/Documents/6. GitHub/SimRace/Model/Model/Model.csproj": {
+                "projectPath": "/Users/jeroendenotter/Documents/6. GitHub/SimRace/Model/Model/Model.csproj"
+              }
+            }
           },
           "net6.0-ios16.0": {
             "targetAlias": "net6.0-ios",
-            "projectReferences": {}
+            "projectReferences": {
+              "/Users/jeroendenotter/Documents/6. GitHub/SimRace/Model/Model/Model.csproj": {
+                "projectPath": "/Users/jeroendenotter/Documents/6. GitHub/SimRace/Model/Model/Model.csproj"
+              }
+            }
           },
           "net6.0-maccatalyst15.4": {
             "targetAlias": "net6.0-maccatalyst",
-            "projectReferences": {}
+            "projectReferences": {
+              "/Users/jeroendenotter/Documents/6. GitHub/SimRace/Model/Model/Model.csproj": {
+                "projectPath": "/Users/jeroendenotter/Documents/6. GitHub/SimRace/Model/Model/Model.csproj"
+              }
+            }
           }
         },
         "warningProperties": {
@@ -58,6 +70,14 @@
               "target": "Package",
               "version": "[6.0.541, )",
               "autoReferenced": true
+            },
+            "Microsoft.UI.Xaml": {
+              "target": "Package",
+              "version": "[2.8.2-prerelease.220830001, )"
+            },
+            "System.Drawing.Common": {
+              "target": "Package",
+              "version": "[7.0.0-rc.2.22472.3, )"
             }
           },
           "imports": [
@@ -102,6 +122,14 @@
               "target": "Package",
               "version": "[6.0.541, )",
               "autoReferenced": true
+            },
+            "Microsoft.UI.Xaml": {
+              "target": "Package",
+              "version": "[2.8.2-prerelease.220830001, )"
+            },
+            "System.Drawing.Common": {
+              "target": "Package",
+              "version": "[7.0.0-rc.2.22472.3, )"
             },
             "System.Runtime.InteropServices.NFloat.Internal": {
               "target": "Package",
@@ -151,6 +179,14 @@
               "target": "Package",
               "version": "[6.0.541, )",
               "autoReferenced": true
+            },
+            "Microsoft.UI.Xaml": {
+              "target": "Package",
+              "version": "[2.8.2-prerelease.220830001, )"
+            },
+            "System.Drawing.Common": {
+              "target": "Package",
+              "version": "[7.0.0-rc.2.22472.3, )"
             },
             "System.Runtime.InteropServices.NFloat.Internal": {
               "target": "Package",
@@ -208,6 +244,66 @@
         },
         "maccatalyst-x64": {
           "#import": []
+        }
+      }
+    },
+    "/Users/jeroendenotter/Documents/6. GitHub/SimRace/Model/Model/Model.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "/Users/jeroendenotter/Documents/6. GitHub/SimRace/Model/Model/Model.csproj",
+        "projectName": "Model",
+        "projectPath": "/Users/jeroendenotter/Documents/6. GitHub/SimRace/Model/Model/Model.csproj",
+        "packagesPath": "/Users/jeroendenotter/.nuget/packages/",
+        "outputPath": "/Users/jeroendenotter/Documents/6. GitHub/SimRace/Model/Model/obj/",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "/Users/jeroendenotter/.nuget/NuGet/NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "net6.0"
+        ],
+        "sources": {
+          "/usr/local/share/dotnet/library-packs": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net6.0": {
+            "targetAlias": "net6.0",
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net6.0": {
+          "targetAlias": "net6.0",
+          "dependencies": {
+            "Spectre.Console": {
+              "target": "Package",
+              "version": "[0.45.1-preview.0.27, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/6.0.402/RuntimeIdentifierGraph.json"
         }
       }
     }
