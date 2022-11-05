@@ -13,3 +13,18 @@
 /Users/jeroendenotter/Documents/3. School/3. Windesheim/Semester 3 - Software Design/3. C#/RaceSim/Controller/obj/Debug/net6.0/refint/Controller.dll
 /Users/jeroendenotter/Documents/3. School/3. Windesheim/Semester 3 - Software Design/3. C#/RaceSim/Controller/obj/Debug/net6.0/Controller.pdb
 /Users/jeroendenotter/Documents/3. School/3. Windesheim/Semester 3 - Software Design/3. C#/RaceSim/Controller/obj/Debug/net6.0/ref/Controller.dll
+/Users/jeroendenotter/Documents/6. GitHub/SimRace/Controller/bin/Debug/net6.0/Controller.deps.json
+/Users/jeroendenotter/Documents/6. GitHub/SimRace/Controller/bin/Debug/net6.0/Controller.dll
+/Users/jeroendenotter/Documents/6. GitHub/SimRace/Controller/bin/Debug/net6.0/Controller.pdb
+/Users/jeroendenotter/Documents/6. GitHub/SimRace/Controller/bin/Debug/net6.0/Model.dll
+/Users/jeroendenotter/Documents/6. GitHub/SimRace/Controller/bin/Debug/net6.0/Model.pdb
+/Users/jeroendenotter/Documents/6. GitHub/SimRace/Controller/obj/Debug/net6.0/Controller.csproj.AssemblyReference.cache
+/Users/jeroendenotter/Documents/6. GitHub/SimRace/Controller/obj/Debug/net6.0/Controller.GeneratedMSBuildEditorConfig.editorconfig
+/Users/jeroendenotter/Documents/6. GitHub/SimRace/Controller/obj/Debug/net6.0/Controller.AssemblyInfoInputs.cache
+/Users/jeroendenotter/Documents/6. GitHub/SimRace/Controller/obj/Debug/net6.0/Controller.AssemblyInfo.cs
+/Users/jeroendenotter/Documents/6. GitHub/SimRace/Controller/obj/Debug/net6.0/Controller.csproj.CoreCompileInputs.cache
+/Users/jeroendenotter/Documents/6. GitHub/SimRace/Controller/obj/Debug/net6.0/Controller.csproj.CopyComplete
+/Users/jeroendenotter/Documents/6. GitHub/SimRace/Controller/obj/Debug/net6.0/Controller.dll
+/Users/jeroendenotter/Documents/6. GitHub/SimRace/Controller/obj/Debug/net6.0/refint/Controller.dll
+/Users/jeroendenotter/Documents/6. GitHub/SimRace/Controller/obj/Debug/net6.0/Controller.pdb
+/Users/jeroendenotter/Documents/6. GitHub/SimRace/Controller/obj/Debug/net6.0/ref/Controller.dll

@@ -9,7 +9,9 @@
 /Users/jeroendenotter/Documents/6. GitHub/SimRace/MAUI/bin/Debug/net6.0-android/com.companyname.maui-Signed.aab
 /Users/jeroendenotter/Documents/6. GitHub/SimRace/MAUI/bin/Debug/net6.0-android/com.companyname.maui-Signed.apk
 /Users/jeroendenotter/Documents/6. GitHub/SimRace/MAUI/bin/Debug/net6.0-android/com.companyname.maui-Signed.apk.idsig
+/Users/jeroendenotter/Documents/6. GitHub/SimRace/MAUI/bin/Debug/net6.0-android/Controller.dll
 /Users/jeroendenotter/Documents/6. GitHub/SimRace/MAUI/bin/Debug/net6.0-android/Model.dll
+/Users/jeroendenotter/Documents/6. GitHub/SimRace/MAUI/bin/Debug/net6.0-android/Controller.pdb
 /Users/jeroendenotter/Documents/6. GitHub/SimRace/MAUI/bin/Debug/net6.0-android/Model.pdb
 /Users/jeroendenotter/Documents/6. GitHub/SimRace/MAUI/obj/Debug/net6.0-android/.NETCoreApp,Version=v6.0.AssemblyAttributes.cs
 /Users/jeroendenotter/Documents/6. GitHub/SimRace/MAUI/obj/Debug/net6.0-android/build.props
@@ -135,6 +137,8 @@
 /Users/jeroendenotter/Documents/6. GitHub/SimRace/MAUI/obj/Debug/net6.0-android/android/assets/armeabi-v7a/System.Private.CoreLib.dll
 /Users/jeroendenotter/Documents/6. GitHub/SimRace/MAUI/obj/Debug/net6.0-android/android/assets/armeabi-v7a/System.Private.Uri.dll
 /Users/jeroendenotter/Documents/6. GitHub/SimRace/MAUI/obj/Debug/net6.0-android/android/assets/armeabi-v7a/System.Xml.dll
+/Users/jeroendenotter/Documents/6. GitHub/SimRace/MAUI/obj/Debug/net6.0-android/android/assets/Controller.dll
+/Users/jeroendenotter/Documents/6. GitHub/SimRace/MAUI/obj/Debug/net6.0-android/android/assets/Controller.pdb
 /Users/jeroendenotter/Documents/6. GitHub/SimRace/MAUI/obj/Debug/net6.0-android/android/assets/GoogleGson.dll
 /Users/jeroendenotter/Documents/6. GitHub/SimRace/MAUI/obj/Debug/net6.0-android/android/assets/Java.Interop.dll
 /Users/jeroendenotter/Documents/6. GitHub/SimRace/MAUI/obj/Debug/net6.0-android/android/assets/Java.Interop.pdb

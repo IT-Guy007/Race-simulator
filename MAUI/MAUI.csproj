@@ -72,6 +72,7 @@
     </ItemGroup>
 
     <ItemGroup>
+      <ProjectReference Include="..\Controller\Controller.csproj" />
       <ProjectReference Include="..\Model\Model\Model.csproj" />
     </ItemGroup>
 

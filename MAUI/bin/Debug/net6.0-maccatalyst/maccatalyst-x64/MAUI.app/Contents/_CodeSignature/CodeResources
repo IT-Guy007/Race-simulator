@@ -10,7 +10,7 @@
 		</data>
 		<key>Resources/Assets.car</key>
 		<data>
-		3O8Tc3GRZr0QWz0/64jMLRYsB3o=
+		jhtHs9fUeFWDw2A+RrIRc31LqPk=
 		</data>
 		<key>Resources/MonoTouchDebugConfiguration.txt</key>
 		<data>
@@ -55,18 +55,32 @@
 	</dict>
 	<key>files2</key>
 	<dict>
+		<key>MonoBundle/Controller.dll</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			m+T52aYiirHmq44JAsQusbyfq+I7IbJvMFNy7biCrHc=
+			</data>
+		</dict>
+		<key>MonoBundle/Controller.pdb</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			j9+VYZ8o0BVWkPGSirspyjJbg20dwpsfEyQ+UYcvaUg=
+			</data>
+		</dict>
 		<key>MonoBundle/MAUI.dll</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			prTIy++5MDlDbRvQJ2EI82aN1m+yi9lmGcZ2nxzY0lo=
+			T+SMCziybVfbb+DrgZraoCk5lON2sNm2mxOq/Lf6lnw=
 			</data>
 		</dict>
 		<key>MonoBundle/MAUI.pdb</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			x4vmU7X09GSsseGPaRaAmvhuEjWmIMnhZe2EIKDnAJk=
+			qyDr9ydhLtEJa8+t3DkmxaAzfqEBNjE9piAbljgzrCc=
 			</data>
 		</dict>
 		<key>MonoBundle/Microsoft.CSharp.dll</key>
@@ -1459,7 +1473,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			ak/LhCsJ7YxV5lTOi167mmeQLLHmwNuzqB9GKs/AqWo=
+			ia+ht3IZb9aCMBNRPgO3NT1FfqUPXEaB4NPMViGJTmU=
 			</data>
 		</dict>
 		<key>Resources/MonoTouchDebugConfiguration.txt</key>

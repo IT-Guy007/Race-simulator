@@ -15,6 +15,7 @@
 /Users/jeroendenotter/Documents/6. GitHub/SimRace/MAUI/bin/Debug/net6.0-maccatalyst/maccatalyst-x64/publish/../MAUI.app/Contents/MonoBundle/Microsoft.Win32.SystemEvents.dll
 /Users/jeroendenotter/Documents/6. GitHub/SimRace/MAUI/bin/Debug/net6.0-maccatalyst/maccatalyst-x64/publish/../MAUI.app/Contents/MonoBundle/Spectre.Console.dll
 /Users/jeroendenotter/Documents/6. GitHub/SimRace/MAUI/bin/Debug/net6.0-maccatalyst/maccatalyst-x64/publish/../MAUI.app/Contents/MonoBundle/System.Drawing.Common.dll
+/Users/jeroendenotter/Documents/6. GitHub/SimRace/MAUI/bin/Debug/net6.0-maccatalyst/maccatalyst-x64/publish/../MAUI.app/Contents/MonoBundle/Controller.dll
 /Users/jeroendenotter/Documents/6. GitHub/SimRace/MAUI/bin/Debug/net6.0-maccatalyst/maccatalyst-x64/publish/../MAUI.app/Contents/MonoBundle/Model.dll
 /Users/jeroendenotter/Documents/6. GitHub/SimRace/MAUI/bin/Debug/net6.0-maccatalyst/maccatalyst-x64/publish/../MAUI.app/Contents/MonoBundle/MAUI.dll
 /Users/jeroendenotter/Documents/6. GitHub/SimRace/MAUI/bin/Debug/net6.0-maccatalyst/maccatalyst-x64/publish/../MAUI.app/Contents/MonoBundle/Microsoft.CSharp.dll
@@ -189,6 +190,7 @@
 /Users/jeroendenotter/Documents/6. GitHub/SimRace/MAUI/bin/Debug/net6.0-maccatalyst/maccatalyst-x64/publish/../MAUI.app/Contents/MonoBundle/Microsoft.Maui.Essentials.dll
 /Users/jeroendenotter/Documents/6. GitHub/SimRace/MAUI/bin/Debug/net6.0-maccatalyst/maccatalyst-x64/publish/../MAUI.app/Contents/MonoBundle/Microsoft.MacCatalyst.dll
 /Users/jeroendenotter/Documents/6. GitHub/SimRace/MAUI/bin/Debug/net6.0-maccatalyst/maccatalyst-x64/publish/../MAUI.app/Contents/MonoBundle/MAUI.pdb
+/Users/jeroendenotter/Documents/6. GitHub/SimRace/MAUI/bin/Debug/net6.0-maccatalyst/maccatalyst-x64/publish/../MAUI.app/Contents/MonoBundle/Controller.pdb
 /Users/jeroendenotter/Documents/6. GitHub/SimRace/MAUI/bin/Debug/net6.0-maccatalyst/maccatalyst-x64/publish/../MAUI.app/Contents/MonoBundle/Model.pdb
 /Users/jeroendenotter/Documents/6. GitHub/SimRace/MAUI/bin/Debug/net6.0-maccatalyst/maccatalyst-x64/publish/../MAUI.app/Contents/MonoBundle/libSystem.IO.Compression.Native.dylib
 /Users/jeroendenotter/Documents/6. GitHub/SimRace/MAUI/bin/Debug/net6.0-maccatalyst/maccatalyst-x64/publish/../MAUI.app/Contents/MonoBundle/libSystem.Native.dylib

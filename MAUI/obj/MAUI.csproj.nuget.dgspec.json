@@ -4,6 +4,64 @@
     "/Users/jeroendenotter/Documents/6. GitHub/SimRace/MAUI/MAUI.csproj": {}
   },
   "projects": {
+    "/Users/jeroendenotter/Documents/6. GitHub/SimRace/Controller/Controller.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "/Users/jeroendenotter/Documents/6. GitHub/SimRace/Controller/Controller.csproj",
+        "projectName": "Controller",
+        "projectPath": "/Users/jeroendenotter/Documents/6. GitHub/SimRace/Controller/Controller.csproj",
+        "packagesPath": "/Users/jeroendenotter/.nuget/packages/",
+        "outputPath": "/Users/jeroendenotter/Documents/6. GitHub/SimRace/Controller/obj/",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "/Users/jeroendenotter/.nuget/NuGet/NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "net6.0"
+        ],
+        "sources": {
+          "/usr/local/share/dotnet/library-packs": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net6.0": {
+            "targetAlias": "net6.0",
+            "projectReferences": {
+              "/Users/jeroendenotter/Documents/6. GitHub/SimRace/Model/Model/Model.csproj": {
+                "projectPath": "/Users/jeroendenotter/Documents/6. GitHub/SimRace/Model/Model/Model.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net6.0": {
+          "targetAlias": "net6.0",
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/6.0.402/RuntimeIdentifierGraph.json"
+        }
+      }
+    },
     "/Users/jeroendenotter/Documents/6. GitHub/SimRace/MAUI/MAUI.csproj": {
       "version": "1.0.0",
       "restore": {
@@ -29,6 +87,9 @@
           "net6.0-android31.0": {
             "targetAlias": "net6.0-android",
             "projectReferences": {
+              "/Users/jeroendenotter/Documents/6. GitHub/SimRace/Controller/Controller.csproj": {
+                "projectPath": "/Users/jeroendenotter/Documents/6. GitHub/SimRace/Controller/Controller.csproj"
+              },
               "/Users/jeroendenotter/Documents/6. GitHub/SimRace/Model/Model/Model.csproj": {
                 "projectPath": "/Users/jeroendenotter/Documents/6. GitHub/SimRace/Model/Model/Model.csproj"
               }
@@ -37,6 +98,9 @@
           "net6.0-ios16.0": {
             "targetAlias": "net6.0-ios",
             "projectReferences": {
+              "/Users/jeroendenotter/Documents/6. GitHub/SimRace/Controller/Controller.csproj": {
+                "projectPath": "/Users/jeroendenotter/Documents/6. GitHub/SimRace/Controller/Controller.csproj"
+              },
               "/Users/jeroendenotter/Documents/6. GitHub/SimRace/Model/Model/Model.csproj": {
                 "projectPath": "/Users/jeroendenotter/Documents/6. GitHub/SimRace/Model/Model/Model.csproj"
               }
@@ -45,6 +109,9 @@
           "net6.0-maccatalyst15.4": {
             "targetAlias": "net6.0-maccatalyst",
             "projectReferences": {
+              "/Users/jeroendenotter/Documents/6. GitHub/SimRace/Controller/Controller.csproj": {
+                "projectPath": "/Users/jeroendenotter/Documents/6. GitHub/SimRace/Controller/Controller.csproj"
+              },
               "/Users/jeroendenotter/Documents/6. GitHub/SimRace/Model/Model/Model.csproj": {
                 "projectPath": "/Users/jeroendenotter/Documents/6. GitHub/SimRace/Model/Model/Model.csproj"
               }
