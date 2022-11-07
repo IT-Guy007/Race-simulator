@@ -9,7 +9,7 @@
       <dSYMInfoPlistRelativePath>MAUI.app.dSYM\Contents\Info.plist</dSYMInfoPlistRelativePath>
       <SymbolFile>obj/Debug/net6.0-maccatalyst/maccatalyst-x64/mtouch-symbols.list</SymbolFile>
       <DSymName>MAUI.app.dSYM</DSymName>
-      <SourceProjectPath>/Users/jeroendenotter/Documents/6. GitHub/SimRace/MAUI</SourceProjectPath>
+      <SourceProjectPath>/Users/jeroendenotter/Documents/6. GitHub/Race-simulator/MAUI</SourceProjectPath>
     </_PostProcessingItem>
   </ItemGroup>
 </Project>

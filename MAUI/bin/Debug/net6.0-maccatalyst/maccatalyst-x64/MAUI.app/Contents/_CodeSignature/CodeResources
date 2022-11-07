@@ -12,6 +12,10 @@
 		<data>
 		jhtHs9fUeFWDw2A+RrIRc31LqPk=
 		</data>
+		<key>Resources/MauiInfo.plist</key>
+		<data>
+		iEtuUGCV6JM3gxS/pO33swhmpp8=
+		</data>
 		<key>Resources/MonoTouchDebugConfiguration.txt</key>
 		<data>
 		HlmAtjuZZYt4rOfUtxY3eRZ7cWA=
@@ -28,13 +32,33 @@
 		<data>
 		L9cHAOVSlaW2jMaBgy7GlIBZdZg=
 		</data>
-		<key>Resources/blue_car.jpeg</key>
-		<data>
-		xUNVV7a807fcvYDd43Lv/HZNu6A=
-		</data>
 		<key>Resources/car.png</key>
 		<data>
 		vV12VBSa/TKh04D5YVYfV6YW8oY=
+		</data>
+		<key>Resources/car_blue.jpeg</key>
+		<data>
+		xUNVV7a807fcvYDd43Lv/HZNu6A=
+		</data>
+		<key>Resources/car_darkblue.jpeg</key>
+		<data>
+		O5izrZFnPC01GQVRJgW0mo+M6e4=
+		</data>
+		<key>Resources/car_green.jpeg</key>
+		<data>
+		o1xjLaZ4596bgGZgdawbmc9Fxsw=
+		</data>
+		<key>Resources/car_orange.jpeg</key>
+		<data>
+		0quYdWW51gn4fkmzl0pyYLrikvE=
+		</data>
+		<key>Resources/car_red.png</key>
+		<data>
+		Hve3mhIL/1BHlBBeg8irK2OIpdo=
+		</data>
+		<key>Resources/car_yellow.png</key>
+		<data>
+		5d2DoyaA4HsT9sfHZxqA8BDYfPI=
 		</data>
 		<key>Resources/cornereasttonorth.jpeg</key>
 		<data>
@@ -51,10 +75,6 @@
 		<key>Resources/cornerwesttosouth.jpeg</key>
 		<data>
 		rRbQeNNkdWRGE19XKMHFkwLSEX0=
-		</data>
-		<key>Resources/darkblue_car.jpeg</key>
-		<data>
-		O5izrZFnPC01GQVRJgW0mo+M6e4=
 		</data>
 		<key>Resources/dotnet_bot.png</key>
 		<data>
@@ -76,21 +96,9 @@
 		<data>
 		CDlRXcqe72q81NC/5VlK+BrcZIo=
 		</data>
-		<key>Resources/green_car.jpeg</key>
-		<data>
-		o1xjLaZ4596bgGZgdawbmc9Fxsw=
-		</data>
-		<key>Resources/orange_car.jpeg</key>
-		<data>
-		0quYdWW51gn4fkmzl0pyYLrikvE=
-		</data>
 		<key>Resources/raceimage.jpg</key>
 		<data>
 		kDeGMCi8Yw9XCJpKHl8qmVh/J+g=
-		</data>
-		<key>Resources/red_car.png</key>
-		<data>
-		Hve3mhIL/1BHlBBeg8irK2OIpdo=
 		</data>
 		<key>Resources/runtimes/win-x64/native/WebView2Loader.dll</key>
 		<data>
@@ -102,7 +110,7 @@
 		</data>
 		<key>Resources/start_up.png</key>
 		<data>
-		Njq8o+wJM6Yvnkyr9APF7q3HzQI=
+		rSYvqQ9D0WZ3UhVqvF7s3aMB6Sk=
 		</data>
 		<key>Resources/straight.jpeg</key>
 		<data>
@@ -112,10 +120,6 @@
 		<data>
 		05t2W/LNGPrwZyiQA7SEBo3pqks=
 		</data>
-		<key>Resources/yellow_car.png</key>
-		<data>
-		5d2DoyaA4HsT9sfHZxqA8BDYfPI=
-		</data>
 	</dict>
 	<key>files2</key>
 	<dict>
@@ -123,28 +127,28 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			m+T52aYiirHmq44JAsQusbyfq+I7IbJvMFNy7biCrHc=
+			DcCEqfjXD6zsaUg8O4SorZ8ekNx8K7KhGC1p2F8sdbw=
 			</data>
 		</dict>
 		<key>MonoBundle/Controller.pdb</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			j9+VYZ8o0BVWkPGSirspyjJbg20dwpsfEyQ+UYcvaUg=
+			W6LB+0CUg2z3aQPlVyShzrGNHjH2c1/gNZOQChPYTJM=
 			</data>
 		</dict>
 		<key>MonoBundle/MAUI.dll</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			T+SMCziybVfbb+DrgZraoCk5lON2sNm2mxOq/Lf6lnw=
+			mrUPnKtzOwgf9Aj7/2Afo1B/wRrjEj8Yg59jDV4k974=
 			</data>
 		</dict>
 		<key>MonoBundle/MAUI.pdb</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			qyDr9ydhLtEJa8+t3DkmxaAzfqEBNjE9piAbljgzrCc=
+			XcwSp8QYVA1hdVcR08oXh9i6C4g11J0y4h5qt0B0EtY=
 			</data>
 		</dict>
 		<key>MonoBundle/Microsoft.CSharp.dll</key>
@@ -319,14 +323,14 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			GaW4olN6DeiosYqWNFmM9osXtY0WZI7jFF4Vm2yBPq4=
+			Q/7RbgVcu1D9TPncMy7Arp8LurfP9XSuYNTfIiqYnb4=
 			</data>
 		</dict>
 		<key>MonoBundle/Model.pdb</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			O17LjbJ0vziwBTEYseSgd294qxvRmgZ2OqOc7v9ds6Q=
+			0hhNqH2cMXwGIFpb/z+P6zhXdIL7dV0rRCnWZ0zzKSE=
 			</data>
 		</dict>
 		<key>MonoBundle/Spectre.Console.dll</key>
@@ -1540,6 +1544,13 @@
 			ia+ht3IZb9aCMBNRPgO3NT1FfqUPXEaB4NPMViGJTmU=
 			</data>
 		</dict>
+		<key>Resources/MauiInfo.plist</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			tx0KXqEC+DvcCGyogQTEQWHcCWJYYqH24NtPwhpQEjo=
+			</data>
+		</dict>
 		<key>Resources/MonoTouchDebugConfiguration.txt</key>
 		<dict>
 			<key>hash2</key>
@@ -1568,18 +1579,53 @@
 			H4w+DqGNITnXOEy4UxkSBph9BjGxHf/ui2zq6lzv5a0=
 			</data>
 		</dict>
-		<key>Resources/blue_car.jpeg</key>
+		<key>Resources/car.png</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			2T28U/ctI+hhUiycywPcIMk7kapYIUbfb4aF2Ve9ua0=
+			</data>
+		</dict>
+		<key>Resources/car_blue.jpeg</key>
 		<dict>
 			<key>hash2</key>
 			<data>
 			s8mORVkGmDDgvlc+XtAxry+2gzRgzNmpZH7fqlA+mX0=
 			</data>
 		</dict>
-		<key>Resources/car.png</key>
+		<key>Resources/car_darkblue.jpeg</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			2T28U/ctI+hhUiycywPcIMk7kapYIUbfb4aF2Ve9ua0=
+			29n9IfJs4tAhVenp3ip1ScxpWV/4heJeqaxetxelpNc=
+			</data>
+		</dict>
+		<key>Resources/car_green.jpeg</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			1NzTbJmHgDmp2JPE8lXt1KliWETo7tH6TFrt8f+7lFY=
+			</data>
+		</dict>
+		<key>Resources/car_orange.jpeg</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			/F/KzgyJ33djVeYBSst7n4SpCWFj9c4E72+/Xc8eclg=
+			</data>
+		</dict>
+		<key>Resources/car_red.png</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			D/D3luMsOoTMU4vJtnNTLyD8TjYYSyJpau6C8EMg2iI=
+			</data>
+		</dict>
+		<key>Resources/car_yellow.png</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			ADC4DQY7H1Ms6bqolk/kW6wvZ9T6qHXXQbRYMrLUL8g=
 			</data>
 		</dict>
 		<key>Resources/cornereasttonorth.jpeg</key>
@@ -1608,13 +1654,6 @@
 			<key>hash2</key>
 			<data>
 			3okFMQ4KsU6C4+5+ZXzwXsSv8lN2jZEbPGW9CWkdj1g=
-			</data>
-		</dict>
-		<key>Resources/darkblue_car.jpeg</key>
-		<dict>
-			<key>hash2</key>
-			<data>
-			29n9IfJs4tAhVenp3ip1ScxpWV/4heJeqaxetxelpNc=
 			</data>
 		</dict>
 		<key>Resources/dotnet_bot.png</key>
@@ -1652,32 +1691,11 @@
 			KbMQU8NoyQ4CyZZD9+jHnFeuXsp/Y37CLHvet+yKyoI=
 			</data>
 		</dict>
-		<key>Resources/green_car.jpeg</key>
-		<dict>
-			<key>hash2</key>
-			<data>
-			1NzTbJmHgDmp2JPE8lXt1KliWETo7tH6TFrt8f+7lFY=
-			</data>
-		</dict>
-		<key>Resources/orange_car.jpeg</key>
-		<dict>
-			<key>hash2</key>
-			<data>
-			/F/KzgyJ33djVeYBSst7n4SpCWFj9c4E72+/Xc8eclg=
-			</data>
-		</dict>
 		<key>Resources/raceimage.jpg</key>
 		<dict>
 			<key>hash2</key>
 			<data>
 			/SG1TvE/oLvWdk6cEAW4TdEgSYvSBe+AC8Tdnm/Yi44=
-			</data>
-		</dict>
-		<key>Resources/red_car.png</key>
-		<dict>
-			<key>hash2</key>
-			<data>
-			D/D3luMsOoTMU4vJtnNTLyD8TjYYSyJpau6C8EMg2iI=
 			</data>
 		</dict>
 		<key>Resources/runtimes/win-x64/native/WebView2Loader.dll</key>
@@ -1698,7 +1716,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			/pMe2KOeY1AnBPQP1zOWRNxgcYpmqaMhVmAQ1ArQxwo=
+			z3vzPrVvq2fgB6WxmrBh0o9LALtSvZ6zZKtKPoddUds=
 			</data>
 		</dict>
 		<key>Resources/straight.jpeg</key>
@@ -1713,13 +1731,6 @@
 			<key>hash2</key>
 			<data>
 			0mfHecnPfyclMkt6QQQ2a8bt92qaFyJw445gbmx0p2Y=
-			</data>
-		</dict>
-		<key>Resources/yellow_car.png</key>
-		<dict>
-			<key>hash2</key>
-			<data>
-			ADC4DQY7H1Ms6bqolk/kW6wvZ9T6qHXXQbRYMrLUL8g=
 			</data>
 		</dict>
 	</dict>

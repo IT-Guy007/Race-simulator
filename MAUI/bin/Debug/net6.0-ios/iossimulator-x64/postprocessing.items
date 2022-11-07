@@ -7,9 +7,9 @@
       <dSYMSourcePathExists>false</dSYMSourcePathExists>
       <NoSymbolStrip>true</NoSymbolStrip>
       <dSYMInfoPlistRelativePath>MAUI.app.dSYM\Contents\Info.plist</dSYMInfoPlistRelativePath>
-      <SymbolFile>/Users/jeroendenotter/Documents/6. GitHub/SimRace/MAUI/obj/Debug/net6.0-ios/iossimulator-x64/mtouch-symbols.list</SymbolFile>
+      <SymbolFile>/Users/jeroendenotter/Documents/6. GitHub/Race-simulator/MAUI/obj/Debug/net6.0-ios/iossimulator-x64/mtouch-symbols.list</SymbolFile>
       <DSymName>MAUI.app.dSYM</DSymName>
-      <SourceProjectPath>/Users/jeroendenotter/Documents/6. GitHub/SimRace/MAUI</SourceProjectPath>
+      <SourceProjectPath>/Users/jeroendenotter/Documents/6. GitHub/Race-simulator/MAUI</SourceProjectPath>
     </_PostProcessingItem>
   </ItemGroup>
 </Project>

@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "/Users/jeroendenotter/Documents/6. GitHub/SimRace/RaceSim/RaceSim.csproj": {}
+    "/Users/jeroendenotter/Documents/6. GitHub/Race-simulator/RaceSim/RaceSim.csproj": {}
   },
   "projects": {
-    "/Users/jeroendenotter/Documents/6. GitHub/SimRace/Controller/Controller.csproj": {
+    "/Users/jeroendenotter/Documents/6. GitHub/Race-simulator/Controller/Controller.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/Users/jeroendenotter/Documents/6. GitHub/SimRace/Controller/Controller.csproj",
+        "projectUniqueName": "/Users/jeroendenotter/Documents/6. GitHub/Race-simulator/Controller/Controller.csproj",
         "projectName": "Controller",
-        "projectPath": "/Users/jeroendenotter/Documents/6. GitHub/SimRace/Controller/Controller.csproj",
+        "projectPath": "/Users/jeroendenotter/Documents/6. GitHub/Race-simulator/Controller/Controller.csproj",
         "packagesPath": "/Users/jeroendenotter/.nuget/packages/",
-        "outputPath": "/Users/jeroendenotter/Documents/6. GitHub/SimRace/Controller/obj/",
+        "outputPath": "/Users/jeroendenotter/Documents/6. GitHub/Race-simulator/Controller/obj/",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "/Users/jeroendenotter/.nuget/NuGet/NuGet.Config"
@@ -27,8 +27,8 @@
           "net6.0": {
             "targetAlias": "net6.0",
             "projectReferences": {
-              "/Users/jeroendenotter/Documents/6. GitHub/SimRace/Model/Model/Model.csproj": {
-                "projectPath": "/Users/jeroendenotter/Documents/6. GitHub/SimRace/Model/Model/Model.csproj"
+              "/Users/jeroendenotter/Documents/6. GitHub/Race-simulator/Model/Model/Model.csproj": {
+                "projectPath": "/Users/jeroendenotter/Documents/6. GitHub/Race-simulator/Model/Model/Model.csproj"
               }
             }
           }
@@ -62,14 +62,14 @@
         }
       }
     },
-    "/Users/jeroendenotter/Documents/6. GitHub/SimRace/Model/Model/Model.csproj": {
+    "/Users/jeroendenotter/Documents/6. GitHub/Race-simulator/Model/Model/Model.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/Users/jeroendenotter/Documents/6. GitHub/SimRace/Model/Model/Model.csproj",
+        "projectUniqueName": "/Users/jeroendenotter/Documents/6. GitHub/Race-simulator/Model/Model/Model.csproj",
         "projectName": "Model",
-        "projectPath": "/Users/jeroendenotter/Documents/6. GitHub/SimRace/Model/Model/Model.csproj",
+        "projectPath": "/Users/jeroendenotter/Documents/6. GitHub/Race-simulator/Model/Model/Model.csproj",
         "packagesPath": "/Users/jeroendenotter/.nuget/packages/",
-        "outputPath": "/Users/jeroendenotter/Documents/6. GitHub/SimRace/Model/Model/obj/",
+        "outputPath": "/Users/jeroendenotter/Documents/6. GitHub/Race-simulator/Model/Model/obj/",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "/Users/jeroendenotter/.nuget/NuGet/NuGet.Config"
@@ -122,14 +122,14 @@
         }
       }
     },
-    "/Users/jeroendenotter/Documents/6. GitHub/SimRace/RaceSim/RaceSim.csproj": {
+    "/Users/jeroendenotter/Documents/6. GitHub/Race-simulator/RaceSim/RaceSim.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/Users/jeroendenotter/Documents/6. GitHub/SimRace/RaceSim/RaceSim.csproj",
+        "projectUniqueName": "/Users/jeroendenotter/Documents/6. GitHub/Race-simulator/RaceSim/RaceSim.csproj",
         "projectName": "RaceSim",
-        "projectPath": "/Users/jeroendenotter/Documents/6. GitHub/SimRace/RaceSim/RaceSim.csproj",
+        "projectPath": "/Users/jeroendenotter/Documents/6. GitHub/Race-simulator/RaceSim/RaceSim.csproj",
         "packagesPath": "/Users/jeroendenotter/.nuget/packages/",
-        "outputPath": "/Users/jeroendenotter/Documents/6. GitHub/SimRace/RaceSim/obj/",
+        "outputPath": "/Users/jeroendenotter/Documents/6. GitHub/Race-simulator/RaceSim/obj/",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "/Users/jeroendenotter/.nuget/NuGet/NuGet.Config"
@@ -145,11 +145,11 @@
           "net6.0": {
             "targetAlias": "net6.0",
             "projectReferences": {
-              "/Users/jeroendenotter/Documents/6. GitHub/SimRace/Controller/Controller.csproj": {
-                "projectPath": "/Users/jeroendenotter/Documents/6. GitHub/SimRace/Controller/Controller.csproj"
+              "/Users/jeroendenotter/Documents/6. GitHub/Race-simulator/Controller/Controller.csproj": {
+                "projectPath": "/Users/jeroendenotter/Documents/6. GitHub/Race-simulator/Controller/Controller.csproj"
               },
-              "/Users/jeroendenotter/Documents/6. GitHub/SimRace/Model/Model/Model.csproj": {
-                "projectPath": "/Users/jeroendenotter/Documents/6. GitHub/SimRace/Model/Model/Model.csproj"
+              "/Users/jeroendenotter/Documents/6. GitHub/Race-simulator/Model/Model/Model.csproj": {
+                "projectPath": "/Users/jeroendenotter/Documents/6. GitHub/Race-simulator/Model/Model/Model.csproj"
               }
             }
           }

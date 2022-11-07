@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "iQ0c2g7VfW8eJxpqwdbdUfu8d0BrYznVQp7Vc96dValbx47BQYukvKTlSh5EsZMImJNPF3blYP4kWk2x1vDDmQ==",
+  "dgSpecHash": "i+JIYqT2mlorQQoslEvyHn7g+uDsTD5wdOWMhhZRF34Sy3+WOJMLzcQlr0A2LYZwvWqZYzKyOCL3ZJ2zwEJAbw==",
   "success": true,
-  "projectFilePath": "/Users/jeroendenotter/Documents/6. GitHub/SimRace/ControllerTest/ControllerTest.csproj",
+  "projectFilePath": "/Users/jeroendenotter/Documents/6. GitHub/Race-simulator/ControllerTest/ControllerTest.csproj",
   "expectedPackageFiles": [
     "/Users/jeroendenotter/.nuget/packages/coverlet.collector/3.1.2/coverlet.collector.3.1.2.nupkg.sha512",
     "/Users/jeroendenotter/.nuget/packages/microsoft.codecoverage/17.3.2/microsoft.codecoverage.17.3.2.nupkg.sha512",

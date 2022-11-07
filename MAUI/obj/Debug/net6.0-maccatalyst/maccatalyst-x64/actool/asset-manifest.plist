@@ -6,9 +6,9 @@
 	<dict>
 		<key>output-files</key>
 		<array>
-			<string>/Users/jeroendenotter/Documents/6. GitHub/SimRace/MAUI/obj/Debug/net6.0-maccatalyst/maccatalyst-x64/actool/bundle/Assets.car</string>
-			<string>/Users/jeroendenotter/Documents/6. GitHub/SimRace/MAUI/obj/Debug/net6.0-maccatalyst/maccatalyst-x64/actool/bundle/appicon.icns</string>
-			<string>/Users/jeroendenotter/Documents/6. GitHub/SimRace/MAUI/obj/Debug/net6.0-maccatalyst/maccatalyst-x64/actool/partial-info.plist</string>
+			<string>/Users/jeroendenotter/Documents/6. GitHub/Race-simulator/MAUI/obj/Debug/net6.0-maccatalyst/maccatalyst-x64/actool/bundle/Assets.car</string>
+			<string>/Users/jeroendenotter/Documents/6. GitHub/Race-simulator/MAUI/obj/Debug/net6.0-maccatalyst/maccatalyst-x64/actool/bundle/appicon.icns</string>
+			<string>/Users/jeroendenotter/Documents/6. GitHub/Race-simulator/MAUI/obj/Debug/net6.0-maccatalyst/maccatalyst-x64/actool/partial-info.plist</string>
 		</array>
 	</dict>
 </dict>

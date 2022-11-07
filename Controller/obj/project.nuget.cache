@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "/6VxxVmtbQcjsewL2ZbV/Zsr1hP9YdVQhzMGUqTYUE++APJwjZJWfLfB+1wlyN04RdoeOdWq+3jAgO8Oz7qARQ==",
+  "dgSpecHash": "iZyBpANKGxZehDjIq5dYMGgxbej9sZNA3MgUfRrULXCyZVhkl4ync0piaqFNFx50IAH8Z2vwWsswSuKQl4HtAw==",
   "success": true,
-  "projectFilePath": "/Users/jeroendenotter/Documents/6. GitHub/SimRace/Controller/Controller.csproj",
+  "projectFilePath": "/Users/jeroendenotter/Documents/6. GitHub/Race-simulator/Controller/Controller.csproj",
   "expectedPackageFiles": [
     "/Users/jeroendenotter/.nuget/packages/spectre.console/0.45.1-preview.0.27/spectre.console.0.45.1-preview.0.27.nupkg.sha512",
     "/Users/jeroendenotter/.nuget/packages/system.memory/4.5.5/system.memory.4.5.5.nupkg.sha512"

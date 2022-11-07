@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "AHYyVUwWFHyrg+l3wYVZOQZFnpe6z10lxQs9xdONmoGvELVt1AqZZAhkgHMtKv6gw1Kbkz9L8faFmxYt7XEllQ==",
+  "dgSpecHash": "/1iVzHhbdcF4/A7xUmujyY8X60QXlq56l1QYtyqPkALQXMvKe/YPJc0UKw2I2qpqZ0AfRIbFkekiO3PqZXcY6g==",
   "success": true,
-  "projectFilePath": "/Users/jeroendenotter/Documents/6. GitHub/SimRace/RaceSim/RaceSim.csproj",
+  "projectFilePath": "/Users/jeroendenotter/Documents/6. GitHub/Race-simulator/RaceSim/RaceSim.csproj",
   "expectedPackageFiles": [
     "/Users/jeroendenotter/.nuget/packages/spectre.console/0.45.1-preview.0.27/spectre.console.0.45.1-preview.0.27.nupkg.sha512",
     "/Users/jeroendenotter/.nuget/packages/system.memory/4.5.5/system.memory.4.5.5.nupkg.sha512"

@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "nwtibxFhpWqa1VShS9Tzdc0k3Pw4F7j0di+0GwcOVnve17Mrz/o486OTm4j5pyVnwfLOnD6WYCoMXPu9l02cVQ==",
+  "dgSpecHash": "8LZlRUz87whEhVO6dGrQ5BDW3Yz7FYoilS6ZSn9JC3QcfkZd8CkqW64/OkA7bGXD0IKUVlOmeC/rQfPiNfq0Bw==",
   "success": true,
-  "projectFilePath": "/Users/jeroendenotter/Documents/6. GitHub/SimRace/MAUI/MAUI.csproj",
+  "projectFilePath": "/Users/jeroendenotter/Documents/6. GitHub/Race-simulator/MAUI/MAUI.csproj",
   "expectedPackageFiles": [
     "/Users/jeroendenotter/.nuget/packages/googlegson/2.9.0.1/googlegson.2.9.0.1.nupkg.sha512",
     "/Users/jeroendenotter/.nuget/packages/microsoft.extensions.configuration/6.0.1/microsoft.extensions.configuration.6.0.1.nupkg.sha512",

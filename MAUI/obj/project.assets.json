@@ -22048,11 +22048,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "/Users/jeroendenotter/Documents/6. GitHub/SimRace/MAUI/MAUI.csproj",
+      "projectUniqueName": "/Users/jeroendenotter/Documents/6. GitHub/Race-simulator/MAUI/MAUI.csproj",
       "projectName": "MAUI",
-      "projectPath": "/Users/jeroendenotter/Documents/6. GitHub/SimRace/MAUI/MAUI.csproj",
+      "projectPath": "/Users/jeroendenotter/Documents/6. GitHub/Race-simulator/MAUI/MAUI.csproj",
       "packagesPath": "/Users/jeroendenotter/.nuget/packages/",
-      "outputPath": "/Users/jeroendenotter/Documents/6. GitHub/SimRace/MAUI/obj/",
+      "outputPath": "/Users/jeroendenotter/Documents/6. GitHub/Race-simulator/MAUI/obj/",
       "projectStyle": "PackageReference",
       "crossTargeting": true,
       "configFilePaths": [
@@ -22070,33 +22070,33 @@
         "net6.0-android31.0": {
           "targetAlias": "net6.0-android",
           "projectReferences": {
-            "/Users/jeroendenotter/Documents/6. GitHub/SimRace/Controller/Controller.csproj": {
-              "projectPath": "/Users/jeroendenotter/Documents/6. GitHub/SimRace/Controller/Controller.csproj"
+            "/Users/jeroendenotter/Documents/6. GitHub/Race-simulator/Controller/Controller.csproj": {
+              "projectPath": "/Users/jeroendenotter/Documents/6. GitHub/Race-simulator/Controller/Controller.csproj"
             },
-            "/Users/jeroendenotter/Documents/6. GitHub/SimRace/Model/Model/Model.csproj": {
-              "projectPath": "/Users/jeroendenotter/Documents/6. GitHub/SimRace/Model/Model/Model.csproj"
+            "/Users/jeroendenotter/Documents/6. GitHub/Race-simulator/Model/Model/Model.csproj": {
+              "projectPath": "/Users/jeroendenotter/Documents/6. GitHub/Race-simulator/Model/Model/Model.csproj"
             }
           }
         },
         "net6.0-ios16.0": {
           "targetAlias": "net6.0-ios",
           "projectReferences": {
-            "/Users/jeroendenotter/Documents/6. GitHub/SimRace/Controller/Controller.csproj": {
-              "projectPath": "/Users/jeroendenotter/Documents/6. GitHub/SimRace/Controller/Controller.csproj"
+            "/Users/jeroendenotter/Documents/6. GitHub/Race-simulator/Controller/Controller.csproj": {
+              "projectPath": "/Users/jeroendenotter/Documents/6. GitHub/Race-simulator/Controller/Controller.csproj"
             },
-            "/Users/jeroendenotter/Documents/6. GitHub/SimRace/Model/Model/Model.csproj": {
-              "projectPath": "/Users/jeroendenotter/Documents/6. GitHub/SimRace/Model/Model/Model.csproj"
+            "/Users/jeroendenotter/Documents/6. GitHub/Race-simulator/Model/Model/Model.csproj": {
+              "projectPath": "/Users/jeroendenotter/Documents/6. GitHub/Race-simulator/Model/Model/Model.csproj"
             }
           }
         },
         "net6.0-maccatalyst15.4": {
           "targetAlias": "net6.0-maccatalyst",
           "projectReferences": {
-            "/Users/jeroendenotter/Documents/6. GitHub/SimRace/Controller/Controller.csproj": {
-              "projectPath": "/Users/jeroendenotter/Documents/6. GitHub/SimRace/Controller/Controller.csproj"
+            "/Users/jeroendenotter/Documents/6. GitHub/Race-simulator/Controller/Controller.csproj": {
+              "projectPath": "/Users/jeroendenotter/Documents/6. GitHub/Race-simulator/Controller/Controller.csproj"
             },
-            "/Users/jeroendenotter/Documents/6. GitHub/SimRace/Model/Model/Model.csproj": {
-              "projectPath": "/Users/jeroendenotter/Documents/6. GitHub/SimRace/Model/Model/Model.csproj"
+            "/Users/jeroendenotter/Documents/6. GitHub/Race-simulator/Model/Model/Model.csproj": {
+              "projectPath": "/Users/jeroendenotter/Documents/6. GitHub/Race-simulator/Model/Model/Model.csproj"
             }
           }
         }
