@@ -256,18 +256,7 @@ public partial class CompetitionPage : ContentPage {
             i++;
             toDo--;
         }
-        
-        
 
-
-        /*
-        _raceSimulator = new RaceSimulator();
-        _raceStatisticsPage = new RaceStatisticsPage();
-        
-        _raceWindow = new Window{Page = _raceSimulator};
-        _statisticsWindow = new Window{Page = _raceStatisticsPage};
-        */
-        
         _verticalStackLayout.Add(_grid);
         Content = _verticalStackLayout;
         
