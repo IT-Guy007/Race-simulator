@@ -1,4 +1,4 @@
-﻿<Properties StartupConfiguration="RaceSim">
+﻿<Properties StartupConfiguration="{932F66C7-9C27-4FD1-AE52-193F3770E3FA}|Default">
   <MultiItemStartupConfigurations>
     <MultiItemSolutionRunConfiguration Id="RaceSim" Name="RaceSim">
       <Items>
@@ -6,24 +6,35 @@
       </Items>
     </MultiItemSolutionRunConfiguration>
   </MultiItemStartupConfigurations>
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
   <MonoDevelop.Ide.ItemProperties.RaceSimulator PreferredExecutionTarget="MyAppleMacCatalystID" />
-  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
-  <MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.Workbench ActiveDocument="RaceSimulator/CompetitionPage.xaml.cs">
+    <Files>
+      <File FileName="RaceSimulator/CompetitionPage.xaml.cs" Line="321" Column="2" />
+    </Files>
     <Pads>
       <Pad Id="ProjectPad">
         <State name="__root__">
-          <Node name="RaceSim" expanded="True" />
+          <Node name="RaceSim" expanded="True">
+            <Node name="RaceSimulator" expanded="True">
+              <Node name="Platforms" expanded="True">
+                <Node name="MacCatalyst" expanded="True" />
+              </Node>
+              <Node name="CompetitionPage.xaml" expanded="True" />
+              <Node name="RaceSimulator.xaml" expanded="True" />
+            </Node>
+          </Node>
         </State>
-      </Pad>
-      <Pad Id="MonoDevelop.Debugger.WatchPad">
-        <State />
       </Pad>
     </Pads>
   </MonoDevelop.Ide.Workbench>
   <Xamarin.Addins.Core.Project ActiveDebugTarget="MyAppleMacCatalystID" />
-  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
-  <MonoDevelop.Ide.DebuggingService.Breakpoints>
-    <BreakpointStore />
-  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MonoDevelop.Ide.ItemProperties.Console PreferredExecutionTarget="MonoDevelop.Default" />
   <MonoDevelop.Ide.ItemProperties.RaceSim PreferredExecutionTarget="MonoDevelop.Default" />
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore>
+      <Breakpoint file="/Users/jeroendenotter/Documents/6. GitHub/Race-simulator/RaceSimulator/CompetitionPage.xaml.cs" relfile="RaceSimulator/CompetitionPage.xaml.cs" line="304" column="1" />
+    </BreakpointStore>
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
 </Properties>

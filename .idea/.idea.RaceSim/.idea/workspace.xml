@@ -8,12 +8,26 @@
     <projectFile kind="XamarinAndroid">RaceSimulator/RaceSimulator.csproj</projectFile>
     <projectFile kind="XamarinIOS">RaceSimulator/RaceSimulator.csproj</projectFile>
     <projectFile kind="XamarinMacOS">RaceSimulator/RaceSimulator.csproj</projectFile>
+    <projectFile pubXmlPath="RaceSimulator/Properties/PublishProfiles/FolderProfile net6.0-maccatalyst.pubxml">RaceSimulator/RaceSimulator.csproj</projectFile>
   </component>
   <component name="ChangeListManager">
     <list default="true" id="74749e98-3fd5-4128-88ab-bc8cb0b9c985" name="Changes" comment="Bug fix of images">
-      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.RaceSim/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.RaceSim/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.vs/RaceSim/xs/UserPrefs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.vs/RaceSim/xs/UserPrefs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.vs/RaceSim/xs/project-cache/Controller-Debug.json" beforeDir="false" afterPath="$PROJECT_DIR$/.vs/RaceSim/xs/project-cache/Controller-Debug.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.vs/RaceSim/xs/project-cache/ControllerTest-Debug.json" beforeDir="false" afterPath="$PROJECT_DIR$/.vs/RaceSim/xs/project-cache/ControllerTest-Debug.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.vs/RaceSim/xs/project-cache/Model-Debug.json" beforeDir="false" afterPath="$PROJECT_DIR$/.vs/RaceSim/xs/project-cache/Model-Debug.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.vs/RaceSim/xs/project-cache/RaceSimulator-Debug-net6.0-android.json" beforeDir="false" afterPath="$PROJECT_DIR$/.vs/RaceSim/xs/project-cache/RaceSimulator-Debug-net6.0-android.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.vs/RaceSim/xs/project-cache/RaceSimulator-Debug-net6.0-ios.json" beforeDir="false" afterPath="$PROJECT_DIR$/.vs/RaceSim/xs/project-cache/RaceSimulator-Debug-net6.0-ios.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.vs/RaceSim/xs/project-cache/RaceSimulator-Debug-net6.0-maccatalyst.json" beforeDir="false" afterPath="$PROJECT_DIR$/.vs/RaceSim/xs/project-cache/RaceSimulator-Debug-net6.0-maccatalyst.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Model/Model/Competition.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Model/Model/Competition.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/RaceSimulator/CompetitionPage.xaml" beforeDir="false" afterPath="$PROJECT_DIR$/RaceSimulator/CompetitionPage.xaml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/RaceSimulator/CompetitionPage.xaml.cs" beforeDir="false" afterPath="$PROJECT_DIR$/RaceSimulator/CompetitionPage.xaml.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/RaceSimulator/Image.cs" beforeDir="false" afterPath="$PROJECT_DIR$/RaceSimulator/Image.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/RaceSimulator/RaceSimulator.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/RaceSimulator/RaceSimulator.csproj" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/RaceSimulator/RaceSimulator.xaml.cs" beforeDir="false" afterPath="$PROJECT_DIR$/RaceSimulator/RaceSimulator.xaml.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/RaceSimulator/RaceStatisticsPage.xaml" beforeDir="false" afterPath="$PROJECT_DIR$/RaceSimulator/RaceStatisticsPage.xaml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/RaceSimulator/RaceStatisticsPage.xaml.cs" beforeDir="false" afterPath="$PROJECT_DIR$/RaceSimulator/RaceStatisticsPage.xaml.cs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -22,7 +36,7 @@
   </component>
   <component name="HighlightingSettingsPerFile">
     <setting file="file://$USER_HOME$/.nuget/packages/microsoft.net.test.sdk/17.3.2/build/netcoreapp2.1/Microsoft.NET.Test.Sdk.Program.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/RaceSimulator/obj/Debug/net6.0-android/Resource.designer 3.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/../Winder/Winder/StartPage.xaml.cs" root0="SKIP_HIGHLIGHTING" />
   </component>
   <component name="InvalidFacetManager">
     <ignored-facets>
@@ -44,10 +58,13 @@
   <component name="PropertiesComponent">{
   &quot;keyToString&quot;: {
     &quot;ASKED_ADD_EXTERNAL_FILES&quot;: &quot;true&quot;,
+    &quot;Device#class com.jetbrains.rider.run.xamarin.ios.devices.XamarinIOSSimulatorKind#com.jetbrains.rider.run.xamarin.ios.devices.XamarinIOSDevicesProvider#Xamarin.iOS: RaceSimulator&quot;: &quot;iPhone 14&quot;,
+    &quot;DeviceKind#com.jetbrains.rider.run.xamarin.ios.devices.XamarinIOSDevicesProvider&quot;: &quot;Simulator&quot;,
     &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
     &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
     &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
     &quot;rider.run.widget.enabled.cache&quot;: &quot;false&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.pluginManager&quot;,
     &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   },
   &quot;keyToStringList&quot;: {
@@ -61,11 +78,15 @@
     ]
   }
 }</component>
-  <component name="RunManager" selected="Xamarin.Mac.MAUI">
-    <configuration name="RaceSim" type="DotNetProject" factoryName=".NET Project">
-      <option name="EXE_PATH" value="" />
+  <component name="RunManager" selected="Xamarin.Mac.RaceSimulator">
+    <configuration name="RaceSimulator: FolderProfile net6.0-maccatalyst" type="DotNetMsBuildPublish" factoryName="Publish to IIS">
+      <riderPublish configuration="Release" platform="Any CPU" pubxml_path="$PROJECT_DIR$/RaceSimulator/Properties/PublishProfiles/FolderProfile net6.0-maccatalyst.pubxml" />
+      <method v="2" />
+    </configuration>
+    <configuration name="Console" type="DotNetProject" factoryName=".NET Project">
+      <option name="EXE_PATH" value="$PROJECT_DIR$/Console/bin/Debug/net6.0/Console" />
       <option name="PROGRAM_PARAMETERS" value="" />
-      <option name="WORKING_DIRECTORY" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/Console/bin/Debug/net6.0" />
       <option name="PASS_PARENT_ENVS" value="1" />
       <option name="USE_EXTERNAL_CONSOLE" value="0" />
       <option name="USE_MONO" value="0" />
@@ -75,34 +96,33 @@
       <option name="PROJECT_ARGUMENTS_TRACKING" value="1" />
       <option name="PROJECT_WORKING_DIRECTORY_TRACKING" value="1" />
       <option name="PROJECT_KIND" value="DotNetCore" />
-      <option name="PROJECT_TFM" value="" />
+      <option name="PROJECT_TFM" value="net6.0" />
       <method v="2">
         <option name="Build" />
       </method>
     </configuration>
-    <configuration name="MAUI" type="XamarinAndroidProject" factoryName="Xamarin.Android">
-      <option name="PROJECT_PATH" value="$PROJECT_DIR$/MAUI/MAUI.csproj" />
+    <configuration name="Debug workaround" type="RunExe" factoryName=".NET Executable">
+      <option name="EXE_PATH" value="$PROJECT_DIR$/RaceSimulator/bin/Debug/net6.0-maccatalyst/maccatalyst-x64/RaceSimulator.app/Contents/MacOS/RaceSimulator" />
       <option name="PROGRAM_PARAMETERS" value="" />
-      <option name="TARGET_SELECTION_MODE" value="SHOW_DIALOG" />
-      <option name="DEPLOY_BEHAVIOUR_NAME" value="Default" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/RaceSimulator/bin/Debug/net6.0-maccatalyst/maccatalyst-x64/RaceSimulator.app/Contents/MacOS" />
+      <option name="PASS_PARENT_ENVS" value="1" />
+      <option name="USE_EXTERNAL_CONSOLE" value="0" />
+      <option name="USE_MONO" value="0" />
+      <option name="RUNTIME_ARGUMENTS" value="" />
+      <option name="RUNTIME_TYPE" value="coreclr" />
       <method v="2">
-        <option name="Build" />
+        <option name="Build" default="false" projectName="RaceSimulator" projectPath="file://$PROJECT_DIR$/RaceSimulator/RaceSimulator.csproj" />
+        <option name="Build Solution" enabled="true" />
       </method>
     </configuration>
     <configuration name="RaceSimulator" type="XamarinAndroidProject" factoryName="Xamarin.Android">
       <option name="PROJECT_PATH" value="$PROJECT_DIR$/RaceSimulator/RaceSimulator.csproj" />
       <option name="PROGRAM_PARAMETERS" value="" />
-      <option name="TARGET_SELECTION_MODE" value="SHOW_DIALOG" />
+      <option name="TARGET_SELECTION_MODE" value="DEVICE_AND_SNAPSHOT_COMBO_BOX" />
       <option name="DEPLOY_BEHAVIOUR_NAME" value="Default" />
       <method v="2">
         <option name="Build" />
       </method>
-    </configuration>
-    <configuration name="MAUI" type="XamarinIOSProject" factoryName="Xamarin.iOS">
-      <option name="PROJECT_PATH" value="$PROJECT_DIR$/RaceSimulator/RaceSimulator.csproj" />
-      <option name="PROGRAM_PARAMETERS" value="" />
-      <option name="IS_PASS_PARENT_ENVS" value="false" />
-      <method v="2" />
     </configuration>
     <configuration name="RaceSimulator" type="XamarinIOSProject" factoryName="Xamarin.iOS">
       <option name="PROJECT_PATH" value="$PROJECT_DIR$/RaceSimulator/RaceSimulator.csproj" />
@@ -110,24 +130,23 @@
       <option name="IS_PASS_PARENT_ENVS" value="false" />
       <method v="2" />
     </configuration>
-    <configuration name="MAUI" type="XamarinMacProject" factoryName="Xamarin.Mac">
-      <option name="PROJECT_PATH" value="$PROJECT_DIR$/RaceSimulator/RaceSimulator.csproj" />
-      <option name="PROGRAM_PARAMETERS" value="" />
-      <option name="WORKING_DIRECTORY" value="" />
-      <option name="PASS_PARENT_ENVS_MAC" value="1" />
-      <method v="2">
-        <option name="Build" />
-      </method>
-    </configuration>
     <configuration name="RaceSimulator" type="XamarinMacProject" factoryName="Xamarin.Mac">
       <option name="PROJECT_PATH" value="$PROJECT_DIR$/RaceSimulator/RaceSimulator.csproj" />
       <option name="PROGRAM_PARAMETERS" value="" />
-      <option name="WORKING_DIRECTORY" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/RaceSimulator/bin/Debug/net6.0-maccatalyst/maccatalyst-x64" />
       <option name="PASS_PARENT_ENVS_MAC" value="1" />
       <method v="2">
         <option name="Build" />
       </method>
     </configuration>
+    <list>
+      <item itemvalue=".NET Executable.Debug workaround" />
+      <item itemvalue=".NET Project.Console" />
+      <item itemvalue="Publish to IIS.RaceSimulator: FolderProfile net6.0-maccatalyst" />
+      <item itemvalue="Xamarin.Android.RaceSimulator" />
+      <item itemvalue="Xamarin.iOS.RaceSimulator" />
+      <item itemvalue="Xamarin.Mac.RaceSimulator" />
+    </list>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
@@ -154,7 +173,11 @@
       <workItem from="1671631333383" duration="36000" />
       <workItem from="1671631393157" duration="8689000" />
       <workItem from="1671640762472" duration="4027000" />
-      <workItem from="1671653811971" duration="600000" />
+      <workItem from="1671653811971" duration="1804000" />
+      <workItem from="1671656028973" duration="228000" />
+      <workItem from="1671656359337" duration="50000" />
+      <workItem from="1671656424494" duration="768000" />
+      <workItem from="1671657612749" duration="3146000" />
     </task>
     <task id="LOCAL-00001" summary="Bug fix of images">
       <created>1667828032411</created>

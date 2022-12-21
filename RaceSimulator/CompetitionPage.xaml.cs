@@ -1,6 +1,9 @@
-﻿using Controller;
+﻿using System.Linq;
+using Controller;
 
 using Microsoft.Maui;
+using Microsoft.Maui.Controls;
+using Microsoft.Maui.Graphics;
 using Model;
 
 namespace MAUI;
@@ -16,8 +19,6 @@ public partial class CompetitionPage : ContentPage {
     //Elements
     private Button _startRace;
 
-    //Extra variables
-    private bool _competitionStarted;
 
     public CompetitionPage() {
         
@@ -209,7 +210,47 @@ public partial class CompetitionPage : ContentPage {
         
         //Calculate amount of races done
         int toDo = Data.currentCompetition.Tracks.Count;
+        int tracksDone = Data.currentCompetition.TracksDone.Count;
         
+        //Done races
+        foreach (Track race in Data.currentCompetition.TracksDone) {
+            //Race name
+            _racesGrid.Add(new BoxView {
+                Color = race.backgroundColorMaui
+            },0,i);
+
+            _racesGrid.Add(new Label {
+                Text = race.name,
+                TextColor = Colors.White,
+                FontSize = 20,
+                HorizontalOptions = LayoutOptions.Start,
+                VerticalOptions = LayoutOptions.Center,
+                Padding = new Thickness(10,10,10,10)
+            }, 0, i);
+
+            if (i == tracksDone)
+            {
+                _racesGrid.Add(new Label {
+                    Text = "In progress",
+                    TextColor = Colors.Orange,
+                    FontSize = 20,
+                    HorizontalOptions = LayoutOptions.Center,
+                    VerticalOptions = LayoutOptions.Center,
+                    Padding = new Thickness(10, 10, 10, 10)
+                }, 1, i);
+            } else {
+                _racesGrid.Add(new Label {
+                    Text = "Done",
+                    TextColor = Colors.Green,
+                    FontSize = 20,
+                    HorizontalOptions = LayoutOptions.Center,
+                    VerticalOptions = LayoutOptions.Center,
+                    Padding = new Thickness(10, 10, 10, 10)
+                }, 1, i);
+            }
+        }
+
+        //Upcoming races
         foreach (Track race in Data.currentCompetition.Tracks) {
             
             //Race name
@@ -264,9 +305,13 @@ public partial class CompetitionPage : ContentPage {
 
     private void RaceStart() {
         if (!Data.currentCompetition.RaceInProgress) {
-            _competitionStarted = true;
-            Application.Current.OpenWindow(new Window(new RaceSimulator()));
-            Application.Current.OpenWindow(new Window(new RaceStatisticsPage()));
+            Data.currentCompetition.RaceInProgress = true;
+            Data.NextRace();
+            
+            RaceSimulator raceSimulator = new RaceSimulator();
+            Window raceWindow = new Window(raceSimulator);
+            Application.Current.OpenWindow(raceWindow);
+            Navigation.PushAsync(new RaceStatisticsPage());
         }
     }
     

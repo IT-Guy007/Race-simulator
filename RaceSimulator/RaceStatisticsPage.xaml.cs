@@ -76,7 +76,7 @@ public partial class RaceStatisticsPage : ContentPage {
         }, 3, 0);
         
         //Numbers
-        for (int i = 0; i != 7; i++) {
+        for (int i = 0; i != 8; i++) {
             grid.Add(new Label {
                 Text = (i + 1).ToString(),
                 FontSize = 20,
