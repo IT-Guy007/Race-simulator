@@ -1,4 +1,13 @@
 ﻿<Properties StartupConfiguration="RaceSim">
+  <MultiItemStartupConfigurations>
+    <MultiItemSolutionRunConfiguration Id="RaceSim" Name="RaceSim">
+      <Items>
+        <StartupItem ItemId="{08647694-615E-4FB1-875F-F2DC759CF411}" ItemName="RaceSim" ConfigurationId="Default" />
+      </Items>
+    </MultiItemSolutionRunConfiguration>
+  </MultiItemStartupConfigurations>
+  <MonoDevelop.Ide.ItemProperties.RaceSimulator PreferredExecutionTarget="MyAppleMacCatalystID" />
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
   <MonoDevelop.Ide.Workbench>
     <Pads>
       <Pad Id="ProjectPad">
@@ -9,26 +18,12 @@
       <Pad Id="MonoDevelop.Debugger.WatchPad">
         <State />
       </Pad>
-      <Pad Id="MonoDevelop.UnitTesting.TestPad">
-        <State name="__root__">
-          <Node name="RaceSim" expanded="True" selected="True" />
-        </State>
-      </Pad>
     </Pads>
   </MonoDevelop.Ide.Workbench>
+  <Xamarin.Addins.Core.Project ActiveDebugTarget="MyAppleMacCatalystID" />
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
     <BreakpointStore />
   </MonoDevelop.Ide.DebuggingService.Breakpoints>
-  <MonoDevelop.Ide.ItemProperties.RaceSimulator PreferredExecutionTarget="MyAppleMacCatalystID" />
-  <Xamarin.Addins.Core.Project ActiveDebugTarget="MyAppleMacCatalystID" />
-  <MultiItemStartupConfigurations>
-    <MultiItemSolutionRunConfiguration Id="RaceSim" Name="RaceSim">
-      <Items>
-        <StartupItem ItemId="{08647694-615E-4FB1-875F-F2DC759CF411}" ItemName="RaceSim" ConfigurationId="Default" />
-      </Items>
-    </MultiItemSolutionRunConfiguration>
-  </MultiItemStartupConfigurations>
-  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
   <MonoDevelop.Ide.ItemProperties.RaceSim PreferredExecutionTarget="MonoDevelop.Default" />
 </Properties>

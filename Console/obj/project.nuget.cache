@@ -1,0 +1,11 @@
+{
+  "version": 2,
+  "dgSpecHash": "z6W5HXhwEcwONRpMgMEjVV5z2V0fKk5dt3QlhQXPGKGOwFar4vgwhJ9hViVkCSVzPIh2s3c5KGe05oMFieCLzw==",
+  "success": true,
+  "projectFilePath": "/Users/jeroendenotter/Documents/6. GitHub/Race-simulator/Console/Console.csproj",
+  "expectedPackageFiles": [
+    "/Users/jeroendenotter/.nuget/packages/spectre.console/0.45.1-preview.0.27/spectre.console.0.45.1-preview.0.27.nupkg.sha512",
+    "/Users/jeroendenotter/.nuget/packages/system.memory/4.5.5/system.memory.4.5.5.nupkg.sha512"
+  ],
+  "logs": []
+}

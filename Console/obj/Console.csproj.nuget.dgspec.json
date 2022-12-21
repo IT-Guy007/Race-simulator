@@ -1,0 +1,187 @@
+{
+  "format": 1,
+  "restore": {
+    "/Users/jeroendenotter/Documents/6. GitHub/Race-simulator/Console/Console.csproj": {}
+  },
+  "projects": {
+    "/Users/jeroendenotter/Documents/6. GitHub/Race-simulator/Console/Console.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "/Users/jeroendenotter/Documents/6. GitHub/Race-simulator/Console/Console.csproj",
+        "projectName": "Console",
+        "projectPath": "/Users/jeroendenotter/Documents/6. GitHub/Race-simulator/Console/Console.csproj",
+        "packagesPath": "/Users/jeroendenotter/.nuget/packages/",
+        "outputPath": "/Users/jeroendenotter/Documents/6. GitHub/Race-simulator/Console/obj/",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "/Users/jeroendenotter/.nuget/NuGet/NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "net6.0"
+        ],
+        "sources": {
+          "/usr/local/share/dotnet/library-packs": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net6.0": {
+            "targetAlias": "net6.0",
+            "projectReferences": {
+              "/Users/jeroendenotter/Documents/6. GitHub/Race-simulator/Controller/Controller.csproj": {
+                "projectPath": "/Users/jeroendenotter/Documents/6. GitHub/Race-simulator/Controller/Controller.csproj"
+              },
+              "/Users/jeroendenotter/Documents/6. GitHub/Race-simulator/Model/Model/Model.csproj": {
+                "projectPath": "/Users/jeroendenotter/Documents/6. GitHub/Race-simulator/Model/Model/Model.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net6.0": {
+          "targetAlias": "net6.0",
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/7.0.101/RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "/Users/jeroendenotter/Documents/6. GitHub/Race-simulator/Controller/Controller.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "/Users/jeroendenotter/Documents/6. GitHub/Race-simulator/Controller/Controller.csproj",
+        "projectName": "Controller",
+        "projectPath": "/Users/jeroendenotter/Documents/6. GitHub/Race-simulator/Controller/Controller.csproj",
+        "packagesPath": "/Users/jeroendenotter/.nuget/packages/",
+        "outputPath": "/Users/jeroendenotter/Documents/6. GitHub/Race-simulator/Controller/obj/",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "/Users/jeroendenotter/.nuget/NuGet/NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "net6.0"
+        ],
+        "sources": {
+          "/usr/local/share/dotnet/library-packs": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net6.0": {
+            "targetAlias": "net6.0",
+            "projectReferences": {
+              "/Users/jeroendenotter/Documents/6. GitHub/Race-simulator/Model/Model/Model.csproj": {
+                "projectPath": "/Users/jeroendenotter/Documents/6. GitHub/Race-simulator/Model/Model/Model.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net6.0": {
+          "targetAlias": "net6.0",
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/7.0.101/RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "/Users/jeroendenotter/Documents/6. GitHub/Race-simulator/Model/Model/Model.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "/Users/jeroendenotter/Documents/6. GitHub/Race-simulator/Model/Model/Model.csproj",
+        "projectName": "Model",
+        "projectPath": "/Users/jeroendenotter/Documents/6. GitHub/Race-simulator/Model/Model/Model.csproj",
+        "packagesPath": "/Users/jeroendenotter/.nuget/packages/",
+        "outputPath": "/Users/jeroendenotter/Documents/6. GitHub/Race-simulator/Model/Model/obj/",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "/Users/jeroendenotter/.nuget/NuGet/NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "net6.0"
+        ],
+        "sources": {
+          "/usr/local/share/dotnet/library-packs": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net6.0": {
+            "targetAlias": "net6.0",
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net6.0": {
+          "targetAlias": "net6.0",
+          "dependencies": {
+            "Spectre.Console": {
+              "target": "Package",
+              "version": "[0.45.1-preview.0.27, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/7.0.101/RuntimeIdentifierGraph.json"
+        }
+      }
+    }
+  }
+}
