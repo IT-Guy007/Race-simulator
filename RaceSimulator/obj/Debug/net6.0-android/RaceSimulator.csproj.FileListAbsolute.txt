@@ -1031,3 +1031,20 @@
 /Users/jeroendenotter/Documents/6. GitHub/Race-simulator/RaceSimulator/obj/Debug/net6.0-android/stamp/_GenerateJavaStubs.stamp
 /Users/jeroendenotter/Documents/6. GitHub/Race-simulator/RaceSimulator/obj/Debug/net6.0-android/stamp/_GeneratePackageManagerJava.stamp
 /Users/jeroendenotter/Documents/6. GitHub/Race-simulator/RaceSimulator/obj/Debug/net6.0-android/stamp/_ResolveLibraryProjectImports.stamp
+/Users/jeroendenotter/Documents/6. GitHub/Race-simulator/RaceSimulator/obj/Debug/net6.0-android/android/src/androidx/activity/ktx/R 2.java
+/Users/jeroendenotter/Documents/6. GitHub/Race-simulator/RaceSimulator/obj/Debug/net6.0-android/android/src/androidx/activity/R 2.java
+/Users/jeroendenotter/Documents/6. GitHub/Race-simulator/RaceSimulator/obj/Debug/net6.0-android/android/src/androidx/annotation/experimental/R 2.java
+/Users/jeroendenotter/Documents/6. GitHub/Race-simulator/RaceSimulator/obj/Debug/net6.0-android/android/src/androidx/core/ktx/R 2.java
+/Users/jeroendenotter/Documents/6. GitHub/Race-simulator/RaceSimulator/obj/Debug/net6.0-android/android/src/androidx/emoji2/R 2.java
+/Users/jeroendenotter/Documents/6. GitHub/Race-simulator/RaceSimulator/obj/Debug/net6.0-android/android/src/androidx/emoji2/viewsintegration/R 2.java
+/Users/jeroendenotter/Documents/6. GitHub/Race-simulator/RaceSimulator/obj/Debug/net6.0-android/android/src/androidx/fragment/ktx/R 2.java
+/Users/jeroendenotter/Documents/6. GitHub/Race-simulator/RaceSimulator/obj/Debug/net6.0-android/android/src/androidx/lifecycle/ktx/R 2.java
+/Users/jeroendenotter/Documents/6. GitHub/Race-simulator/RaceSimulator/obj/Debug/net6.0-android/android/src/androidx/lifecycle/livedata/R 3.java
+/Users/jeroendenotter/Documents/6. GitHub/Race-simulator/RaceSimulator/obj/Debug/net6.0-android/android/src/androidx/lifecycle/process/R 2.java
+/Users/jeroendenotter/Documents/6. GitHub/Race-simulator/RaceSimulator/obj/Debug/net6.0-android/android/src/androidx/localbroadcastmanager/R 2.java
+/Users/jeroendenotter/Documents/6. GitHub/Race-simulator/RaceSimulator/obj/Debug/net6.0-android/android/src/androidx/slidingpanelayout/R 2.java
+/Users/jeroendenotter/Documents/6. GitHub/Race-simulator/RaceSimulator/obj/Debug/net6.0-android/android/src/androidx/startup/R 2.java
+/Users/jeroendenotter/Documents/6. GitHub/Race-simulator/RaceSimulator/obj/Debug/net6.0-android/android/src/crc640242b01ce184f8a7/MainApplication 2.java
+/Users/jeroendenotter/Documents/6. GitHub/Race-simulator/RaceSimulator/obj/Debug/net6.0-android/android/src/crc6452ffdc5b34af3a0f/StepperHandlerHolder 2.java
+/Users/jeroendenotter/Documents/6. GitHub/Race-simulator/RaceSimulator/obj/Debug/net6.0-android/android/src/crc6488302ad6e9e4df1a/ImageLoaderCallback 2.java
+/Users/jeroendenotter/Documents/6. GitHub/Race-simulator/RaceSimulator/obj/Debug/net6.0-android/android/src/crc64a25b61d9f8ee364f/TransitionUtils 2.java

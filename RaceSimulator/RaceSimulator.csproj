@@ -53,10 +53,10 @@
     </ItemGroup>
 
     <ItemGroup>
-      <Compile Update="RacePage.xaml.cs">
+      <Compile Update="RaceSimulator.xaml.cs">
         <DependentUpon>Race.xaml</DependentUpon>
       </Compile>
-      <Compile Update="StatisticsPage.xaml.cs">
+      <Compile Update="RaceStatisticsPage.xaml.cs">
         <DependentUpon>StatisticsPage.xaml</DependentUpon>
         <SubType>Code</SubType>
       </Compile>
@@ -77,7 +77,7 @@
     </ItemGroup>
 
     <ItemGroup>
-      <MauiXaml Update="StatisticsPage.xaml">
+      <MauiXaml Update="RaceStatisticsPage.xaml">
         <SubType>Designer</SubType>
       </MauiXaml>
       <MauiXaml Update="CompetitionPage.xaml">

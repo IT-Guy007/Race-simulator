@@ -6,14 +6,17 @@ public class Track {
     public int laps { get; set; }
     public LinkedList<Section> Sections { get; set; }
     public Direction startDirection { get; set; }
-    public Spectre.Console.Color backgroundColor { get; set; }
+    public Spectre.Console.Color backgroundColorSpectre { get; set; }
+    
+    public Microsoft.Maui.Graphics.Color backgroundColorMaui { get; set; } 
 
-    public Track(string trackName, LinkedList<Section> trackSections, Direction startDirection, int laps, Spectre.Console.Color backgroundColor) {
+    public Track(string trackName, LinkedList<Section> trackSections, Direction startDirection, int laps, Spectre.Console.Color backgroundColorSpectre, Microsoft.Maui.Graphics.Color backgroundColorMaui) {
         this.name = trackName;
         this.Sections = trackSections;
         this.startDirection = startDirection;
         this.laps = laps;
-        this.backgroundColor = backgroundColor;
+        this.backgroundColorSpectre = backgroundColorSpectre;
+        this.backgroundColorMaui = backgroundColorMaui;
     }
     
     public Track() {}

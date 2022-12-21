@@ -2147,6 +2147,7 @@
         "type": "project",
         "framework": ".NETCoreApp,Version=v6.0",
         "dependencies": {
+          "Microsoft.Maui.Graphics": "6.0.501",
           "Spectre.Console": "0.45.1-preview.0.27"
         },
         "compile": {
@@ -4227,6 +4228,7 @@
         "type": "project",
         "framework": ".NETCoreApp,Version=v6.0",
         "dependencies": {
+          "Microsoft.Maui.Graphics": "6.0.501",
           "Spectre.Console": "0.45.1-preview.0.27"
         },
         "compile": {
@@ -6307,6 +6309,7 @@
         "type": "project",
         "framework": ".NETCoreApp,Version=v6.0",
         "dependencies": {
+          "Microsoft.Maui.Graphics": "6.0.501",
           "Spectre.Console": "0.45.1-preview.0.27"
         },
         "compile": {
@@ -8387,6 +8390,7 @@
         "type": "project",
         "framework": ".NETCoreApp,Version=v6.0",
         "dependencies": {
+          "Microsoft.Maui.Graphics": "6.0.501",
           "Spectre.Console": "0.45.1-preview.0.27"
         },
         "compile": {
@@ -10467,6 +10471,7 @@
         "type": "project",
         "framework": ".NETCoreApp,Version=v6.0",
         "dependencies": {
+          "Microsoft.Maui.Graphics": "6.0.501",
           "Spectre.Console": "0.45.1-preview.0.27"
         },
         "compile": {
@@ -12547,6 +12552,7 @@
         "type": "project",
         "framework": ".NETCoreApp,Version=v6.0",
         "dependencies": {
+          "Microsoft.Maui.Graphics": "6.0.501",
           "Spectre.Console": "0.45.1-preview.0.27"
         },
         "compile": {
@@ -14627,6 +14633,7 @@
         "type": "project",
         "framework": ".NETCoreApp,Version=v6.0",
         "dependencies": {
+          "Microsoft.Maui.Graphics": "6.0.501",
           "Spectre.Console": "0.45.1-preview.0.27"
         },
         "compile": {
@@ -15042,6 +15049,7 @@
         "type": "project",
         "framework": ".NETCoreApp,Version=v6.0",
         "dependencies": {
+          "Microsoft.Maui.Graphics": "6.0.501",
           "Spectre.Console": "0.45.1-preview.0.27"
         },
         "compile": {
@@ -15381,6 +15389,7 @@
         "type": "project",
         "framework": ".NETCoreApp,Version=v6.0",
         "dependencies": {
+          "Microsoft.Maui.Graphics": "6.0.501",
           "Spectre.Console": "0.45.1-preview.0.27"
         },
         "compile": {
@@ -15720,6 +15729,7 @@
         "type": "project",
         "framework": ".NETCoreApp,Version=v6.0",
         "dependencies": {
+          "Microsoft.Maui.Graphics": "6.0.501",
           "Spectre.Console": "0.45.1-preview.0.27"
         },
         "compile": {
@@ -16059,6 +16069,7 @@
         "type": "project",
         "framework": ".NETCoreApp,Version=v6.0",
         "dependencies": {
+          "Microsoft.Maui.Graphics": "6.0.501",
           "Spectre.Console": "0.45.1-preview.0.27"
         },
         "compile": {
@@ -16398,6 +16409,7 @@
         "type": "project",
         "framework": ".NETCoreApp,Version=v6.0",
         "dependencies": {
+          "Microsoft.Maui.Graphics": "6.0.501",
           "Spectre.Console": "0.45.1-preview.0.27"
         },
         "compile": {
@@ -16737,6 +16749,7 @@
         "type": "project",
         "framework": ".NETCoreApp,Version=v6.0",
         "dependencies": {
+          "Microsoft.Maui.Graphics": "6.0.501",
           "Spectre.Console": "0.45.1-preview.0.27"
         },
         "compile": {
@@ -17076,6 +17089,7 @@
         "type": "project",
         "framework": ".NETCoreApp,Version=v6.0",
         "dependencies": {
+          "Microsoft.Maui.Graphics": "6.0.501",
           "Spectre.Console": "0.45.1-preview.0.27"
         },
         "compile": {
@@ -17491,6 +17505,7 @@
         "type": "project",
         "framework": ".NETCoreApp,Version=v6.0",
         "dependencies": {
+          "Microsoft.Maui.Graphics": "6.0.501",
           "Spectre.Console": "0.45.1-preview.0.27"
         },
         "compile": {
@@ -17830,6 +17845,7 @@
         "type": "project",
         "framework": ".NETCoreApp,Version=v6.0",
         "dependencies": {
+          "Microsoft.Maui.Graphics": "6.0.501",
           "Spectre.Console": "0.45.1-preview.0.27"
         },
         "compile": {
@@ -18169,6 +18185,7 @@
         "type": "project",
         "framework": ".NETCoreApp,Version=v6.0",
         "dependencies": {
+          "Microsoft.Maui.Graphics": "6.0.501",
           "Spectre.Console": "0.45.1-preview.0.27"
         },
         "compile": {
@@ -18508,6 +18525,7 @@
         "type": "project",
         "framework": ".NETCoreApp,Version=v6.0",
         "dependencies": {
+          "Microsoft.Maui.Graphics": "6.0.501",
           "Spectre.Console": "0.45.1-preview.0.27"
         },
         "compile": {
@@ -18847,6 +18865,7 @@
         "type": "project",
         "framework": ".NETCoreApp,Version=v6.0",
         "dependencies": {
+          "Microsoft.Maui.Graphics": "6.0.501",
           "Spectre.Console": "0.45.1-preview.0.27"
         },
         "compile": {
@@ -19186,6 +19205,7 @@
         "type": "project",
         "framework": ".NETCoreApp,Version=v6.0",
         "dependencies": {
+          "Microsoft.Maui.Graphics": "6.0.501",
           "Spectre.Console": "0.45.1-preview.0.27"
         },
         "compile": {
@@ -19525,6 +19545,7 @@
         "type": "project",
         "framework": ".NETCoreApp,Version=v6.0",
         "dependencies": {
+          "Microsoft.Maui.Graphics": "6.0.501",
           "Spectre.Console": "0.45.1-preview.0.27"
         },
         "compile": {

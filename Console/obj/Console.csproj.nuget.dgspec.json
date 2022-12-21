@@ -158,6 +158,10 @@
         "net6.0": {
           "targetAlias": "net6.0",
           "dependencies": {
+            "Microsoft.Maui.Graphics": {
+              "target": "Package",
+              "version": "[6.0.501, )"
+            },
             "Spectre.Console": {
               "target": "Package",
               "version": "[0.45.1-preview.0.27, )"

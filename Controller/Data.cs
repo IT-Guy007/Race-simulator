@@ -3,8 +3,7 @@ using Model;
 
 namespace Controller;
 
-public static class Data
-{
+public static class Data {
 
     public static Competition currentCompetition { get; set; }
     public static Race currentRace { get; set; }
@@ -186,9 +185,9 @@ public static class Data
             
         };
 
-        currentCompetition.Tracks.Enqueue(new Track("Zandvoort", createSections(zandvoortSections),Direction.North,3, Spectre.Console.Color.Orange3));
-        currentCompetition.Tracks.Enqueue(new Track("Spa", createSections(spaSections), Direction.South, 2, Spectre.Console.Color.DarkGreen));
-        currentCompetition.Tracks.Enqueue(new Track("Square", createSections(squareSections),Direction.East,1, Spectre.Console.Color.DarkSlateGray1));
+        currentCompetition.Tracks.Enqueue(new Track("Zandvoort", createSections(zandvoortSections),Direction.North,3, Spectre.Console.Color.Orange3, Microsoft.Maui.Graphics.Color.FromArgb("#FFA500")));
+        currentCompetition.Tracks.Enqueue(new Track("Spa", createSections(spaSections), Direction.South, 2, Spectre.Console.Color.DarkGreen, Microsoft.Maui.Graphics.Color.FromArgb("#023020")));
+        currentCompetition.Tracks.Enqueue(new Track("Square", createSections(squareSections),Direction.East,1, Spectre.Console.Color.DarkSlateGray1, Microsoft.Maui.Graphics.Color.FromArgb("#2F4F4F")));
     }
 
     public static LinkedList<Section> createSections(SectionTypes[] trackSections) {

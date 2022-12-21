@@ -96,7 +96,7 @@ public static class Visualisation
         {
             for (int j = 0; j < ySize * tileSize; j++)
             {
-                canvas.SetPixel(i, j, Data.currentRace.Track.backgroundColor);
+                canvas.SetPixel(i, j, Data.currentRace.Track.backgroundColorSpectre);
             }
         }
 

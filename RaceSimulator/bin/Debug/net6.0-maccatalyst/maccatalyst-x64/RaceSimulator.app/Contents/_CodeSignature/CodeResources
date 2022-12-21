@@ -12,6 +12,10 @@
 		<data>
 		ibJN3LMjbo0gB6pQAsaPXnYGl/g=
 		</data>
+		<key>Resources/MauiInfo.plist</key>
+		<data>
+		iEtuUGCV6JM3gxS/pO33swhmpp8=
+		</data>
 		<key>Resources/MonoTouchDebugConfiguration.txt</key>
 		<data>
 		oowkf1sL6T19nanXUObgmuayWqM=
@@ -123,14 +127,14 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			SHX6vMFhq1vjkaDHoDL+oWDpvxdCNN6pYqs2u+H9t1I=
+			22PHGMLuFQgllUy6AFYkh9BJKFlw0YT9Nd20HPDA++E=
 			</data>
 		</dict>
 		<key>MonoBundle/Controller.pdb</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			Kgp0EJfwhYUcNzNx7gUwtH5R1nHtDj0KwZIrAQAvakk=
+			ZhEL1y/56OuIFKXEl4v4rw+NzL44waSlNlqR6uEUBhY=
 			</data>
 		</dict>
 		<key>MonoBundle/Microsoft.CSharp.dll</key>
@@ -305,28 +309,28 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			5bfXBoObdg+lSTr6fuAIUbYluis6Uv8G8iBzqFz21Uk=
+			LRBBcKHHUI+mAx7FkrP/w0EwK3WY4AyJVFxtMcvhX4Y=
 			</data>
 		</dict>
 		<key>MonoBundle/Model.pdb</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			p1FoTMeee02opwbyFM05i+y3O42aGgMp5+yuOhWCPEg=
+			k39ZQNlI9ZTcqeLVf0NQWM4oe8r3rMfrawiWFO2CeDc=
 			</data>
 		</dict>
 		<key>MonoBundle/RaceSimulator.dll</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			RuWGherBlTMG5tLQ7KVJdhoLruwK4YXtxw8uzaeaYOU=
+			OQIP/1AqNKoD96SflSmHbWU3fC7OOUfv8hpAOfUl8xg=
 			</data>
 		</dict>
 		<key>MonoBundle/RaceSimulator.pdb</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			itIPSeQSvrAqVuINNk96ful6S7CClH+uaPagYPR1mzs=
+			th0UGj79SV0V3c6xoNgPUd3OfJRElKBaO2olRXY0oLA=
 			</data>
 		</dict>
 		<key>MonoBundle/Spectre.Console.dll</key>
@@ -1538,6 +1542,13 @@
 			<key>hash2</key>
 			<data>
 			sFsvpQzoUQj4sSix+6ObipN3tH3jXlGSKNtuhELLW+o=
+			</data>
+		</dict>
+		<key>Resources/MauiInfo.plist</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			tx0KXqEC+DvcCGyogQTEQWHcCWJYYqH24NtPwhpQEjo=
 			</data>
 		</dict>
 		<key>Resources/MonoTouchDebugConfiguration.txt</key>

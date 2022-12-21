@@ -1,15 +1,20 @@
-﻿namespace MAUI;
+﻿using Controller;
+using Model;
+
+namespace MAUI;
 
 public partial class MainPage : ContentPage {
-
-    StatisticsPage _statisticsPage;
-    private RacePage _racePage;
-    public MainPage()
-    {
+    
+    public MainPage() {
         InitializeComponent();
     }
 
     private void Clicked(object sender, EventArgs e) {
+        //Initialise the data
+        if (Data.currentCompetition == null) {
+            Data.Initialize();
+        }
+
         Navigation.PushAsync(new CompetitionPage());
     }
 }
