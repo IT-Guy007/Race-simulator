@@ -1,9 +1,5 @@
-﻿using System.Linq;
-using Controller;
+﻿using Controller;
 
-using Microsoft.Maui;
-using Microsoft.Maui.Controls;
-using Microsoft.Maui.Graphics;
 using Model;
 
 namespace MAUI;
@@ -54,16 +50,8 @@ public partial class CompetitionPage : ContentPage {
                 new ColumnDefinition(),
             },
 
-            //9 rows, 8 drivers + 1 lavel
+            //1 label row
             RowDefinitions = {
-                new RowDefinition { Height = new GridLength(25) },
-                new RowDefinition { Height = new GridLength(50) },
-                new RowDefinition { Height = new GridLength(50) },
-                new RowDefinition { Height = new GridLength(50) },
-                new RowDefinition { Height = new GridLength(50) },
-                new RowDefinition { Height = new GridLength(50) },
-                new RowDefinition { Height = new GridLength(50) },
-                new RowDefinition { Height = new GridLength(50) },
                 new RowDefinition { Height = new GridLength(50) },
             }
         };
@@ -94,7 +82,7 @@ public partial class CompetitionPage : ContentPage {
             HorizontalOptions = LayoutOptions.Center,
             VerticalOptions = LayoutOptions.Center
         };
-        _startRace.Clicked += (sender, args) => RaceStart();
+        _startRace.Clicked += (_,_) => RaceStart();
 
         //The page
         Title = "Competition";
@@ -157,7 +145,9 @@ public partial class CompetitionPage : ContentPage {
         //Get the list sorted by points using lambda
         int posDriver = 1;
         IOrderedEnumerable<IParticipant> drivers = Data.currentCompetition.Participants.OrderByDescending(x => x.Points);
-        foreach (IParticipant driver in drivers) {
+        foreach (IParticipant driver in drivers)
+        {
+            _grid.RowDefinitions.Add(new RowDefinition { Height = new GridLength(25)});
             _grid.Add(new Label {
                 Text = (posDriver).ToString(),
                 FontSize = 20,

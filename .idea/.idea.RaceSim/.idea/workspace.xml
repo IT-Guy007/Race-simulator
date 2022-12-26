@@ -14,19 +14,7 @@
     <list default="true" id="74749e98-3fd5-4128-88ab-bc8cb0b9c985" name="Changes" comment="Bug fix of images">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.RaceSim/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.RaceSim/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.vs/RaceSim/xs/UserPrefs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.vs/RaceSim/xs/UserPrefs.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.vs/RaceSim/xs/project-cache/Controller-Debug.json" beforeDir="false" afterPath="$PROJECT_DIR$/.vs/RaceSim/xs/project-cache/Controller-Debug.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.vs/RaceSim/xs/project-cache/ControllerTest-Debug.json" beforeDir="false" afterPath="$PROJECT_DIR$/.vs/RaceSim/xs/project-cache/ControllerTest-Debug.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.vs/RaceSim/xs/project-cache/Model-Debug.json" beforeDir="false" afterPath="$PROJECT_DIR$/.vs/RaceSim/xs/project-cache/Model-Debug.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.vs/RaceSim/xs/project-cache/RaceSimulator-Debug-net6.0-android.json" beforeDir="false" afterPath="$PROJECT_DIR$/.vs/RaceSim/xs/project-cache/RaceSimulator-Debug-net6.0-android.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.vs/RaceSim/xs/project-cache/RaceSimulator-Debug-net6.0-ios.json" beforeDir="false" afterPath="$PROJECT_DIR$/.vs/RaceSim/xs/project-cache/RaceSimulator-Debug-net6.0-ios.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.vs/RaceSim/xs/project-cache/RaceSimulator-Debug-net6.0-maccatalyst.json" beforeDir="false" afterPath="$PROJECT_DIR$/.vs/RaceSim/xs/project-cache/RaceSimulator-Debug-net6.0-maccatalyst.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Model/Model/Competition.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Model/Model/Competition.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/RaceSimulator/CompetitionPage.xaml" beforeDir="false" afterPath="$PROJECT_DIR$/RaceSimulator/CompetitionPage.xaml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/RaceSimulator/CompetitionPage.xaml.cs" beforeDir="false" afterPath="$PROJECT_DIR$/RaceSimulator/CompetitionPage.xaml.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/RaceSimulator/Image.cs" beforeDir="false" afterPath="$PROJECT_DIR$/RaceSimulator/Image.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/RaceSimulator/RaceSimulator.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/RaceSimulator/RaceSimulator.csproj" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/RaceSimulator/RaceSimulator.xaml.cs" beforeDir="false" afterPath="$PROJECT_DIR$/RaceSimulator/RaceSimulator.xaml.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/RaceSimulator/RaceStatisticsPage.xaml" beforeDir="false" afterPath="$PROJECT_DIR$/RaceSimulator/RaceStatisticsPage.xaml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/RaceSimulator/RaceStatisticsPage.xaml.cs" beforeDir="false" afterPath="$PROJECT_DIR$/RaceSimulator/RaceStatisticsPage.xaml.cs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -177,7 +165,11 @@
       <workItem from="1671656028973" duration="228000" />
       <workItem from="1671656359337" duration="50000" />
       <workItem from="1671656424494" duration="768000" />
-      <workItem from="1671657612749" duration="3146000" />
+      <workItem from="1671657612749" duration="3842000" />
+      <workItem from="1671716539846" duration="962000" />
+      <workItem from="1671721686100" duration="33000" />
+      <workItem from="1671724581849" duration="46000" />
+      <workItem from="1672059029383" duration="1792000" />
     </task>
     <task id="LOCAL-00001" summary="Bug fix of images">
       <created>1667828032411</created>
