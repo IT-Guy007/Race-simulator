@@ -14,8 +14,15 @@
     <list default="true" id="74749e98-3fd5-4128-88ab-bc8cb0b9c985" name="Changes" comment="Bug fix of images">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.RaceSim/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.RaceSim/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.vs/RaceSim/xs/UserPrefs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.vs/RaceSim/xs/UserPrefs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Console/Visualisation.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Console/Visualisation.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Console/program.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Console/program.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Controller/Data.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Controller/Data.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/RaceSimulator/CompetitionPage.xaml.cs" beforeDir="false" afterPath="$PROJECT_DIR$/RaceSimulator/CompetitionPage.xaml.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/RaceSimulator/RaceStatisticsPage.xaml.cs" beforeDir="false" afterPath="$PROJECT_DIR$/RaceSimulator/RaceStatisticsPage.xaml.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/RaceSimulator/Image.cs" beforeDir="false" afterPath="$PROJECT_DIR$/RaceSimulator/Image.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/RaceSimulator/RaceSimulator.xaml.cs" beforeDir="false" afterPath="$PROJECT_DIR$/RaceSimulator/RaceSimulator.xaml.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/RaceSimulator/Resources/Images/car.png" beforeDir="false" afterPath="$PROJECT_DIR$/RaceSimulator/Resources/Images/car.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/RaceSimulator/Resources/Images/car_red.png" beforeDir="false" afterPath="$PROJECT_DIR$/RaceSimulator/Resources/Images/car_red.png" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -66,7 +73,7 @@
     ]
   }
 }</component>
-  <component name="RunManager" selected="Xamarin.Mac.RaceSimulator">
+  <component name="RunManager" selected=".NET Project.Console">
     <configuration name="RaceSimulator: FolderProfile net6.0-maccatalyst" type="DotNetMsBuildPublish" factoryName="Publish to IIS">
       <riderPublish configuration="Release" platform="Any CPU" pubxml_path="$PROJECT_DIR$/RaceSimulator/Properties/PublishProfiles/FolderProfile net6.0-maccatalyst.pubxml" />
       <method v="2" />
@@ -169,7 +176,10 @@
       <workItem from="1671716539846" duration="962000" />
       <workItem from="1671721686100" duration="33000" />
       <workItem from="1671724581849" duration="46000" />
-      <workItem from="1672059029383" duration="1792000" />
+      <workItem from="1672059029383" duration="8740000" />
+      <workItem from="1672144049005" duration="1071000" />
+      <workItem from="1672149475971" duration="2440000" />
+      <workItem from="1672151943551" duration="1344000" />
     </task>
     <task id="LOCAL-00001" summary="Bug fix of images">
       <created>1667828032411</created>

@@ -1,25 +1,17 @@
 ﻿<Properties StartupConfiguration="{932F66C7-9C27-4FD1-AE52-193F3770E3FA}|Default">
-  <MonoDevelop.Ide.ItemProperties.RaceSim PreferredExecutionTarget="MonoDevelop.Default" />
-  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
-  <Xamarin.Addins.Core.Project ActiveDebugTarget="MyAppleMacCatalystID" />
-  <MonoDevelop.Ide.ItemProperties.Console PreferredExecutionTarget="MonoDevelop.Default" />
-  <MonoDevelop.Ide.DebuggingService.Breakpoints>
-    <BreakpointStore />
-  </MonoDevelop.Ide.DebuggingService.Breakpoints>
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
-  <MultiItemStartupConfigurations>
-    <MultiItemSolutionRunConfiguration Id="RaceSim" Name="RaceSim">
-      <Items>
-        <StartupItem ItemId="{08647694-615E-4FB1-875F-F2DC759CF411}" ItemName="RaceSim" ConfigurationId="Default" />
-      </Items>
-    </MultiItemSolutionRunConfiguration>
-  </MultiItemStartupConfigurations>
   <MonoDevelop.Ide.ItemProperties.RaceSimulator PreferredExecutionTarget="MyAppleMacCatalystID" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="RaceSimulator/RaceSimulator.xaml.cs">
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore>
+      <Breakpoint file="/Users/jeroendenotter/Documents/6. GitHub/Race-simulator/RaceSimulator/RaceSimulator.xaml.cs" relfile="RaceSimulator/RaceSimulator.xaml.cs" line="55" column="1" />
+    </BreakpointStore>
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MonoDevelop.Ide.ItemProperties.RaceSim PreferredExecutionTarget="MonoDevelop.Default" />
+  <MonoDevelop.Ide.Workbench ActiveDocument="RaceSimulator/Image.cs">
     <Files>
-      <File FileName="RaceSimulator/CompetitionPage.xaml.cs" Line="314" Column="1" />
-      <File FileName="RaceSimulator/RaceSimulator.xaml.cs" Line="35" Column="2" />
-      <File FileName="RaceSimulator/RaceStatisticsPage.xaml.cs" Line="79" Column="1" />
+      <File FileName="RaceSimulator/RaceSimulator.xaml.cs" Line="58" Column="25" />
+      <File FileName="RaceSimulator/Image.cs" Line="5" Column="1" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
@@ -29,7 +21,7 @@
               <Node name="Platforms" expanded="True">
                 <Node name="MacCatalyst" expanded="True" />
               </Node>
-              <Node name="CompetitionPage.xaml" expanded="True" />
+              <Node name="Image.cs" selected="True" />
               <Node name="RaceSimulator.xaml" expanded="True" />
               <Node name="RaceStatisticsPage.xaml" expanded="True" />
             </Node>
@@ -38,4 +30,13 @@
       </Pad>
     </Pads>
   </MonoDevelop.Ide.Workbench>
+  <MultiItemStartupConfigurations>
+    <MultiItemSolutionRunConfiguration Id="RaceSim" Name="RaceSim">
+      <Items>
+        <StartupItem ItemId="{08647694-615E-4FB1-875F-F2DC759CF411}" ItemName="RaceSim" ConfigurationId="Default" />
+      </Items>
+    </MultiItemSolutionRunConfiguration>
+  </MultiItemStartupConfigurations>
+  <MonoDevelop.Ide.ItemProperties.Console PreferredExecutionTarget="MonoDevelop.Default" />
+  <Xamarin.Addins.Core.Project ActiveDebugTarget="MyAppleMacCatalystID" />
 </Properties>

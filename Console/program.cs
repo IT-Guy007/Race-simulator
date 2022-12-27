@@ -1,5 +1,4 @@
 ﻿using Controller;
-using Model;
 using RaceSim;
 
 public class Program {
@@ -15,5 +14,5 @@ public class Program {
         
         while (Data.currentRace.Participants.Count > 0) { for (;;) { } }
     }
-    
+
 }

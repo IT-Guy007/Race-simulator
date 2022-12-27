@@ -1,113 +1,101 @@
-using System.Drawing.Imaging;
-using Controller;
 using Model;
 
 namespace MAUI;
-#pragma warning disable CA1416
 public static class Images {
-    private static int xSize = 0;
-    private static int ySize = 0;
-    private static Direction direction = Data.currentRace.Track.startDirection;
 
-
-    private static void startImage(Track track) {
-        int x = 5;
-        int y = 5;
-        
-        int xSize;
-        int ySize;
-        int xMax = x;
-        int yMax = y;
-        int xMin = x;
-        int yMin = y;
-        
-        foreach (var varSection in track.Sections) {
-            setDirection(varSection);
-
-            switch (direction)
-            {
-                case Direction.North:
-                    y--;
-                    break;
-                case Direction.East:
-                    x++;
-                    break;
-                case Direction.South:
-                    y++;
-                    break;
-                case Direction.West:
-                    x--;
-                    break;
-            }
-
-            if (x > xMax)
-            {
-                xMax = x;
-            }
-
-            if (y > yMax)
-            {
-                yMax = y;
-            }
-
-            if (x < xMin)
-            {
-                xMin = x;
-            }
-
-            if (y < yMin)
-            {
-                yMin = y;
-            }
-        }
-
-        xSize = xMax - xMin + 1;
-        ySize = yMax - yMin + 1;
-    }
+    //Cars
+    private const string CarBlue = "car_blue.png";
+    private const string CarGreen = "car_green.png";
+    private const string CarOrange = "car_orange.png";
+    private const string CarRed = "car_red.png";
+    private const string CarYellow = "car_yellow.png";
+    private const string CarDarkblue = "car_darkblue.png";
     
-    private static void setDirection(Section section)
-    {
-        switch (section.sectionType)
-        {
+    //Corners
+    private const string CornerEastToNorth = "cornereasttonorth.jpeg";
+    private const string CornerEastToSouth = "cornereasttosouth.jpeg";
+    private const string CornerWestToNorth = "cornerwesttonorth.jpeg";
+    private const string CornerWestToSouth = "cornerwesttosouth.jpeg";
+    
+    //Finishes
+    private const string Finish= "finish.png";
+    private const string FinishUp = "finish_up.png";
+
+    //Start
+    private const string Start = "start.png";
+    private const string StartUp = "start_up.png";
+    
+    //Straight
+    private const string Straight = "straight.jpeg";
+    private const string StraightUp = "straight_up.jpeg";
+
+    public static ImageSource GetImageSource(Section section, Direction direction) {
+        switch (section.sectionType) {
+            case SectionTypes.Straight:
+                switch(direction) {
+                    case Direction.North:
+                        return ImageSource.FromFile(Straight);
+                    case Direction.South:
+                        return ImageSource.FromFile(Straight);
+                    case Direction.East:
+                        return ImageSource.FromFile(StraightUp);
+                    case Direction.West:
+                        return ImageSource.FromFile(StraightUp);
+                }
+                break;
 
             case SectionTypes.LeftCorner:
-                if (direction == Direction.North)
-                {
-                    direction = Direction.West;
+                switch(direction) {
+                    case Direction.North:
+                        return ImageSource.FromFile(CornerWestToSouth);
+                    case Direction.South:
+                        return ImageSource.FromFile(CornerEastToNorth);
+                    case Direction.East:
+                        return ImageSource.FromFile(CornerWestToNorth);
+                    case Direction.West:
+                        return ImageSource.FromFile(CornerEastToSouth);
                 }
-                else if (direction == Direction.East)
-                {
-                    direction = Direction.North;
-                }
-                else if (direction == Direction.South)
-                {
-                    direction = Direction.East;
-                }
-                else if (direction == Direction.West)
-                {
-                    direction = Direction.South;
-                }
-
                 break;
+            
             case SectionTypes.RightCorner:
-                if (direction == Direction.North)
-                {
-                    direction = Direction.East;
+                switch(direction) {
+                    case Direction.North:
+                        return ImageSource.FromFile(CornerEastToSouth);
+                    case Direction.South:
+                        return ImageSource.FromFile(CornerWestToNorth);
+                    case Direction.East:
+                        return ImageSource.FromFile(CornerWestToSouth);
+                    case Direction.West:
+                        return ImageSource.FromFile(CornerEastToNorth);
                 }
-                else if (direction == Direction.East)
-                {
-                    direction = Direction.South;
+                break;
+            case SectionTypes.StartGrid:
+                switch(direction) {
+                    case Direction.North:
+                        return ImageSource.FromFile(StartUp);
+                    case Direction.South:
+                        return ImageSource.FromFile(StartUp);
+                    case Direction.East:
+                        return ImageSource.FromFile(Start);
+                    case Direction.West:
+                        return ImageSource.FromFile(Start);
                 }
-                else if (direction == Direction.South)
-                {
-                    direction = Direction.West;
-                }
-                else if (direction == Direction.West)
-                {
-                    direction = Direction.North;
-                }
+                break;
 
+            case SectionTypes.Finish:
+                switch(direction) {
+                    case Direction.North:
+                        return ImageSource.FromFile(Finish);
+                    case Direction.South:
+                        return ImageSource.FromFile(Finish);
+                    case Direction.East:
+                        return ImageSource.FromFile(FinishUp);
+                    case Direction.West:
+                        return ImageSource.FromFile(FinishUp);
+                }
                 break;
         }
+
+        return ImageSource.FromFile(StraightUp);
     }
 }

@@ -4,29 +4,25 @@ using Spectre.Console;
 
 namespace RaceSim;
 
-public static class Visualisation
-{
+public static class Visualisation {
 
     private static int tileSize;
     private static Table table;
     private static Canvas canvas;
     private static Direction direction;
 
-    public static void Initialize()
-    {
+    public static void Initialize() {
         direction = Data.currentRace.Track.startDirection;
         tileSize = Straight.Length; //Which is always 7
         table = new Table();
     }
 
     //Events
-    public static void DriversChanged(object sender, DriversChanged e)
-    {
+    public static void DriversChanged(object? sender, DriversChanged e) {
         DrawTrack();
     }
 
-    public static void DrawTrack()
-    {
+    private static void DrawTrack() {
         //Start position
         int x = 5;
         int y = 5;
@@ -40,12 +36,10 @@ public static class Visualisation
         int yMin = y;
 
         //Calculate canvas size
-        foreach (var varSection in Data.currentRace.Track.Sections)
-        {
-            setDirection(varSection);
+        foreach (var varSection in Data.currentRace.Track.Sections) {
+            direction = SetDirection(varSection);
 
-            switch (direction)
-            {
+            switch (direction) {
                 case Direction.North:
                     y--;
                     break;
@@ -60,18 +54,15 @@ public static class Visualisation
                     break;
             }
 
-            if (x > xMax)
-            {
+            if (x > xMax) {
                 xMax = x;
             }
 
-            if (y > yMax)
-            {
+            if (y > yMax) {
                 yMax = y;
             }
 
-            if (x < xMin)
-            {
+            if (x < xMin) {
                 xMin = x;
             }
 
@@ -85,28 +76,25 @@ public static class Visualisation
         ySize = yMax - yMin + 1;
 
         //Create canvas
-        canvas = new Canvas(xSize * tileSize, ySize * tileSize);
-        canvas.Scale = false;
+        canvas = new Canvas(xSize * tileSize, ySize * tileSize) {
+            Scale = false
+        };
         direction = Data.currentRace.Track.startDirection;
         x = 5 - xMin;
         y = 5 - yMin;
 
         //Background
-        for (int i = 0; i < xSize * tileSize; i++)
-        {
-            for (int j = 0; j < ySize * tileSize; j++)
-            {
+        for (int i = 0; i < xSize * tileSize; i++) {
+            for (int j = 0; j < ySize * tileSize; j++) {
                 canvas.SetPixel(i, j, Data.currentRace.Track.backgroundColorSpectre);
             }
         }
 
         //Draw tiles
-        foreach (Section section in Data.currentRace.Track.Sections)
-        {
+        foreach (Section section in Data.currentRace.Track.Sections) {
             DrawSection(section, x, y);
 
-            switch (direction)
-            {
+            switch (direction) {
                 case Direction.North:
                     y--;
                     break;
@@ -121,157 +109,121 @@ public static class Visualisation
                     break;
             }
         }
-        /*
-        //Write screen
-        //TABLES DON'T WORK, MAYBLE LATER
+
+        //Write console
+        
         AnsiConsole.Clear();
-        table.RoundedBorder();
-        table.Alignment(Justify.Left);
-        
-        //Create row data
-        string positions = "1\n2\n3\n4\n5\n6\n7\n8";
-        string participants = "";
-        foreach (var driver in Data.currentRace.Participants) {
-           participants = participants + (driver.DriverNumber + " " + driver.Name + "\n");
-        }
-        
-        //Create column
-        table.Title("Track: " + Data.currentRace.Track.name);
-        table.AddColumn("Laps: " + Data.currentRace.Track.laps).Centered();
-        table.AddColumn(new TableColumn("Position").Centered());
-        table.AddColumn(new TableColumn("Racers").Alignment(Justify.Left));
-
-        // Create row
-        table.AddRow(canvas);
-        table.AddRow(canvas,positions, participants);
-
-        //Print to console
         AnsiConsole.Write(canvas);
-        */
+        
     }
 
-    public static void DrawSection(Section section, int x, int y)
-    {
+    private static void DrawSection(Section section, int x, int y) {
 
         string[] tile = new string[tileSize];
 
         //Get graphic for section
-        switch (section.sectionType)
-        {
+        switch (section.sectionType) {
             case SectionTypes.Straight:
-                if (direction == Direction.North)
-                {
-                    tile = StraightUp;
+                switch(direction) {
+                    case Direction.North:
+                        tile = StraightUp;
+                        break;
+                    case Direction.South:
+                        tile = StraightUp;
+                        break;
+                    case Direction.East:
+                        tile = Straight;
+                        break;
+                    case Direction.West:
+                        tile = Straight;
+                        break;
                 }
-                else if (direction == Direction.West)
-                {
-                    tile = Straight;
-                }
-                else if (direction == Direction.South)
-                {
-                    tile = StraightUp;
-                }
-                else if (direction == Direction.East)
-                {
-                    tile = Straight;
-                }
-
                 break;
+            
             case SectionTypes.LeftCorner:
-                if (direction == Direction.North)
-                {
-                    tile = CornerWestToSouth;
-                    direction = Direction.West;
+                switch (direction) {
+                    case Direction.North:
+                        tile = CornerWestToSouth;
+                        direction = Direction.West;
+                        break;
+                    case Direction.South:
+                        tile = CornerEastToNorth;
+                        direction = Direction.East;
+                        break;
+                    case Direction.East:
+                        tile = CornerWestToNorth;
+                        direction = Direction.North;
+                        break;
+                    case Direction.West:
+                        tile = CornerEastToSouth;
+                        direction = Direction.South;
+                        break;
                 }
-                else if (direction == Direction.West)
-                {
-                    tile = CornerEastToSouth;
-                    direction = Direction.South;
-                }
-                else if (direction == Direction.South)
-                {
-                    tile = CornerEastToNorth;
-                    direction = Direction.East;
-                }
-                else if (direction == Direction.East)
-                {
-                    tile = CornerWestToNorth;
-                    direction = Direction.North;
-                }
-
                 break;
+            
             case SectionTypes.RightCorner:
-                if (direction == Direction.North)
-                {
-                    tile = CornerEastToSouth;
-                    direction = Direction.East;
+                switch (direction) {
+                    case Direction.North:
+                        tile = CornerEastToSouth;
+                        direction = Direction.East;
+                        break;
+                    case Direction.South:
+                        tile = CornerWestToNorth;
+                        direction = Direction.West;
+                        break;
+                    case Direction.East:
+                        tile = CornerWestToSouth;
+                        direction = Direction.South;
+                        break;
+                    case Direction.West:
+                        tile = CornerEastToNorth;
+                        direction = Direction.North;
+                        break;
                 }
-                else if (direction == Direction.West)
-                {
-                    tile = CornerEastToNorth;
-                    direction = Direction.North;
-                }
-                else if (direction == Direction.South)
-                {
-                    tile = CornerWestToNorth;
-                    direction = Direction.West;
-                }
-                else if (direction == Direction.East)
-                {
-                    tile = CornerWestToSouth;
-                    direction = Direction.South;
-                }
-
                 break;
+            
             case SectionTypes.StartGrid:
-                if (direction == Direction.North)
-                {
-                    tile = StartUp;
+                switch (direction) {
+                    case Direction.North:
+                        tile = StartUp;
+                        break;
+                    case Direction.South:
+                        tile = StartUp;
+                        break;
+                    case Direction.East:
+                        tile = Start;
+                        break;
+                    case Direction.West:
+                        tile = Start;
+                        break;
                 }
-                else if (direction == Direction.West)
-                {
-                    tile = Start;
-                }
-                else if (direction == Direction.South)
-                {
-                    tile = StartUp;
-                }
-                else if (direction == Direction.East)
-                {
-                    tile = Start;
-                }
-
                 break;
+            
             case SectionTypes.Finish:
-                if (direction == Direction.North)
-                {
-                    tile = FinishUp;
+                switch (direction) {
+                    case Direction.North:
+                        tile = FinishUp;
+                        break;
+                    case Direction.South:
+                        tile = FinishUp;
+                        break;
+                    case Direction.East:
+                        tile = Finish;
+                        break;
+                    case Direction.West:
+                        tile = Finish;;
+                        break;
                 }
-                else if (direction == Direction.West)
-                {
-                    tile = Finish;
-                }
-                else if (direction == Direction.South)
-                {
-                    tile = FinishUp;
-                }
-                else if (direction == Direction.East)
-                {
-                    tile = Finish;
-                }
-
                 break;
         }
 
         //Add drivers to it
-        tile = addDrivers(tile, Data.currentRace.Positions[section].Left,
+        tile = AddDrivers(tile, Data.currentRace.Positions[section].Left,
             Data.currentRace.Positions[section].Right);
 
         //Draw the tile
-        for (int i = 0; i < tile.Length; i++)
-        {
-            for (int j = 0; j < tile[i].Length; j++)
-            {
+        for (int i = 0; i < tile.Length; i++) {
+            for (int j = 0; j < tile[i].Length; j++) {
                 int piX = x * tileSize + j;
                 int pixY = y * tileSize + i;
 
@@ -279,8 +231,7 @@ public static class Visualisation
                 Color color = Color.Black;
 
                 //Set color for tile
-                switch (singleTile)
-                {
+                switch (singleTile) {
                     //Track items
 
                     //Side of the track
@@ -371,90 +322,67 @@ public static class Visualisation
     }
 
     //Set new direction for next section
-    private static void setDirection(Section section)
-    {
-        switch (section.sectionType)
-        {
+    private static Direction SetDirection(Section section) {
+        switch (section.sectionType) {
 
             case SectionTypes.LeftCorner:
-                if (direction == Direction.North)
-                {
-                    direction = Direction.West;
-                }
-                else if (direction == Direction.East)
-                {
-                    direction = Direction.North;
-                }
-                else if (direction == Direction.South)
-                {
-                    direction = Direction.East;
-                }
-                else if (direction == Direction.West)
-                {
-                    direction = Direction.South;
+                switch(direction) {
+                    case Direction.North:
+                        return Direction.West;
+                    case Direction.East:
+                        return Direction.North;
+                    case Direction.South:
+                        return Direction.East;
+                    case Direction.West:
+                        return Direction.South;
                 }
 
                 break;
             case SectionTypes.RightCorner:
-                if (direction == Direction.North)
-                {
-                    direction = Direction.East;
+                switch (direction) {
+                    case Direction.North:
+                        return Direction.East;
+                    case Direction.East:
+                        return Direction.South;
+                    case Direction.South:
+                        return Direction.West;
+                    case Direction.West:
+                        return Direction.North;
                 }
-                else if (direction == Direction.East)
-                {
-                    direction = Direction.South;
-                }
-                else if (direction == Direction.South)
-                {
-                    direction = Direction.West;
-                }
-                else if (direction == Direction.West)
-                {
-                    direction = Direction.North;
-                }
-
                 break;
         }
+
+        return direction;
     }
 
     //Add drivers to section
-    private static string[] addDrivers(string[] givenSize, IParticipant driverLeft, IParticipant driverRight)
-    {
+    private static string[] AddDrivers(string[] givenSize, IParticipant driverLeft, IParticipant driverRight) {
 
         string[] tile = new string[givenSize.Length];
 
         givenSize.CopyTo(tile, 0);
 
-        for (int i = 0; i < tile.Length; i++)
-        {
+        for (int i = 0; i < tile.Length; i++) {
             string line = tile[i];
 
-            if (driverLeft != null)
-            {
-                if (!driverLeft.Equipment.IsBroken)
-                {
+            if (driverLeft != null) {
+                if (!driverLeft.Equipment.IsBroken) {
                     line = line.Replace('1', TeamColorToChar(driverLeft.TeamColor));
                     line = line.Replace('3', TeamColorToChar(driverLeft.TeamColor));
                     line = line.Replace('5', TeamColorToChar(driverLeft.TeamColor));
                     line = line.Replace('7', TeamColorToChar(driverLeft.TeamColor));
-                }
-                else
-                {
+                } else {
                     line = line.Replace('1', '#');
                 }
             }
 
-            if (driverRight != null)
-            {
-                if (!driverRight.Equipment.IsBroken)
-                {
+            if (driverRight != null) {
+                if (!driverRight.Equipment.IsBroken) {
                     line = line.Replace('2', TeamColorToChar(driverRight.TeamColor));
                     line = line.Replace('4', TeamColorToChar(driverRight.TeamColor));
                     line = line.Replace('6', TeamColorToChar(driverRight.TeamColor));
                     line = line.Replace('8', TeamColorToChar(driverRight.TeamColor));
-                }
-                else
-                {
+                } else {
                     line = line.Replace('2', '#');
                 }
             }
@@ -469,8 +397,7 @@ public static class Visualisation
 
     // Create the trackTypes
 
-    private static string[] Straight =
-    {
+    private static readonly string[] Straight = {
         "║║║║║║║",
         "       ",
         "   2   ",
@@ -481,8 +408,7 @@ public static class Visualisation
 
     };
 
-    private static string[] StraightUp =
-    {
+    private static readonly string[] StraightUp = {
         "║     ║",
         "║     ║",
         "║     ║",
@@ -493,8 +419,7 @@ public static class Visualisation
 
     };
 
-    private static string[] Finish =
-    {
+    private static readonly string[] Finish = {
         "║║║║║║║",
         "     f-",
         "   1 -f",
@@ -505,8 +430,7 @@ public static class Visualisation
 
     };
 
-    private static string[] FinishUp =
-    {
+    private static readonly string[] FinishUp = {
         "║     ║",
         "║     ║",
         "║     ║",
@@ -517,8 +441,7 @@ public static class Visualisation
 
     };
 
-    private static string[] Start =
-    {
+    private static readonly string[] Start = {
         "║║║║║║║",
         "       ",
         "B D F H",
@@ -529,8 +452,7 @@ public static class Visualisation
 
     };
 
-    private static string[] StartUp =
-    {
+    private static readonly string[] StartUp = {
         "║ A B ║",
         "║     ║",
         "║ C D ║",
@@ -541,8 +463,7 @@ public static class Visualisation
 
     };
 
-    private static string[] CornerWestToNorth =
-    {
+    private static readonly string[] CornerWestToNorth = {
         "║     ║",
         "      ═",
         "  1   ║",
@@ -553,8 +474,7 @@ public static class Visualisation
 
     };
 
-    private static string[] CornerWestToSouth =
-    {
+    private static readonly string[] CornerWestToSouth = {
         "║═║═║═║",
         "      ═",
         "   2  ║",
@@ -565,8 +485,7 @@ public static class Visualisation
 
     };
 
-    private static string[] CornerEastToSouth =
-    {
+    private static readonly string[] CornerEastToSouth = {
         "║═║═║═║",
         "═      ",
         "║  2   ",
@@ -577,8 +496,7 @@ public static class Visualisation
 
     };
 
-    private static string[] CornerEastToNorth =
-    {
+    private static readonly string[] CornerEastToNorth = {
         "║     ║",
         "═      ",
         "║   1  ",
@@ -591,33 +509,24 @@ public static class Visualisation
 
     #endregion
 
-    private static char TeamColorToChar(TeamColors teamColor)
-    {
-        switch (teamColor)
-        {
-            case TeamColors.Red:
-                return 'r';
-            case TeamColors.Blue:
-                return 'b';
-            case TeamColors.Green:
-                return 'g';
-            case TeamColors.Yellow:
-                return 'y';
-            case TeamColors.Orange:
-                return 'o';
-            case TeamColors.Grey:
-                return 'h';
-            default:
-                return ' ';
-        }
+    private static char TeamColorToChar(TeamColors teamColor) {
+        return teamColor switch {
+            TeamColors.Red => 'r',
+            TeamColors.Blue => 'b',
+            TeamColors.Green => 'g',
+            TeamColors.Yellow => 'y',
+            TeamColors.Orange => 'o',
+            TeamColors.Grey => 'h',
+            _ => ' '
+        };
     }
 
     //Race ended, start new race if exists
-    public static void RaceEnded(object sender, EventArgs eventArgs)
-    {
+    public static void RaceEnded(object? sender, EventArgs eventArgs) {
         Data.NextRace();
-        Data.currentRace.DriversChanged += Visualisation.DriversChanged;
+        Data.currentRace.DriversChanged += DriversChanged;
         Data.currentRace.RaceEnded += RaceEnded;
-        Visualisation.Initialize();
+        Initialize();
     }
 }
+    

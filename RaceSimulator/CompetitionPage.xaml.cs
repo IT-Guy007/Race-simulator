@@ -83,6 +83,7 @@ public partial class CompetitionPage : ContentPage {
             VerticalOptions = LayoutOptions.Center
         };
         _startRace.Clicked += (_,_) => RaceStart();
+        _startRace.Clicked += (_,_) => _startRace.Text = "In progress";
 
         //The page
         Title = "Competition";
@@ -218,8 +219,7 @@ public partial class CompetitionPage : ContentPage {
                 Padding = new Thickness(10,10,10,10)
             }, 0, i);
 
-            if (i == tracksDone)
-            {
+            if (i == tracksDone) {
                 _racesGrid.Add(new Label {
                     Text = "In progress",
                     TextColor = Colors.Orange,

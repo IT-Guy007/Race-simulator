@@ -7,6 +7,7 @@ public static class Data {
 
     public static Competition currentCompetition { get; set; }
     public static Race currentRace { get; set; }
+    private static Direction direction;
 
     public static void Initialize() {
         currentCompetition = new Competition();
@@ -190,7 +191,7 @@ public static class Data {
         currentCompetition.Tracks.Enqueue(new Track("Square", createSections(squareSections),Direction.East,1, Spectre.Console.Color.DarkSlateGray1, Microsoft.Maui.Graphics.Color.FromArgb("#2F4F4F")));
     }
 
-    public static LinkedList<Section> createSections(SectionTypes[] trackSections) {
+    private static LinkedList<Section> createSections(SectionTypes[] trackSections) {
         LinkedList<Section> sectionList = new LinkedList<Section>();
 
         for (int i = 0; i != trackSections.Length; i++)
@@ -201,5 +202,94 @@ public static class Data {
         return sectionList;
 
     }
+
+    public static int[] calculateCanvas() {
+        //Start position
+        int x = 5;
+        int y = 5;
+        
+        //Canvas
+        int xSize = 0;
+        int ySize = 0;
+        int xMax = x;
+        int yMax = y;
+        int xMin = x;
+        int yMin = y;
+        //Calculate canvas size
+        foreach (var varSection in currentRace.Track.Sections) {
+            SetDirection(varSection);
+
+            switch (direction) {
+                case Direction.North:
+                    y--;
+                    break;
+                case Direction.East:
+                    x++;
+                    break;
+                case Direction.South:
+                    y++;
+                    break;
+                case Direction.West:
+                    x--;
+                    break;
+            }
+
+            if (x > xMax) {
+                xMax = x;
+            }
+
+            if (y > yMax) {
+                yMax = y;
+            }
+
+            if (x < xMin) {
+                xMin = x;
+            }
+
+            if (y < yMin) {
+                yMin = y;
+            }
+        }
+        
+        xSize = xMax - xMin + 1;
+        ySize = yMax - yMin + 1;
+        int[] result = {xSize,ySize,xMin,yMin,x,y};
+        return result;
+    }
+    
+    //Set new direction for next section
+    public static Direction SetDirection(Section section) {
+        switch (section.sectionType) {
+
+            case SectionTypes.LeftCorner:
+                switch(direction) {
+                    case Direction.North:
+                        return Direction.West;
+                    case Direction.East:
+                        return Direction.North;
+                    case Direction.South:
+                        return Direction.East;
+                    case Direction.West:
+                        return Direction.South;
+                }
+
+                break;
+            case SectionTypes.RightCorner:
+                switch (direction) {
+                    case Direction.North:
+                        return Direction.East;
+                    case Direction.East:
+                        return Direction.South;
+                    case Direction.South:
+                        return Direction.West;
+                    case Direction.West:
+                        return Direction.North;
+                }
+                break;
+        }
+
+        return direction;
+    }
+    
 }
 
