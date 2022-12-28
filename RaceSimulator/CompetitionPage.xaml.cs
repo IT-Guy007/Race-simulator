@@ -306,13 +306,6 @@ public partial class CompetitionPage : ContentPage {
         Window raceWindow = new Window(raceSimulator);
         Application.Current?.OpenWindow(raceWindow);
         Navigation.PushAsync(new RaceStatisticsPage());
-        Data.currentRace.DriversChanged += DriversChangedPlace;
     }
-
-    //Change places in the standings
-    private void DriversChangedPlace(object sender, EventArgs eventArgs) {
-        
-    }
-    
 
 }

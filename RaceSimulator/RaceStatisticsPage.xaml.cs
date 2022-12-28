@@ -99,19 +99,7 @@ public partial class RaceStatisticsPage : ContentPage {
             HorizontalOptions = LayoutOptions.Center,
             VerticalOptions = LayoutOptions.Center
         }, 5, 0);
-        
-        //Numbers
-        /*
-        for (int i = 0; i != 8; i++) {
-            grid.Add(new Label {
-                Text = (i + 1).ToString(),
-                FontSize = 20,
-                HorizontalOptions = LayoutOptions.Center,
-                VerticalOptions = LayoutOptions.Center
-            }, 0, i + 1);
-        }
-        */
-        
+
         //Drivers
         for(int i = 0; i != Controller.Data.currentCompetition.Participants.Count; i++) {
             grid.RowDefinitions.Add(new RowDefinition());

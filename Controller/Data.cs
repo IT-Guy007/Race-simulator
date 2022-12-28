@@ -19,12 +19,12 @@ public static class Data {
         currentCompetition.Participants = new List<IParticipant>();
         AddDriver("Max Verstappen", TeamColors.Yellow, 01, new Car(80, 80, 80, false));
         AddDriver("Sergio Perez", TeamColors.Yellow, 33, new Car(80, 80, 80, false));
-        AddDriver("Charles Lecrerc", TeamColors.Red, 16, new Car(80, 80, 80, false));
+        AddDriver("Charles Leclerc", TeamColors.Red, 16, new Car(80, 80, 80, false));
         AddDriver("Carlos Sainz", TeamColors.Red, 55, new Car(80, 80, 80, false));
         AddDriver("Lewis Hamilton", TeamColors.Grey, 44, new Car(80, 80, 80, false));
         AddDriver("George Russell", TeamColors.Grey, 63, new Car(80, 80, 80, false));
         AddDriver("Lando Norris", TeamColors.Orange, 04, new Car(80, 80, 80, false));
-        AddDriver("Daniel Ricciardo", TeamColors.Orange, 03, new Car(80, 80, 80, false));
+        AddDriver("Daniel Riccardo", TeamColors.Orange, 03, new Car(80, 80, 80, false));
     }
 
     public static void NextRace() {
@@ -34,7 +34,7 @@ public static class Data {
             } else {
                 currentRace?.Stop();
                 currentRace = new Race(currentCompetition.Tracks.Dequeue(), currentCompetition.Participants);
-                currentRace.PlaceDriversInQue();
+                currentRace.PlaceDriversOnTrack();
                 currentRace.RandomEquipment();
                 currentRace.Start();
             }
@@ -47,7 +47,6 @@ public static class Data {
 
     private static void AddTracks() {
         SectionTypes[] zandvoortSections = {
-            SectionTypes.StartGrid,
             SectionTypes.Finish,
             SectionTypes.RightCorner,
             SectionTypes.Straight,
@@ -108,10 +107,10 @@ public static class Data {
             SectionTypes.Straight,
             SectionTypes.Straight,
             SectionTypes.Straight,
-            SectionTypes.Straight
+            SectionTypes.Straight,
+            SectionTypes.StartGrid
         };
         SectionTypes[] squareSections = {
-            SectionTypes.StartGrid,
             SectionTypes.Finish,
             SectionTypes.RightCorner,
             SectionTypes.Straight,
@@ -127,10 +126,10 @@ public static class Data {
             SectionTypes.Straight,
             SectionTypes.Straight,
             SectionTypes.Straight,
-            SectionTypes.Straight
+            SectionTypes.Straight,
+            SectionTypes.StartGrid,
         };
         SectionTypes[] spaSections = {
-            SectionTypes.StartGrid,
             SectionTypes.Finish,
             SectionTypes.RightCorner,
             SectionTypes.RightCorner,
@@ -175,11 +174,12 @@ public static class Data {
             SectionTypes.Straight,
             SectionTypes.Straight,
             SectionTypes.Straight,
-            SectionTypes.LeftCorner
+            SectionTypes.LeftCorner,
+            SectionTypes.StartGrid
             
         };
 
-        currentCompetition.Tracks.Enqueue(new Track("Zandvoort", CreateSections(zandvoortSections),Direction.North,3, Spectre.Console.Color.Orange3, Microsoft.Maui.Graphics.Color.FromArgb("#FFA500"),0,2));
+        currentCompetition.Tracks.Enqueue(new Track("Zandvoort", CreateSections(zandvoortSections),Direction.North,3, Spectre.Console.Color.Orange3, Microsoft.Maui.Graphics.Color.FromArgb("#FFA500"),0,1));
         currentCompetition.Tracks.Enqueue(new Track("Spa", CreateSections(spaSections), Direction.South, 2, Spectre.Console.Color.DarkGreen, Microsoft.Maui.Graphics.Color.FromArgb("#023020"),0,0));
         currentCompetition.Tracks.Enqueue(new Track("Square", CreateSections(squareSections),Direction.East,1, Spectre.Console.Color.DarkSlateGray1, Microsoft.Maui.Graphics.Color.FromArgb("#2F4F4F"),0,0));
     }

@@ -211,31 +211,47 @@ public static class Images {
 
    //Add cars to the track
    public static string AddDrivers(IParticipant driverLeft, IParticipant driverRight) {
-       int selectedDriver = _random.Next(0, 2);
-       if (driverLeft != null) {
-           if(!driverLeft.Equipment.IsBroken) {
-               if (selectedDriver == 1) {
-                   return GetCarFromDriver(driverLeft);
-               }
-           }
-       } else {
-           return CarBroken;
-       }
 
-       if (driverRight != null) {
-           if (!driverRight.Equipment.IsBroken) {
-               if (selectedDriver == 2) {
-                   return GetCarFromDriver(driverLeft);
-               }
-           } else {
+       if(driverLeft == null && driverRight == null) {
+           return "";
+       }
+       
+       //If left is not null, add driver left
+       if (driverLeft != null && driverRight == null) {
+           if(driverLeft.Equipment.IsBroken) {
                return CarBroken;
-           }
+           } 
+           return GetCarFromDriver(driverLeft);
            
-       } else {
-           return CarBroken;
+       }
+       //if right is not null, add driver right
+       if (driverRight != null && driverLeft == null) {
+           if(driverRight.Equipment.IsBroken) {
+               return CarBroken;
+           } 
+           return GetCarFromDriver(driverRight);
+           
+       }
+       
+       if(!driverLeft.Equipment.IsBroken && driverRight.Equipment.IsBroken) {
+           return GetCarFromDriver(driverLeft);
+       }
+       
+       if(!driverRight.Equipment.IsBroken && driverLeft.Equipment.IsBroken) {
+           return GetCarFromDriver(driverRight);
+       }
+       
+       //If both are not null, add random driver
+       int selectedDriver = _random.Next(0, 2);
+       if(!driverLeft.Equipment.IsBroken && !driverRight.Equipment.IsBroken) {
+           if (selectedDriver == 1) {
+               return GetCarFromDriver(driverLeft);
+           } 
+           return GetCarFromDriver(driverRight);
+           
        }
 
-       return null;
+       return "";
    }
 
    private static string GetCarFromDriver(IParticipant driver) {
@@ -261,20 +277,75 @@ public static class Images {
    public static Double GetRotationOfCurrentDirection() {
        switch (Direction) {
            case Direction.North:
-               return 0;
-           case Direction.East:
-               return 90;
-           case Direction.South:
-               return 180;
-           case Direction.West:
                return 270;
+           case Direction.East:
+               return 00;
+           case Direction.South:
+               return 90;
+           case Direction.West:
+               return 180;
        }
 
-       return 0;
+       return 270;
    }
 
    public static void AwardPoints() {
-       
+       int participant = 0;
+       foreach (KeyValuePair<int,IParticipant> racer in Race.Position) {
+           switch (racer.Key) {
+               case 1:
+                   participant = Data.currentCompetition.Participants.FindIndex(x => x == racer.Value);
+                   Data.currentCompetition.Participants[participant].Points += 25;
+                   break;
+               case 2:
+                   participant = Data.currentCompetition.Participants.FindIndex(x => x == racer.Value);
+                   Data.currentCompetition.Participants[participant].Points += 18;
+                   racer.Value.Points += 18;
+                   break;
+               case 3:
+                   participant = Data.currentCompetition.Participants.FindIndex(x => x == racer.Value);
+                   Data.currentCompetition.Participants[participant].Points += 15;
+                   break;
+               case 4:
+                   participant = Data.currentCompetition.Participants.FindIndex(x => x == racer.Value);
+                   Data.currentCompetition.Participants[participant].Points += 12;
+                   break;
+               case 5:
+                   participant = Data.currentCompetition.Participants.FindIndex(x => x == racer.Value);
+                   Data.currentCompetition.Participants[participant].Points += 10;
+                   racer.Value.Points += 10;
+                   break;
+               case 6:
+                   participant = Data.currentCompetition.Participants.FindIndex(x => x == racer.Value);
+                   Data.currentCompetition.Participants[participant].Points += 8;
+                   racer.Value.Points += 8;
+                   break;
+               case 7:
+                   participant = Data.currentCompetition.Participants.FindIndex(x => x == racer.Value);
+                   Data.currentCompetition.Participants[participant].Points += 6;
+                   racer.Value.Points += 6;
+                   break;
+               case 8:
+                   participant = Data.currentCompetition.Participants.FindIndex(x => x == racer.Value);
+                   Data.currentCompetition.Participants[participant].Points += 4;
+                   racer.Value.Points += 4;
+                   break;
+               case 9:
+                   participant = Data.currentCompetition.Participants.FindIndex(x => x == racer.Value);
+                   Data.currentCompetition.Participants[participant].Points += 2;
+                   racer.Value.Points += 2;
+                   break;
+               case 10:
+                   participant = Data.currentCompetition.Participants.FindIndex(x => x == racer.Value);
+                   Data.currentCompetition.Participants[participant].Points += 1;
+                   racer.Value.Points += 1;
+                   break;
+               default:
+                   participant = Data.currentCompetition.Participants.FindIndex(x => x == racer.Value);
+                   Data.currentCompetition.Participants[participant].Points += 0;
+                   break;
+           }
+       }
    }
 
 }

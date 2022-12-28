@@ -1,8 +1,7 @@
 namespace Model;
 
 public class DriversChanged: EventArgs {
-    
-    public Track Track { get; set; }
+    private Track Track { get; }
     
     public DriversChanged(Track track) {
         Track = track;

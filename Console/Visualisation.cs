@@ -218,8 +218,8 @@ public static class Visualisation {
         }
 
         //Add drivers to it
-        tile = AddDrivers(tile, Data.currentRace.Positions[section].Left,
-            Data.currentRace.Positions[section].Right);
+        tile = AddDrivers(tile, Data.currentRace.SectionsSectionData[section].Left,
+            Data.currentRace.SectionsSectionData[section].Right);
 
         //Draw the tile
         for (int i = 0; i < tile.Length; i++) {
@@ -248,7 +248,7 @@ public static class Visualisation {
                         color = Color.White;
                         break;
 
-                    //Positions
+                    //SectionsSectionData
                     case '1':
                         color = Color.White;
                         break;
