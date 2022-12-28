@@ -5,6 +5,7 @@ namespace MAUI;
 public static class Images {
 
     public static Direction Direction;
+    private static Random _random;
     
     //Selected section
     public static int X = 5;
@@ -25,6 +26,7 @@ public static class Images {
     private const string CarRed = "car_red.png";
     private const string CarYellow = "car_yellow.png";
     private const string CarDarkblue = "car_darkblue.png";
+    private const string CarBroken = "car_broken.png";
     
     //Corners
     private const string CornerEastToNorth = "cornereasttonorth.jpeg";
@@ -44,11 +46,15 @@ public static class Images {
     private const string Straight = "straight.jpeg";
     private const string StraightUp = "straight_up.jpeg";
 
+    //Initialize
     public static void Initialize() {
         Direction = Data.currentRace.Track.startDirection;
+        _random = new Random();
         CalculateCanvas();
+        
     }
     
+    //Returns path to image source
     public static ImageSource GetImageSource(Section section) {
         switch (section.sectionType) {
             case SectionTypes.Straight:
@@ -118,6 +124,7 @@ public static class Images {
         return null;
     }
 
+    //Calculate the size of the canvas
     private static void CalculateCanvas() {
        //Calculate canvas size
         foreach (var varSection in Data.currentRace.Track.Sections) {
@@ -195,10 +202,79 @@ public static class Images {
        return Direction;
    }
 
+   //Set new x,y for the first section
    public static void SetStartLocation() {
        X = Data.currentRace.Track.startX;
+       //+ 1 for the label's
        Y = Data.currentRace.Track.startY + 1;
    }
 
+   //Add cars to the track
+   public static string AddDrivers(IParticipant driverLeft, IParticipant driverRight) {
+       int selectedDriver = _random.Next(0, 2);
+       if (driverLeft != null) {
+           if(!driverLeft.Equipment.IsBroken) {
+               if (selectedDriver == 1) {
+                   return GetCarFromDriver(driverLeft);
+               }
+           }
+       } else {
+           return CarBroken;
+       }
+
+       if (driverRight != null) {
+           if (!driverRight.Equipment.IsBroken) {
+               if (selectedDriver == 2) {
+                   return GetCarFromDriver(driverLeft);
+               }
+           } else {
+               return CarBroken;
+           }
+           
+       } else {
+           return CarBroken;
+       }
+
+       return null;
+   }
+
+   private static string GetCarFromDriver(IParticipant driver) {
+       switch (driver.TeamColor) {
+           case TeamColors.Red:
+               return CarRed;
+           case TeamColors.Green:
+               return CarGreen;
+           case TeamColors.Yellow:
+               return CarYellow;
+           case TeamColors.Grey:
+               return CarDarkblue;
+           case TeamColors.Blue:
+               return CarBlue;
+           case TeamColors.Orange:
+               return CarOrange;
+           default:
+              return CarBroken;
+       }
+   }
+
+   //Rotate the car to the correct direction
+   public static Double GetRotationOfCurrentDirection() {
+       switch (Direction) {
+           case Direction.North:
+               return 0;
+           case Direction.East:
+               return 90;
+           case Direction.South:
+               return 180;
+           case Direction.West:
+               return 270;
+       }
+
+       return 0;
+   }
+
+   public static void AwardPoints() {
+       
+   }
 
 }

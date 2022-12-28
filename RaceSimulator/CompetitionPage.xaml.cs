@@ -16,6 +16,7 @@ public partial class CompetitionPage : ContentPage {
     private Button _startRace;
 
 
+    //MAUI
     public CompetitionPage() {
         
         //Initialise
@@ -258,7 +259,7 @@ public partial class CompetitionPage : ContentPage {
             }, 0, i);
             
             
-            //Startbutton
+            //Start button
             _racesGrid.Add(new BoxView {
                 Color = race.backgroundColorMaui
             },1,i);
@@ -294,15 +295,24 @@ public partial class CompetitionPage : ContentPage {
     }
 
     private void RaceStart() {
-        if (!Data.currentCompetition.RaceInProgress) {
-            Data.currentCompetition.RaceInProgress = true;
-            Data.NextRace();
+        
+        //Check for double click
+        if (Data.currentCompetition.RaceInProgress) return;
+        
+        Data.currentCompetition.RaceInProgress = true;
+        Data.NextRace();
             
-            RaceSimulator raceSimulator = new RaceSimulator();
-            Window raceWindow = new Window(raceSimulator);
-            Application.Current.OpenWindow(raceWindow);
-            Navigation.PushAsync(new RaceStatisticsPage());
-        }
+        RaceSimulator raceSimulator = new RaceSimulator();
+        Window raceWindow = new Window(raceSimulator);
+        Application.Current?.OpenWindow(raceWindow);
+        Navigation.PushAsync(new RaceStatisticsPage());
+        Data.currentRace.DriversChanged += DriversChangedPlace;
+    }
+
+    //Change places in the standings
+    private void DriversChangedPlace(object sender, EventArgs eventArgs) {
+        
     }
     
+
 }

@@ -13,9 +13,8 @@
   <component name="ChangeListManager">
     <list default="true" id="74749e98-3fd5-4128-88ab-bc8cb0b9c985" name="Changes" comment="Bug fix of images">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.RaceSim/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.RaceSim/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.vs/RaceSim/xs/UserPrefs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.vs/RaceSim/xs/UserPrefs.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Controller/Data.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Controller/Data.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Model/Model/Track.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Model/Model/Track.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Controller/Race.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Controller/Race.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/RaceSimulator/CompetitionPage.xaml.cs" beforeDir="false" afterPath="$PROJECT_DIR$/RaceSimulator/CompetitionPage.xaml.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/RaceSimulator/Image.cs" beforeDir="false" afterPath="$PROJECT_DIR$/RaceSimulator/Image.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/RaceSimulator/RaceSimulator.xaml.cs" beforeDir="false" afterPath="$PROJECT_DIR$/RaceSimulator/RaceSimulator.xaml.cs" afterDir="false" />
     </list>
@@ -173,6 +172,8 @@
       <workItem from="1672151943551" duration="7652000" />
       <workItem from="1672160646552" duration="3429000" />
       <workItem from="1672166160825" duration="322000" />
+      <workItem from="1672166804252" duration="619000" />
+      <workItem from="1672233909593" duration="6165000" />
     </task>
     <task id="LOCAL-00001" summary="Bug fix of images">
       <created>1667828032411</created>
