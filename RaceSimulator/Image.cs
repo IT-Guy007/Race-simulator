@@ -290,8 +290,8 @@ public static class Images {
    }
 
    public static void AwardPoints() {
-       int participant = 0;
        foreach (KeyValuePair<int,IParticipant> racer in Race.Position) {
+           int participant;
            switch (racer.Key) {
                case 1:
                    participant = Data.currentCompetition.Participants.FindIndex(x => x == racer.Value);

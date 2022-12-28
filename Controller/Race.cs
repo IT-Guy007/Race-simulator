@@ -21,20 +21,24 @@ public class Race {
     public Dictionary<Section, SectionData> SectionsSectionData { get; }
     
     //Timer for sleep and counting
-    public readonly System.Timers.Timer Timer;
+    private readonly System.Timers.Timer Timer;
     
-    
+    //If race is done
+    private bool _startNextRace;
+
     //SectionsSectionData of the participants
     public static Dictionary<int, IParticipant> Position;
+
     
-    //Last lap time
-    public static Dictionary<int, TimeSpan> LastLapTime;
+    //Crashed drivers
+    public List<IParticipant> CrashedDrivers;
 
     //Event Handler to call the UI to update
     public event EventHandler<DriversChanged> DriversChanged;
     
     //Event handler to call when the race is finished
     public event EventHandler<EventArgs> RaceEnded;
+    
 
     
     
@@ -44,6 +48,7 @@ public class Race {
         SectionsSectionData = new Dictionary<Section, SectionData>();
         _roundsCompleted = new Dictionary<IParticipant, int>();
         Position = new Dictionary<int, IParticipant>();
+        CrashedDrivers = new List<IParticipant>();
 
         _random = new Random();
         AddDriversToPositionsList();
@@ -109,207 +114,196 @@ public class Race {
 
     private void TimedEvent(object? source, ElapsedEventArgs e) {
 
-        //Update each section, going backwards
-        for (int i = Track.Sections.Count - 1; i >= 0; i--) {
-            //Get this section
-            Section currentSection = Track.Sections.ElementAt(i);
+        bool rerender = false;
 
-            //Get the next section
+        for (int index = Track.Sections.Count - 1; index >= 0; index--) {
+            // Get current and +1 section
+            Section section = Track.Sections.ElementAt(index);
+            SectionData sectionData = GetSectionData(section);
             Section nextSection;
+
             try {
-                //Next section
-                nextSection = Track.Sections.ElementAt(i + 1);
+                nextSection = Track.Sections.ElementAt(index + 1);
             } catch (Exception) {
-                //Start again
                 nextSection = Track.Sections.ElementAt(0);
             }
 
-            //Get the section data
-            SectionData currentSectionData = GetSectionData(currentSection);
-
-            //Get the next section data
             SectionData nextSectionData = GetSectionData(nextSection);
 
-
-            //Overtaking
-            if (currentSectionData.Left != null && currentSectionData.Right != null) {
-                if(!currentSectionData.Left.Equipment.IsBroken && !currentSectionData.Right.Equipment.IsBroken) {
-                    int chance = _random.Next(currentSectionData.Left.Equipment.Speed - currentSectionData.Left.Equipment.Speed, 100);
-                    if (chance > 30) {
-                        
-                        //Jump 2 sections ahead if possible
-                        SectionData twoSectionsAdvanced = null;
-                        try {
-                            twoSectionsAdvanced = GetSectionData(Track.Sections.ElementAt(i + 2));
-                        } catch(Exception) {
-                            
-                        }
-                        if (twoSectionsAdvanced != null) {
-                            if(twoSectionsAdvanced.Left == null) {
-                               twoSectionsAdvanced.Left = currentSectionData.Left;
-                               currentSectionData.Left = null;
-                            } else {
-                                if (twoSectionsAdvanced.Right == null) {
-                                    twoSectionsAdvanced.Right = currentSectionData.Left;
-                                    currentSectionData.Left = null;
-                                }
-                            }
-                            SectionsSectionData[Track.Sections.ElementAt(i + 2)] = twoSectionsAdvanced;
-                        }
-                    } else {
-                        //Both to next section
-                        nextSectionData.Left = currentSectionData.Left;
-                        nextSectionData.DistanceLeft = currentSectionData.DistanceLeft - Section.SectionLength;
-                        currentSectionData.Left = null;
-
-                        nextSectionData.Right = currentSectionData.Right;
-                        nextSectionData.DistanceRight = currentSectionData.DistanceRight - Section.SectionLength;
-                        currentSectionData.Right = null;
-                    }
+            //Breaking the car
+            if (sectionData.Left != null) {
+                
+                int passedDistance = sectionData.Left.Equipment.Distance();
+                sectionData.DistanceLeft += passedDistance;
+                
+                if (_random.Next(0, sectionData.Left.Equipment.Quality) == 0) {
+                    sectionData.Left.Equipment.IsBroken = true;
+                    CrashedDrivers.Add(sectionData.Left);
+                    rerender = true;
+                }
+                
+                if (!sectionData.Left.Equipment.IsBroken && sectionData.DistanceLeft > Section.SectionLength) {
                     
-                }
-            } 
-            
-            
-            //Check if there is a car in this section
-            if (currentSectionData.Left != null) {
+                    if (nextSectionData.Left == null) {
 
-                //Add the distance passed
-                currentSectionData.DistanceLeft += currentSectionData.Left.Equipment.Distance();
+                        if (section.sectionType == SectionTypes.Finish)
+                        {
+                            if (_roundsCompleted.ContainsKey(sectionData.Left))
+                            {
+                                _roundsCompleted[sectionData.Left]++;
+                            }
+                            else
+                            {
+                                _roundsCompleted.Add(sectionData.Left, 0);
+                            }
+                        }
 
-                //Break the car based on quality
-                if (_random.Next(0, currentSectionData.Left.Equipment.Quality) == 0)
-                {
-                    currentSectionData.Left.Equipment.IsBroken = true;
 
-                    //Remove participant from currentParticipants
-                    Console.WriteLine($"-----------{currentSectionData.Left.Name} has crashed-------");
-                    Participants.Remove(currentSectionData.Left);
+                        if (_roundsCompleted.ContainsKey(sectionData.Left) && _roundsCompleted[sectionData.Left] == Track.laps) {
+                            sectionData.Left = null;
+                        } else {
+
+                            nextSectionData.Left = sectionData.Left;
+                            nextSectionData.DistanceLeft = sectionData.DistanceLeft - Section.SectionLength;
+
+
+                            sectionData.Left = null;
+                            sectionData.DistanceLeft = 0;
+                        }
+
+                        rerender = true;
+                    } else if (nextSectionData.Right == null) {
+                        if (section.sectionType == SectionTypes.Finish) {
+                            if (_roundsCompleted.ContainsKey(sectionData.Left)) {
+                                _roundsCompleted[sectionData.Left]++;
+                            } else {
+                                _roundsCompleted.Add(sectionData.Left, 0);
+                            }
+                        }
+                        
+                        if (_roundsCompleted.ContainsKey(sectionData.Left) &&
+                            _roundsCompleted[sectionData.Left] == Track.laps) {
+                            sectionData.Left = null;
+                        } else {
+                            nextSectionData.Right = sectionData.Left;
+                            nextSectionData.DistanceRight = sectionData.DistanceLeft - Section.SectionLength;
+                            
+                            sectionData.Left = null;
+                            sectionData.DistanceLeft = 0;
+                        }
+
+                        rerender = true;
+                    }
                 }
             }
+            else if (sectionData.Right != null)
+            {
+                // int driverCode = sectionData.Right.GetHashCode();
 
-            if (currentSectionData.Right != null) {
-                //Add the distance passed
-                currentSectionData.DistanceRight += currentSectionData.Right.Equipment.Distance();
-                currentSectionData.Right.Equipment.IsBroken = true;
+                // add driven distance
+                int passedDistance = sectionData.Right.Equipment.Distance();
+                sectionData.DistanceRight += passedDistance;
 
-                //Remove participant from currentParticipants
-                Console.WriteLine($"-----------{currentSectionData.Right.Name} has crashed-------");
-                Participants.Remove(currentSectionData.Right);
-            }
-
-            //Move cars to next section
-            if (currentSectionData.Left != null) {
-                int positions = 0;
-
-                if (nextSectionData.Left != null)
-                {
-                    positions++;
+                // break the car
+                if (_random.Next(0, sectionData.Right.Equipment.Quality) == 0) {
+                    sectionData.Right.Equipment.IsBroken = true;
+                    CrashedDrivers.Add(sectionData.Right);
+                    rerender = true;
                 }
 
-                if (nextSectionData.Right != null)
+                // check if able to go to next section
+                if (!sectionData.Right.Equipment.IsBroken && sectionData.DistanceRight > Section.SectionLength)
                 {
-                    positions++;
-                }
+                    // try straight ahead
+                    if (nextSectionData.Right == null)
+                    {
+                        // add points if lapped
+                        if (section.sectionType == SectionTypes.Finish)
+                        {
+                            if (_roundsCompleted.ContainsKey(sectionData.Right))
+                            {
+                                _roundsCompleted[sectionData.Right]++;
+                            }
+                            else
+                            {
+                                _roundsCompleted.Add(sectionData.Right, 0);
+                            }
+                        }
 
-                //Set positions
-                if (positions == 2)
-                {
-                    nextSectionData.Left = currentSectionData.Left;
-                    nextSectionData.DistanceLeft = currentSectionData.DistanceLeft - Section.SectionLength;
-                    currentSectionData.Left = null;
+                        // remove from track when finished
+                        if (_roundsCompleted.ContainsKey(sectionData.Right) &&
+                            _roundsCompleted[sectionData.Right] == Track.laps)
+                        {
+                            sectionData.Right = null;
+                        }
+                        else
+                        {
+                            // copy data to next section
+                            nextSectionData.Right = sectionData.Right;
+                            nextSectionData.DistanceRight = sectionData.DistanceRight - Section.SectionLength;
 
-                    nextSectionData.Right = currentSectionData.Right;
-                    nextSectionData.DistanceRight = currentSectionData.DistanceRight - Section.SectionLength;
-                    currentSectionData.Right = null;
+                            // clear data for current section
+                            sectionData.Right = null;
+                            sectionData.DistanceRight = 0;
+                        }
+
+                        rerender = true;
+                    }
+                    // check diagonal
+                    else if (nextSectionData.Left == null)
+                    {
+                        // add points if lapped
+                        if (section.sectionType == SectionTypes.Finish)
+                        {
+                            if (_roundsCompleted.ContainsKey(sectionData.Right))
+                            {
+                                _roundsCompleted[sectionData.Right]++;
+                            }
+                            else
+                            {
+                                _roundsCompleted.Add(sectionData.Right, 0);
+                            }
+                        }
+
+                        // remove from track when finished
+                        if (_roundsCompleted.ContainsKey(sectionData.Right) &&
+                            _roundsCompleted[sectionData.Right] == Track.laps)
+                        {
+                            sectionData.Right = null;
+                        }
+                        else
+                        {
+                            // copy data to next section
+                            nextSectionData.Left = sectionData.Right;
+                            nextSectionData.DistanceLeft = sectionData.DistanceRight - Section.SectionLength;
+
+                            // clear data for current section
+                            sectionData.Right = null;
+                            sectionData.DistanceRight = 0;
+                        }
+
+                        rerender = true;
+                    }
                 }
                 else
                 {
-                    if (nextSectionData.Left != null)
+                    // fix car 5% of the time
+                    if (_random.Next(0, 20) == 0)
                     {
-                        nextSectionData.Left = currentSectionData.Left;
-                        nextSectionData.DistanceLeft = currentSectionData.DistanceLeft - Section.SectionLength;
-                        currentSectionData.Left = null;
-                    }
-                    else
-                    {
-                        //Force the car to the right, if broken car is there replace
-                        nextSectionData.Right = currentSectionData.Right;
-                        nextSectionData.DistanceRight = currentSectionData.DistanceRight - Section.SectionLength;
-                        currentSectionData.Right = null;
-                    }
-                }
-
-            }
-            else
-            {
-                if (currentSectionData.Right != null)
-                {
-                    if (nextSectionData.Right != null)
-                    {
-                        nextSectionData.Right = currentSectionData.Right;
-                        nextSectionData.DistanceRight = currentSectionData.DistanceRight - Section.SectionLength;
-                        currentSectionData.Right = null;
-                    }
-                    else
-                    {
-                        //Force the car to the left, if broken car is there replace
-                        nextSectionData.Left = currentSectionData.Right;
-                        nextSectionData.DistanceLeft = currentSectionData.DistanceRight - Section.SectionLength;
-                        currentSectionData.Right = null;
-
-                    }
-
-                }
-            }
-
-            //Check if the car has finished
-            if (currentSection.sectionType == SectionTypes.Finish)
-            {
-                if (currentSectionData.Left != null)
-                {
-                    if (_roundsCompleted.ContainsKey(currentSectionData.Left))
-                    {
-                        _roundsCompleted[currentSectionData.Left]++;
-                    }
-                    else
-                    {
-                        _roundsCompleted.Add(currentSectionData.Left, 0);
-                    }
-                }
-
-                if (currentSectionData.Right != null)
-                {
-                    if (_roundsCompleted.ContainsKey(currentSectionData.Right))
-                    {
-                        _roundsCompleted[currentSectionData.Right]++;
-                    }
-                    else
-                    {
-                        _roundsCompleted.Add(currentSectionData.Right, 0);
-                    }
-                }
-
-                //Remove cars from track if on finish and finished
-                if (currentSectionData.Left != null) {
-                    if (_roundsCompleted.ContainsKey(currentSectionData.Left) && _roundsCompleted[currentSectionData.Left] == Track.laps) {
-                        currentSectionData.Left = null;
-                    }
-                }
-                
-                if(currentSectionData.Right != null) {
-                    if (_roundsCompleted.ContainsKey(currentSectionData.Right) && _roundsCompleted[currentSectionData.Right] == Track.laps) {
-                        currentSectionData.Right = null;
+                        sectionData.Right.Equipment.IsBroken = false;
+                        rerender = true;
                     }
                 }
             }
         }
-    
-        Console.WriteLine(Participants.Count + " drivers left on track");
-        if (Participants.Count > 0) {
+        
+        if (rerender) {
             DriversChanged.Invoke(this, new DriversChanged(Track));
-        } else {
-            RaceEnded.Invoke(this,EventArgs.Empty);
+        }
+
+        if (!_startNextRace) {
+            _startNextRace = true;
+            RaceEnded.Invoke(this, EventArgs.Empty);
         }
     }
     
