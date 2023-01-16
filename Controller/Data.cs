@@ -36,6 +36,7 @@ public static class Data {
                 currentRace = new Race(currentCompetition.Tracks.Dequeue(), currentCompetition.Participants);
                 currentRace.PlaceDriversOnTrack();
                 currentRace.RandomEquipment();
+                Console.WriteLine("The next race is on " + currentRace.Track.name);
                 currentRace.Start();
             }
         }
@@ -120,9 +121,11 @@ public static class Data {
             SectionTypes.Straight,
             SectionTypes.Straight,
             SectionTypes.Straight,
+            SectionTypes.Straight,
             SectionTypes.RightCorner,
             SectionTypes.Straight,
             SectionTypes.RightCorner,
+            SectionTypes.Straight,
             SectionTypes.Straight,
             SectionTypes.Straight,
             SectionTypes.Straight,
@@ -179,9 +182,10 @@ public static class Data {
             
         };
 
-        currentCompetition.Tracks.Enqueue(new Track("Zandvoort", CreateSections(zandvoortSections),Direction.North,3, Spectre.Console.Color.Orange3, Microsoft.Maui.Graphics.Color.FromArgb("#FFA500"),0,1));
-        currentCompetition.Tracks.Enqueue(new Track("Spa", CreateSections(spaSections), Direction.South, 2, Spectre.Console.Color.DarkGreen, Microsoft.Maui.Graphics.Color.FromArgb("#023020"),0,0));
-        currentCompetition.Tracks.Enqueue(new Track("Square", CreateSections(squareSections),Direction.East,1, Spectre.Console.Color.DarkSlateGray1, Microsoft.Maui.Graphics.Color.FromArgb("#2F4F4F"),0,0));
+        currentCompetition.Tracks.Enqueue(new Track("Square", CreateSections(squareSections),Direction.East,1, Spectre.Console.Color.DarkSlateGray1, Microsoft.Maui.Graphics.Color.FromArgb("#2F4F4F"),6,0));
+        currentCompetition.Tracks.Enqueue(new Track("Zandvoort", CreateSections(zandvoortSections),Direction.North,1, Spectre.Console.Color.Orange3, Microsoft.Maui.Graphics.Color.FromArgb("#FFA500"),0,1));
+        currentCompetition.Tracks.Enqueue(new Track("Spa", CreateSections(spaSections), Direction.South, 1, Spectre.Console.Color.DarkGreen, Microsoft.Maui.Graphics.Color.FromArgb("#023020"),0,0));
+
     }
 
     private static LinkedList<Section> CreateSections(SectionTypes[] trackSections) {

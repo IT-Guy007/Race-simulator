@@ -14,6 +14,9 @@ public partial class CompetitionPage : ContentPage {
     
     //Elements
     private Button _startRace;
+    
+    //RaceStatisticsWinow
+    private Window _raceStatisticsWindow;
 
 
     //MAUI
@@ -303,9 +306,22 @@ public partial class CompetitionPage : ContentPage {
         Data.NextRace();
             
         RaceSimulator raceSimulator = new RaceSimulator();
-        Window raceWindow = new Window(raceSimulator);
-        Application.Current?.OpenWindow(raceWindow);
+        _raceStatisticsWindow = new Window(raceSimulator);
+        Application.Current?.OpenWindow(_raceStatisticsWindow);
         Navigation.PushAsync(new RaceStatisticsPage());
+        
+        Data.currentRace.RaceEnded += RaceEnded;
+    }
+    
+    //When the race ends, go to the results page
+    private void RaceEnded(object sender, EventArgs eventArgs) {
+        
+        //End race
+        Console.WriteLine("End of the race: Closing RaceSimulator window");
+        
+        // Close the active window
+        Application.Current!.CloseWindow(_raceStatisticsWindow);
+
     }
 
 }

@@ -1,34 +1,7 @@
 ﻿<Properties StartupConfiguration="{932F66C7-9C27-4FD1-AE52-193F3770E3FA}|Default">
-  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
-  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MonoDevelop.Ide.ItemProperties.RaceSimulator PreferredExecutionTarget="MyAppleMacCatalystID" />
   <MonoDevelop.Ide.ItemProperties.RaceSim PreferredExecutionTarget="MonoDevelop.Default" />
   <MonoDevelop.Ide.ItemProperties.Console PreferredExecutionTarget="MonoDevelop.Default" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="Controller/Race.cs">
-    <Files>
-      <File FileName="Controller/Race.cs" Line="84" Column="1" />
-    </Files>
-    <Pads>
-      <Pad Id="ProjectPad">
-        <State name="__root__">
-          <Node name="RaceSim" expanded="True">
-            <Node name="Controller" expanded="True">
-              <Node name="Race.cs" selected="True" />
-            </Node>
-            <Node name="RaceSimulator" expanded="True">
-              <Node name="CompetitionPage.xaml" expanded="True" />
-            </Node>
-          </Node>
-        </State>
-      </Pad>
-    </Pads>
-  </MonoDevelop.Ide.Workbench>
-  <MonoDevelop.Ide.ItemProperties.RaceSimulator PreferredExecutionTarget="MyAppleMacCatalystID" />
-  <MonoDevelop.Ide.DebuggingService.Breakpoints>
-    <BreakpointStore>
-      <Breakpoint file="/Users/jeroendenotter/Documents/6. GitHub/Race-simulator/RaceSimulator/RaceSimulator.xaml.cs" relfile="RaceSimulator/RaceSimulator.xaml.cs" line="134" column="1" />
-      <Breakpoint file="/Users/jeroendenotter/Documents/6. GitHub/Race-simulator/Controller/Race.cs" relfile="Controller/Race.cs" line="69" column="1" />
-    </BreakpointStore>
-  </MonoDevelop.Ide.DebuggingService.Breakpoints>
   <Xamarin.Addins.Core.Project ActiveDebugTarget="MyAppleMacCatalystID" />
   <MultiItemStartupConfigurations>
     <MultiItemSolutionRunConfiguration Id="RaceSim" Name="RaceSim">
@@ -37,4 +10,26 @@
       </Items>
     </MultiItemSolutionRunConfiguration>
   </MultiItemStartupConfigurations>
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MonoDevelop.Ide.Workbench ActiveDocument="Controller/Race.cs">
+    <Files>
+      <File FileName="Controller/Race.cs" Line="312" Column="1" />
+    </Files>
+    <Pads>
+      <Pad Id="ProjectPad">
+        <State name="__root__">
+          <Node name="RaceSim" expanded="True">
+            <Node name="Controller" expanded="True" />
+          </Node>
+        </State>
+      </Pad>
+    </Pads>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore>
+      <Breakpoint file="/Users/jeroendenotter/Documents/6. GitHub/Race-simulator/RaceSimulator/RaceSimulator.xaml.cs" relfile="RaceSimulator/RaceSimulator.xaml.cs" line="131" column="1" />
+      <Breakpoint file="/Users/jeroendenotter/Documents/6. GitHub/Race-simulator/Controller/Race.cs" relfile="Controller/Race.cs" line="306" column="1" />
+    </BreakpointStore>
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
 </Properties>

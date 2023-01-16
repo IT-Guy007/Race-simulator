@@ -17,11 +17,6 @@ public static class Visualisation {
         table = new Table();
     }
 
-    //Events
-    public static void DriversChanged(object? sender, DriversChanged e) {
-        DrawTrack();
-    }
-
     private static void DrawTrack() {
         //Start position
         int x = 5;
@@ -122,7 +117,7 @@ public static class Visualisation {
         string[] tile = new string[tileSize];
 
         //Get graphic for section
-        switch (section.sectionType) {
+        switch (section.SectionType) {
             case SectionTypes.Straight:
                 switch(direction) {
                     case Direction.North:
@@ -323,7 +318,7 @@ public static class Visualisation {
 
     //Set new direction for next section
     private static Direction SetDirection(Section section) {
-        switch (section.sectionType) {
+        switch (section.SectionType) {
 
             case SectionTypes.LeftCorner:
                 switch(direction) {
@@ -521,12 +516,26 @@ public static class Visualisation {
         };
     }
 
+    public static void DriversChanged(object? sender, DriversChanged e) {
+        DrawTrack();
+    }
+    
+    
     //Race ended, start new race if exists
     public static void RaceEnded(object? sender, EventArgs eventArgs) {
+        //Set the next race
         Data.NextRace();
+        
+        //Get the canvassize
+        Initialize();
+        
+        //Draw the track
+        DrawTrack();
+        
+        //Add event
         Data.currentRace.DriversChanged += DriversChanged;
         Data.currentRace.RaceEnded += RaceEnded;
-        Initialize();
+
     }
 }
     

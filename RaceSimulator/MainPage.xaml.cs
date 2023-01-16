@@ -10,11 +10,9 @@ public partial class MainPage : ContentPage {
     }
 
     private void Clicked(object sender, EventArgs e) {
+        Console.WriteLine("Starting new competition");
         //Initialise the data
-        if (Data.currentCompetition == null) {
-            Data.Initialize();
-        }
-
+        Data.Initialize();
         Navigation.PushAsync(new CompetitionPage());
     }
 }

@@ -56,7 +56,7 @@ public static class Images {
     
     //Returns path to image source
     public static ImageSource GetImageSource(Section section) {
-        switch (section.sectionType) {
+        switch (section.SectionType) {
             case SectionTypes.Straight:
                 switch(Direction) {
                     case Direction.North:
@@ -170,7 +170,7 @@ public static class Images {
    
    //Set new direction for next section
    public static Direction SetDirection(Section section) {
-       switch (section.sectionType) {
+       switch (section.SectionType) {
 
            case SectionTypes.LeftCorner:
                switch(Direction) {
