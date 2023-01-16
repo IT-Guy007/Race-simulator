@@ -39,7 +39,6 @@ public class Race {
     //Event handler to call when the race is finished
     public event EventHandler<EventArgs> RaceEnded;
     
-
     
     
     public Race(Track track, List<IParticipant> participants) {
@@ -101,7 +100,7 @@ public class Race {
         }
     }
 
-    private SectionData GetSectionData(Section section) {
+    public SectionData GetSectionData(Section section) {
         SectionData result = SectionsSectionData.GetValueOrDefault(section, null);
 
         if (result == null) {

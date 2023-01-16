@@ -9,6 +9,7 @@
     <projectFile kind="XamarinAndroid">MAUI/MAUI.csproj</projectFile>
     <projectFile kind="XamarinIOS">MAUI/MAUI.csproj</projectFile>
     <projectFile kind="XamarinMacOS">MAUI/MAUI.csproj</projectFile>
+    <projectFile>MauiXUnit/MauiXUnit.csproj</projectFile>
     <projectFile>RaceSim/RaceSim.csproj</projectFile>
     <projectFile kind="XamarinAndroid">RaceSimulator/RaceSimulator.csproj</projectFile>
     <projectFile kind="XamarinIOS">RaceSimulator/RaceSimulator.csproj</projectFile>
@@ -17,10 +18,15 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="74749e98-3fd5-4128-88ab-bc8cb0b9c985" name="Changes" comment="Bug fix of images">
+      <change afterPath="$PROJECT_DIR$/ControllerTest/DataTest.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ControllerTest/RaceTest.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ControllerTest/TrackTest.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.RaceSim/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.RaceSim/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.vs/RaceSim/xs/project-cache/ControllerTest-Debug.json" beforeDir="false" afterPath="$PROJECT_DIR$/.vs/RaceSim/xs/project-cache/ControllerTest-Debug.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Controller/Race.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Controller/Race.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/RaceSimulator/Image.cs" beforeDir="false" afterPath="$PROJECT_DIR$/RaceSimulator/Image.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/RaceSimulator/RaceStatisticsPage.xaml.cs" beforeDir="false" afterPath="$PROJECT_DIR$/RaceSimulator/RaceStatisticsPage.xaml.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ControllerTest/ControllerTest.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/ControllerTest/ControllerTest.csproj" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Model/Model/Section.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Model/Model/Section.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/RaceSimulator/RaceSimulator.xaml.cs" beforeDir="false" afterPath="$PROJECT_DIR$/RaceSimulator/RaceSimulator.xaml.cs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -28,10 +34,12 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="HighlightingSettingsPerFile">
+    <setting file="mock:///Dummy.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock:///Dummy.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$USER_HOME$/.nuget/packages/microsoft.net.test.sdk/17.3.2/build/netcoreapp2.1/Microsoft.NET.Test.Sdk.Program.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="file://$USER_HOME$/Desktop/Race-simulator-main/Controller/Race.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/RaceSimulator/RaceSimulator.xaml.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/../Winder/Winder/StartPage.xaml.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/46a322d26154b982566e1817203e5452c91223f93b0e392d9c5b4806696fdc1/Assert.cs" root0="SKIP_HIGHLIGHTING" />
   </component>
   <component name="InvalidFacetManager">
     <ignored-facets>
@@ -59,7 +67,7 @@
     &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
     &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
     &quot;rider.run.widget.enabled.cache&quot;: &quot;false&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;RoslynSettingsId&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.pluginManager&quot;,
     &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   },
   &quot;keyToStringList&quot;: {
@@ -133,7 +141,6 @@
     <list>
       <item itemvalue=".NET Executable.Debug workaround" />
       <item itemvalue=".NET Project.Console" />
-      <item itemvalue="Xamarin.Android.RaceSimulator" />
       <item itemvalue="Xamarin.iOS.RaceSimulator" />
       <item itemvalue="Xamarin.Mac.RaceSimulator" />
     </list>
@@ -181,6 +188,7 @@
       <workItem from="1672233909593" duration="15486000" />
       <workItem from="1672253406833" duration="2822000" />
       <workItem from="1672256809901" duration="6527000" />
+      <workItem from="1673871353815" duration="2524000" />
     </task>
     <task id="LOCAL-00001" summary="Bug fix of images">
       <created>1667828032411</created>
