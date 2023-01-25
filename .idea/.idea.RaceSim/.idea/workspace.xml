@@ -18,28 +18,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="74749e98-3fd5-4128-88ab-bc8cb0b9c985" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/RaceSimulator/ViewModel/RaceStatisticsViewModel.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.RaceSim/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.RaceSim/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Console/Visualisation.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Console/Visualisation.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Console/program.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Console/program.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Controller/Data.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Controller/Data.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Controller/Race.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Controller/Race.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ControllerTest/DataTest.cs" beforeDir="false" afterPath="$PROJECT_DIR$/ControllerTest/DataTest.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ControllerTest/RaceTest.cs" beforeDir="false" afterPath="$PROJECT_DIR$/ControllerTest/RaceTest.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ControllerTest/TrackTest.cs" beforeDir="false" afterPath="$PROJECT_DIR$/ControllerTest/TrackTest.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Model/Model/Driver.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Model/Model/Driver.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Model/Model/IEquipement.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Model/Model/IEquipement.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Model/Model/IParticipant.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Model/Model/IParticipant.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/RaceSimulator/App.xaml.cs" beforeDir="false" afterPath="$PROJECT_DIR$/RaceSimulator/App.xaml.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/RaceSimulator/AppShell.xaml.cs" beforeDir="false" afterPath="$PROJECT_DIR$/RaceSimulator/AppShell.xaml.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/RaceSimulator/CompetitionPage.xaml.cs" beforeDir="false" afterPath="$PROJECT_DIR$/RaceSimulator/CompetitionPage.xaml.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/RaceSimulator/Image.cs" beforeDir="false" afterPath="$PROJECT_DIR$/RaceSimulator/Images.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/RaceSimulator/MainPage.xaml.cs" beforeDir="false" afterPath="$PROJECT_DIR$/RaceSimulator/MainPage.xaml.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/RaceSimulator/MauiProgram.cs" beforeDir="false" afterPath="$PROJECT_DIR$/RaceSimulator/MauiProgram.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/RaceSimulator/RaceSimulator.xaml.cs" beforeDir="false" afterPath="$PROJECT_DIR$/RaceSimulator/RaceSimulator.xaml.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/RaceSimulator/RaceStatisticsPage.xaml" beforeDir="false" afterPath="$PROJECT_DIR$/RaceSimulator/RaceStatisticsPage.xaml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/RaceSimulator/RaceStatisticsPage.xaml.cs" beforeDir="false" afterPath="$PROJECT_DIR$/RaceSimulator/RaceStatisticsPage.xaml.cs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -215,7 +195,7 @@
       <workItem from="1674120301589" duration="613000" />
       <workItem from="1674307397037" duration="7860000" />
       <workItem from="1674652306981" duration="1530000" />
-      <workItem from="1674654014980" duration="6343000" />
+      <workItem from="1674654014980" duration="7031000" />
     </task>
     <task id="LOCAL-00001" summary="Bug fix of images">
       <created>1667828032411</created>
