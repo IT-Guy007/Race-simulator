@@ -1,7 +1,8 @@
-﻿namespace MAUI;
+﻿using Microsoft.Maui.Controls;
 
-public partial class AppShell : Shell
-{
+namespace MAUI;
+
+public partial class AppShell {
     public AppShell()
     {
         InitializeComponent();

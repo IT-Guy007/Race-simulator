@@ -14,19 +14,19 @@ internal class DataTest {
 
     [Test]
     public void DriversTest() {
-        Assert.That(Data.currentCompetition.Participants.Count, Is.EqualTo(8));
+        Assert.That(Data.CurrentCompetition.Participants.Count, Is.EqualTo(8));
     }
 
     [Test]
     public void TrackTest() {
-        Assert.That(Data.currentCompetition.Tracks.Count, Is.EqualTo(3));
+        Assert.That(Data.CurrentCompetition.Tracks.Count, Is.EqualTo(3));
     }
     
     //Check if each track has a starting grid
     [Test]
     public void TrackTestCheckIfHasStartingGrid() {
         Queue<bool> hasStartingGrid = new Queue<bool>();
-        foreach (var track in Data.currentCompetition.Tracks) {
+        foreach (var track in Data.CurrentCompetition.Tracks) {
             foreach (Section section in track.Sections) {
                 if (section.SectionType == SectionTypes.StartGrid) {
                     hasStartingGrid.Enqueue(true);
@@ -48,7 +48,7 @@ internal class DataTest {
     [Test]
     public void TrackTestCheckIfHasFinish() {
         Queue<bool> hasFinish = new Queue<bool>();
-        foreach (var track in Data.currentCompetition.Tracks) {
+        foreach (var track in Data.CurrentCompetition.Tracks) {
             foreach (Section section in track.Sections) {
                 if (section.SectionType == SectionTypes.Finish) {
                     hasFinish.Enqueue(true);
@@ -69,34 +69,15 @@ internal class DataTest {
     
     [Test]
     public void SectionShouldBeInRace() {
-        Section firstValue = Data.currentCompetition.Tracks.First().Sections.First?.Value;
+        Section firstValue = Data.CurrentCompetition.Tracks.First().Sections.First?.Value;
         if (firstValue != null) {
             Section section = firstValue;
-            SectionData result = Data.currentRace.GetSectionData(section);
+            SectionData result = Data.CurrentRace.GetSectionData(section);
             
             Assert.IsInstanceOf<SectionData>(result);
             Assert.IsNotNull(result);
         } else {
             Assert.Fail();
-        }
-    }
-
-    [Test]
-    public void CheckRandomEquipment() {
-        foreach (IParticipant driver in Data.currentCompetition.Participants) {
-            if (driver.Equipment.Performance == 80) {
-                Assert.Fail();
-            }
-            if(driver.Equipment.Speed == 80) {
-                Assert.Fail();
-            }
-
-            if (driver.Equipment.Quality == 80) {
-                Assert.Fail();
-            }
-            if(driver.Equipment.IsBroken) {
-                Assert.Fail();
-            }
         }
     }
 

@@ -1,4 +1,6 @@
+using System;
 using Controller;
+using Microsoft.Maui.Controls;
 using Model;
 
 namespace MAUI;
@@ -48,7 +50,7 @@ public static class Images {
 
     //Initialize
     public static void Initialize() {
-        Direction = Data.currentRace.Track.startDirection;
+        Direction = Data.CurrentRace.Track.startDirection;
         _random = new Random();
         CalculateCanvas();
         
@@ -127,7 +129,7 @@ public static class Images {
     //Calculate the size of the canvas
     private static void CalculateCanvas() {
        //Calculate canvas size
-        foreach (var varSection in Data.currentRace.Track.Sections) {
+        foreach (var varSection in Data.CurrentRace.Track.Sections) {
             Direction = SetDirection(varSection);
 
             switch (Direction) {
@@ -204,9 +206,9 @@ public static class Images {
 
    //Set new x,y for the first section
    public static void SetStartLocation() {
-       X = Data.currentRace.Track.startX;
+       X = Data.CurrentRace.Track.startX;
        //+ 1 for the label's
-       Y = Data.currentRace.Track.startY + 1;
+       Y = Data.CurrentRace.Track.startY + 1;
    }
 
    //Add cars to the track
@@ -287,65 +289,6 @@ public static class Images {
        }
 
        return 270;
-   }
-
-   public static void AwardPoints() {
-       foreach (KeyValuePair<int,IParticipant> racer in Race.Position) {
-           int participant;
-           switch (racer.Key) {
-               case 1:
-                   participant = Data.currentCompetition.Participants.FindIndex(x => x == racer.Value);
-                   Data.currentCompetition.Participants[participant].Points += 25;
-                   break;
-               case 2:
-                   participant = Data.currentCompetition.Participants.FindIndex(x => x == racer.Value);
-                   Data.currentCompetition.Participants[participant].Points += 18;
-                   racer.Value.Points += 18;
-                   break;
-               case 3:
-                   participant = Data.currentCompetition.Participants.FindIndex(x => x == racer.Value);
-                   Data.currentCompetition.Participants[participant].Points += 15;
-                   break;
-               case 4:
-                   participant = Data.currentCompetition.Participants.FindIndex(x => x == racer.Value);
-                   Data.currentCompetition.Participants[participant].Points += 12;
-                   break;
-               case 5:
-                   participant = Data.currentCompetition.Participants.FindIndex(x => x == racer.Value);
-                   Data.currentCompetition.Participants[participant].Points += 10;
-                   racer.Value.Points += 10;
-                   break;
-               case 6:
-                   participant = Data.currentCompetition.Participants.FindIndex(x => x == racer.Value);
-                   Data.currentCompetition.Participants[participant].Points += 8;
-                   racer.Value.Points += 8;
-                   break;
-               case 7:
-                   participant = Data.currentCompetition.Participants.FindIndex(x => x == racer.Value);
-                   Data.currentCompetition.Participants[participant].Points += 6;
-                   racer.Value.Points += 6;
-                   break;
-               case 8:
-                   participant = Data.currentCompetition.Participants.FindIndex(x => x == racer.Value);
-                   Data.currentCompetition.Participants[participant].Points += 4;
-                   racer.Value.Points += 4;
-                   break;
-               case 9:
-                   participant = Data.currentCompetition.Participants.FindIndex(x => x == racer.Value);
-                   Data.currentCompetition.Participants[participant].Points += 2;
-                   racer.Value.Points += 2;
-                   break;
-               case 10:
-                   participant = Data.currentCompetition.Participants.FindIndex(x => x == racer.Value);
-                   Data.currentCompetition.Participants[participant].Points += 1;
-                   racer.Value.Points += 1;
-                   break;
-               default:
-                   participant = Data.currentCompetition.Participants.FindIndex(x => x == racer.Value);
-                   Data.currentCompetition.Participants[participant].Points += 0;
-                   break;
-           }
-       }
    }
 
 }

@@ -1,5 +1,4 @@
 ﻿using Controller;
-
 using Model;
 
 namespace MAUI;
@@ -14,10 +13,6 @@ public partial class CompetitionPage : ContentPage {
     
     //Elements
     private Button _startRace;
-    
-    //RaceStatisticsWinow
-    private Window _raceStatisticsWindow;
-
 
     //MAUI
     public CompetitionPage() {
@@ -149,7 +144,7 @@ public partial class CompetitionPage : ContentPage {
         
         //Get the list sorted by points using lambda
         int posDriver = 1;
-        IOrderedEnumerable<IParticipant> drivers = Data.currentCompetition.Participants.OrderByDescending(x => x.Points);
+        IOrderedEnumerable<IParticipant> drivers = Data.CurrentCompetition.Participants.OrderByDescending(x => x.Points);
         foreach (IParticipant driver in drivers)
         {
             _grid.RowDefinitions.Add(new RowDefinition { Height = new GridLength(25)});
@@ -204,11 +199,11 @@ public partial class CompetitionPage : ContentPage {
         int i = 0;
         
         //Calculate amount of races done
-        int toDo = Data.currentCompetition.Tracks.Count;
-        int tracksDone = Data.currentCompetition.TracksDone.Count;
+        int toDo = Data.CurrentCompetition.Tracks.Count;
+        int tracksDone = Data.CurrentCompetition.TracksDone.Count;
         
         //Done races
-        foreach (Track race in Data.currentCompetition.TracksDone) {
+        foreach (Track race in Data.CurrentCompetition.TracksDone) {
             //Race name
             _racesGrid.Add(new BoxView {
                 Color = race.backgroundColorMaui
@@ -245,7 +240,7 @@ public partial class CompetitionPage : ContentPage {
         }
 
         //Upcoming races
-        foreach (Track race in Data.currentCompetition.Tracks) {
+        foreach (Track race in Data.CurrentCompetition.Tracks) {
             
             //Race name
             _racesGrid.Add(new BoxView {
@@ -267,9 +262,9 @@ public partial class CompetitionPage : ContentPage {
                 Color = race.backgroundColorMaui
             },1,i);
 
-            if (Data.currentCompetition.Tracks.Peek() == race) {
+            if (Data.CurrentCompetition.Tracks.Peek() == race) {
                 _racesGrid.Add(_startRace, 1, i);
-            } else if (Data.currentCompetition.Tracks.Contains(race)) {
+            } else if (Data.CurrentCompetition.Tracks.Contains(race)) {
                 _racesGrid.Add(new Label {
                     Text = "To Do",
                     TextColor = Colors.White,
@@ -278,7 +273,7 @@ public partial class CompetitionPage : ContentPage {
                     VerticalOptions = LayoutOptions.Center,
                     Padding = new Thickness(10,10,10,10)
                 }, 1, i);
-            } else if (!Data.currentCompetition.Tracks.Contains(race)) {
+            } else if (!Data.CurrentCompetition.Tracks.Contains(race)) {
                 _racesGrid.Add(new Label {
                     Text = "Done",
                     TextColor = Colors.White,
@@ -300,28 +295,13 @@ public partial class CompetitionPage : ContentPage {
     private void RaceStart() {
         
         //Check for double click
-        if (Data.currentCompetition.RaceInProgress) return;
+        if (Data.CurrentCompetition.RaceInProgress) return;
         
-        Data.currentCompetition.RaceInProgress = true;
+        Data.CurrentCompetition.RaceInProgress = true;
         Data.NextRace();
-            
-        RaceSimulator raceSimulator = new RaceSimulator();
-        _raceStatisticsWindow = new Window(raceSimulator);
-        Application.Current?.OpenWindow(_raceStatisticsWindow);
+        
         Navigation.PushAsync(new RaceStatisticsPage());
-        
-        Data.currentRace.RaceEnded += RaceEnded;
     }
-    
-    //When the race ends, go to the results page
-    private void RaceEnded(object sender, EventArgs eventArgs) {
-        
-        //End race
-        Console.WriteLine("End of the race: Closing RaceSimulator window");
-        
-        // Close the active window
-        Application.Current!.CloseWindow(_raceStatisticsWindow);
 
-    }
 
 }

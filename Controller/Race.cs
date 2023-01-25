@@ -1,4 +1,5 @@
-﻿using System.Timers;
+﻿using System.Collections.ObjectModel;
+using System.Timers;
 using Model;
 using Timer = System.Timers.Timer;
 
@@ -9,7 +10,7 @@ public class Race {
     public Track Track { get; }
     
     //The current participants
-    public List<IParticipant> Participants { get; }
+    public ObservableCollection<IParticipant> Participants { get; }
     
     //Randomizer even though it is not completely random because that is impossible in computer science
     private readonly Random _random;
@@ -18,22 +19,13 @@ public class Race {
     private readonly Dictionary<IParticipant, int> _roundsCompleted;
     
     //SectionData for each section
-    public Dictionary<Section, SectionData> SectionsSectionData { get; }
+    public Dictionary<Section, SectionData> SectionsSectionData;
     
     //Timer for sleep and counting
     private readonly Timer Timer;
-    
-    //If race is done
-    private bool _startNextRace;
 
     //SectionsSectionData of the participants
-    public static Dictionary<int, IParticipant> Position;
-
-    //Crashed drivers
-    public List<IParticipant> CrashedDrivers;
-    
-    //Finished drivers
-    public List<IParticipant> FinishedDrivers;
+    private static Dictionary<int, IParticipant> Position;
 
     //Event Handler to call the UI to update
     public event EventHandler<DriversChanged> DriversChanged;
@@ -46,12 +38,10 @@ public class Race {
 
     public Race(Track track, List<IParticipant> participants) {
         Track = track;
-        Participants = participants;
+        Participants = new ObservableCollection<IParticipant>(participants);
         SectionsSectionData = new Dictionary<Section, SectionData>(); 
         _roundsCompleted = new Dictionary<IParticipant, int>();
         Position = new Dictionary<int, IParticipant>();
-        CrashedDrivers = new List<IParticipant>();
-        FinishedDrivers = new List<IParticipant>();
         StartNextRace = false;
         
         _random = new Random();
@@ -65,8 +55,8 @@ public class Race {
     }
 
     public void Stop() {
-        Data.currentRace.Stop();
-        Data.currentRace.DriversChanged = null!;
+        Data.CurrentRace.Stop();
+        Data.CurrentRace.DriversChanged = null!;
     }
 
     public void Start() {
@@ -140,7 +130,8 @@ public class Race {
 
                 if (_random.Next(0, sectionData.Left.Equipment.Quality) == 0) {
                     sectionData.Left.Equipment.IsBroken = true;
-                    CrashedDrivers.Add(sectionData.Left);
+                    Participants[Participants.IndexOf(sectionData.Left)].RaceStatus = "Crashed";
+                    Console.WriteLine(Participants[Participants.IndexOf(sectionData.Left)].Name + " is " + Participants[Participants.IndexOf(sectionData.Left)].RaceStatus);
                 }
 
                 if (!sectionData.Left.Equipment.IsBroken && sectionData.DistanceLeft > Section.SectionLength) {
@@ -177,6 +168,8 @@ public class Race {
                         }
 
                         if (_roundsCompleted.ContainsKey(sectionData.Left) && _roundsCompleted[sectionData.Left] == Track.laps) {
+                            Participants[Participants.IndexOf(sectionData.Left)].RaceStatus = "Finished";
+                            Console.WriteLine(Participants[Participants.IndexOf(sectionData.Left)].Name + " is " + Participants[Participants.IndexOf(sectionData.Left)].RaceStatus);
                             sectionData.Left = null;
                         } else {
                             nextSectionData.Right = sectionData.Left;
@@ -196,7 +189,8 @@ public class Race {
                 // break the car
                 if (_random.Next(0, sectionData.Right.Equipment.Quality) == 0) {
                     sectionData.Right.Equipment.IsBroken = true;
-                    CrashedDrivers.Add(sectionData.Right);
+                    Participants[Participants.IndexOf(sectionData.Right)].RaceStatus = "Crashed";
+                    Console.WriteLine(Participants[Participants.IndexOf(sectionData.Right)].Name + " is " + Participants[Participants.IndexOf(sectionData.Right)].RaceStatus);
 
                 }
 
@@ -240,6 +234,9 @@ public class Race {
 
                         // remove from track when finished
                         if (_roundsCompleted.ContainsKey(sectionData.Right) && _roundsCompleted[sectionData.Right] == Track.laps) {
+
+                            Participants[Participants.IndexOf(sectionData.Right)].RaceStatus = "Finished";
+                            Console.WriteLine(Participants[Participants.IndexOf(sectionData.Right)].Name + " is " + Participants[Participants.IndexOf(sectionData.Right)].RaceStatus);
                             sectionData.Right = null;
                         } else {
                             // copy data to next section
@@ -262,36 +259,92 @@ public class Race {
         {
             if (_roundsCompleted.ContainsValue(i))
             {
-                Console.WriteLine(" false");
                 nextTrack = false;
             }
         }
 
-        if (_roundsCompleted.Count != Participants.Count)
-        {
-            Console.Write(" false ");
+        if (_roundsCompleted.Count != Participants.Count) {
             nextTrack = false;
         }
+        
 
-        Console.Write(nextTrack);
-
-        if (nextTrack)
-        {
-            Console.Write("---Invoking race ended---");
+        if (nextTrack) {
+            Data.CurrentRace = null!;
             Stop();
+            AwardPoints();
+            Data.CurrentCompetition.RaceInProgress = false;
             RaceEnded.Invoke(this, EventArgs.Empty);
-        }
-        else
-        {
-            Console.Write(" Invoking drivers changed");
+
+        } else  {
             DriversChanged.Invoke(this, new DriversChanged(Track));
         }
 
     }
 
+    private static void AwardPoints() {
+        foreach (KeyValuePair<int, IParticipant> racer in Race.Position)
+        {
+            int participant;
+            switch (racer.Key)
+            {
+                case 1:
+                    participant = Data.CurrentCompetition.Participants.FindIndex(x => x == racer.Value);
+                    Data.CurrentCompetition.Participants[participant].Points += 25;
+                    break;
+                case 2:
+                    participant = Data.CurrentCompetition.Participants.FindIndex(x => x == racer.Value);
+                    Data.CurrentCompetition.Participants[participant].Points += 18;
+                    racer.Value.Points += 18;
+                    break;
+                case 3:
+                    participant = Data.CurrentCompetition.Participants.FindIndex(x => x == racer.Value);
+                    Data.CurrentCompetition.Participants[participant].Points += 15;
+                    break;
+                case 4:
+                    participant = Data.CurrentCompetition.Participants.FindIndex(x => x == racer.Value);
+                    Data.CurrentCompetition.Participants[participant].Points += 12;
+                    break;
+                case 5:
+                    participant = Data.CurrentCompetition.Participants.FindIndex(x => x == racer.Value);
+                    Data.CurrentCompetition.Participants[participant].Points += 10;
+                    racer.Value.Points += 10;
+                    break;
+                case 6:
+                    participant = Data.CurrentCompetition.Participants.FindIndex(x => x == racer.Value);
+                    Data.CurrentCompetition.Participants[participant].Points += 8;
+                    racer.Value.Points += 8;
+                    break;
+                case 7:
+                    participant = Data.CurrentCompetition.Participants.FindIndex(x => x == racer.Value);
+                    Data.CurrentCompetition.Participants[participant].Points += 6;
+                    racer.Value.Points += 6;
+                    break;
+                case 8:
+                    participant = Data.CurrentCompetition.Participants.FindIndex(x => x == racer.Value);
+                    Data.CurrentCompetition.Participants[participant].Points += 4;
+                    racer.Value.Points += 4;
+                    break;
+                case 9:
+                    participant = Data.CurrentCompetition.Participants.FindIndex(x => x == racer.Value);
+                    Data.CurrentCompetition.Participants[participant].Points += 2;
+                    racer.Value.Points += 2;
+                    break;
+                case 10:
+                    participant = Data.CurrentCompetition.Participants.FindIndex(x => x == racer.Value);
+                    Data.CurrentCompetition.Participants[participant].Points += 1;
+                    racer.Value.Points += 1;
+                    break;
+                default:
+                    participant = Data.CurrentCompetition.Participants.FindIndex(x => x == racer.Value);
+                    Data.CurrentCompetition.Participants[participant].Points += 0;
+                    break;
+            }
+        }
+    }
+
     private void AddDriversToPositionsList() {
-        for(int i = 0; i < Data.currentCompetition.Participants.Count; i++) {
-            Position.Add(i + 1, Data.currentCompetition.Participants.ElementAt(i));
+        for(int i = 0; i < Data.CurrentCompetition.Participants.Count; i++) {
+            Position.Add(i + 1, Data.CurrentCompetition.Participants.ElementAt(i));
         }
         
     }

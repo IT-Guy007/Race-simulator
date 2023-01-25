@@ -5,6 +5,7 @@ namespace Model {
         public string Name { get; set; }
         public int Points { get; set; }
         public TeamColors TeamColor { get; set; }
+        public string RaceStatus { get; set; }
 
     }
 }

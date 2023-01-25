@@ -12,7 +12,7 @@ public static class Visualisation {
     private static Direction direction;
 
     public static void Initialize() {
-        direction = Data.currentRace.Track.startDirection;
+        direction = Data.CurrentRace.Track.startDirection;
         tileSize = Straight.Length; //Which is always 7
         table = new Table();
     }
@@ -31,7 +31,7 @@ public static class Visualisation {
         int yMin = y;
 
         //Calculate canvas size
-        foreach (var varSection in Data.currentRace.Track.Sections) {
+        foreach (var varSection in Data.CurrentRace.Track.Sections) {
             direction = SetDirection(varSection);
 
             switch (direction) {
@@ -74,19 +74,19 @@ public static class Visualisation {
         canvas = new Canvas(xSize * tileSize, ySize * tileSize) {
             Scale = false
         };
-        direction = Data.currentRace.Track.startDirection;
+        direction = Data.CurrentRace.Track.startDirection;
         x = 5 - xMin;
         y = 5 - yMin;
 
         //Background
         for (int i = 0; i < xSize * tileSize; i++) {
             for (int j = 0; j < ySize * tileSize; j++) {
-                canvas.SetPixel(i, j, Data.currentRace.Track.backgroundColorSpectre);
+                canvas.SetPixel(i, j, Data.CurrentRace.Track.backgroundColorSpectre);
             }
         }
 
         //Draw tiles
-        foreach (Section section in Data.currentRace.Track.Sections) {
+        foreach (Section section in Data.CurrentRace.Track.Sections) {
             DrawSection(section, x, y);
 
             switch (direction) {
@@ -213,8 +213,8 @@ public static class Visualisation {
         }
 
         //Add drivers to it
-        tile = AddDrivers(tile, Data.currentRace.SectionsSectionData[section].Left,
-            Data.currentRace.SectionsSectionData[section].Right);
+        tile = AddDrivers(tile, Data.CurrentRace.SectionsSectionData[section].Left,
+            Data.CurrentRace.SectionsSectionData[section].Right);
 
         //Draw the tile
         for (int i = 0; i < tile.Length; i++) {
@@ -533,8 +533,8 @@ public static class Visualisation {
         DrawTrack();
         
         //Add event
-        Data.currentRace.DriversChanged += DriversChanged;
-        Data.currentRace.RaceEnded += RaceEnded;
+        Data.CurrentRace.DriversChanged += DriversChanged;
+        Data.CurrentRace.RaceEnded += RaceEnded;
 
     }
 }

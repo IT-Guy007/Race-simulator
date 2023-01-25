@@ -9,10 +9,10 @@ public class Program {
         Data.Initialize();
         Data.NextRace();
         Visualisation.Initialize();
-        Data.currentRace.DriversChanged += Visualisation.DriversChanged;
-        Data.currentRace.RaceEnded += Visualisation.RaceEnded;
+        Data.CurrentRace.DriversChanged += Visualisation.DriversChanged;
+        Data.CurrentRace.RaceEnded += Visualisation.RaceEnded;
         
-        while (Data.currentRace.Participants.Count > 0) { for (;;) { } }
+        while (Data.CurrentRace.Participants.Count > 0) { for (;;) { } }
     }
 
 }

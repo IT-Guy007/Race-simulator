@@ -1,5 +1,4 @@
-﻿using System;
-namespace Model {
+﻿namespace Model {
     public interface IEquipment {
         public int Quality { get; set; }
         public int Speed { get; set; }

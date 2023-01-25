@@ -1,5 +1,77 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-             x:Class="MAUI.RaceStatisticsPage">
+             x:Class="MAUI.RaceStatisticsPage"
+             >
+    
+    <Grid>
+        <!-- Grid Definitions -->
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto" />
+            <RowDefinition Height="*" />
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="*" />
+            <ColumnDefinition Width="*" />
+            <ColumnDefinition Width="*" />
+            <ColumnDefinition Width="*" />
+            <ColumnDefinition Width="*" />
+        </Grid.ColumnDefinitions>
+
+        <!-- Labels -->
+        <Label Text="Name" Grid.Row="0" Grid.Column="0" />
+        <Label Text="Status" Grid.Row="0" Grid.Column="1" />
+        <Label Text="Speed" Grid.Row="0" Grid.Column="2" />
+        <Label Text="Quality" Grid.Row="0" Grid.Column="3" />
+        <Label Text="Performance" Grid.Row="0" Grid.Column="4" />
+        
+        <!-- List View -->
+        <ListView Grid.Column="0" Grid.Row="1" ItemsSource="{Binding DriverNames}"/>
+        <ListView Grid.Column="1" Grid.Row="1" ItemsSource="{Binding DriverStatus}"/>
+        <ListView Grid.Column="2" Grid.Row="1" ItemsSource="{Binding EquipmentSpeed}"/>
+        <ListView Grid.Column="3" Grid.Row="1" ItemsSource="{Binding EquipmentQuality}"/>
+        <ListView Grid.Column="4" Grid.Row="1" ItemsSource="{Binding EquipmentPerformance}"/>
+        <!--
+        <ListView Grid.Column="0" Grid.Row="1" x:Name="NameView">
+            <ListView.ItemTemplate>
+                <DataTemplate>
+                    <TextCell Text="{Binding Name}" />
+                </DataTemplate>
+            </ListView.ItemTemplate>
+        </ListView>
+        
+        <ListView Grid.Column="1" Grid.Row="1" x:Name="StatusView">
+            <ListView.ItemTemplate>
+                <DataTemplate>
+                    <TextCell Text="{Binding RaceStatus}" />
+                </DataTemplate>
+            </ListView.ItemTemplate>
+        </ListView>
+        
+        <ListView Grid.Column="2" Grid.Row="1" x:Name="SpeedView">
+            <ListView.ItemTemplate>
+                <DataTemplate>
+                    <TextCell Text="{Binding Equipment.Speed}" />
+                </DataTemplate>
+            </ListView.ItemTemplate>
+        </ListView>
+        
+        <ListView Grid.Column="3" Grid.Row="1" x:Name="QualityView">
+            <ListView.ItemTemplate>
+                <DataTemplate>
+                    <TextCell Text="{Binding Equipment.Quality}" />
+                </DataTemplate>
+            </ListView.ItemTemplate>
+        </ListView>
+        
+        <ListView Grid.Column="4" Grid.Row="1" x:Name="PerformanceView">
+            <ListView.ItemTemplate>
+                <DataTemplate>
+                    <TextCell Text="{Binding Equipment.Performance}" />
+                </DataTemplate>
+            </ListView.ItemTemplate>
+        </ListView>
+        -->
+    </Grid>
 </ContentPage>
+

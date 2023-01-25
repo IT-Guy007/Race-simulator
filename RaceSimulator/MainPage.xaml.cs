@@ -1,9 +1,11 @@
-﻿using Controller;
+﻿using System;
+using Controller;
+using Microsoft.Maui.Controls;
 using Model;
 
 namespace MAUI;
 
-public partial class MainPage : ContentPage {
+public partial class MainPage {
     
     public MainPage() {
         InitializeComponent();

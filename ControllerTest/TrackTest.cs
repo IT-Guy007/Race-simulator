@@ -15,7 +15,7 @@ public class TrackTest
 
     [Test]
     public void HasNoNullValues() {
-        foreach (Track track in Data.currentCompetition.Tracks) {
+        foreach (Track track in Data.CurrentCompetition.Tracks) {
             if(track.laps == null) {
                 Assert.Fail("Track " + track.name + " has null laps");
             }

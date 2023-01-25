@@ -6,6 +6,7 @@ namespace Model {
         public string Name { get; set; }
         public int Points { get; set; }
         public TeamColors TeamColor { get; set; }
+        public string RaceStatus { get; set; }
 
         public Driver(string name, TeamColors color, int driverNumber, IEquipment equipment) {
             Name = name;
@@ -13,6 +14,7 @@ namespace Model {
             DriverNumber = driverNumber;
             Equipment = equipment;
             Points = 0;
+            RaceStatus = "In race";
         }
     }
 }

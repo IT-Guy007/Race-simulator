@@ -17,25 +17,41 @@
     <projectFile pubXmlPath="RaceSimulator/Properties/PublishProfiles/FolderProfile net6.0-maccatalyst.pubxml">RaceSimulator/RaceSimulator.csproj</projectFile>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="74749e98-3fd5-4128-88ab-bc8cb0b9c985" name="Changes" comment="Bug fix of images">
+    <list default="true" id="74749e98-3fd5-4128-88ab-bc8cb0b9c985" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/RaceSimulator/ViewModel/RaceStatisticsViewModel.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.RaceSim/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.RaceSim/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.vs/RaceSim/xs/UserPrefs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.vs/RaceSim/xs/UserPrefs.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Console/Visualisation.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Console/Visualisation.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Console/program.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Console/program.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Controller/Data.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Controller/Data.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Controller/Race.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Controller/Race.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/ControllerTest/DataTest.cs" beforeDir="false" afterPath="$PROJECT_DIR$/ControllerTest/DataTest.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ControllerTest/RaceTest.cs" beforeDir="false" afterPath="$PROJECT_DIR$/ControllerTest/RaceTest.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ControllerTest/TrackTest.cs" beforeDir="false" afterPath="$PROJECT_DIR$/ControllerTest/TrackTest.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Model/Model/Driver.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Model/Model/Driver.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Model/Model/IEquipement.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Model/Model/IEquipement.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Model/Model/IParticipant.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Model/Model/IParticipant.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Model/Model/Section.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Model/Model/Section.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/RaceSimulator/App.xaml.cs" beforeDir="false" afterPath="$PROJECT_DIR$/RaceSimulator/App.xaml.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/RaceSimulator/AppShell.xaml.cs" beforeDir="false" afterPath="$PROJECT_DIR$/RaceSimulator/AppShell.xaml.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/RaceSimulator/CompetitionPage.xaml.cs" beforeDir="false" afterPath="$PROJECT_DIR$/RaceSimulator/CompetitionPage.xaml.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/RaceSimulator/Image.cs" beforeDir="false" afterPath="$PROJECT_DIR$/RaceSimulator/Image.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/RaceSimulator/Image.cs" beforeDir="false" afterPath="$PROJECT_DIR$/RaceSimulator/Images.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/RaceSimulator/MainPage.xaml.cs" beforeDir="false" afterPath="$PROJECT_DIR$/RaceSimulator/MainPage.xaml.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/RaceSimulator/MauiProgram.cs" beforeDir="false" afterPath="$PROJECT_DIR$/RaceSimulator/MauiProgram.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/RaceSimulator/RaceSimulator.xaml.cs" beforeDir="false" afterPath="$PROJECT_DIR$/RaceSimulator/RaceSimulator.xaml.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/RaceSimulator/RaceStatisticsPage.xaml" beforeDir="false" afterPath="$PROJECT_DIR$/RaceSimulator/RaceStatisticsPage.xaml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/RaceSimulator/RaceStatisticsPage.xaml.cs" beforeDir="false" afterPath="$PROJECT_DIR$/RaceSimulator/RaceStatisticsPage.xaml.cs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <option name="PREVIOUS_COMMIT_AUTHORS">
+      <list>
+        <option value="Jeroen &lt;76699269+it-guy007@users.noreply.github.com&gt;" />
+      </list>
+    </option>
   </component>
   <component name="HighlightingSettingsPerFile">
     <setting file="file://$USER_HOME$/.nuget/packages/microsoft.net.test.sdk/17.3.2/build/netcoreapp2.1/Microsoft.NET.Test.Sdk.Program.cs" root0="SKIP_HIGHLIGHTING" />
@@ -54,6 +70,7 @@
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
   </component>
+  <component name="MetaFilesCheckinStateConfiguration" checkMetaFiles="true" />
   <component name="ProjectId" id="2HDlwnnF0KbIwDXUT9dzTpJ7FWo" />
   <component name="ProjectLevelVcsManager">
     <ConfirmationsSetting value="2" id="Add" />
@@ -194,7 +211,11 @@
       <workItem from="1672253406833" duration="2822000" />
       <workItem from="1672256809901" duration="6527000" />
       <workItem from="1673871353815" duration="2524000" />
-      <workItem from="1673967580538" duration="13289000" />
+      <workItem from="1673967580538" duration="13697000" />
+      <workItem from="1674120301589" duration="613000" />
+      <workItem from="1674307397037" duration="7860000" />
+      <workItem from="1674652306981" duration="1530000" />
+      <workItem from="1674654014980" duration="6343000" />
     </task>
     <task id="LOCAL-00001" summary="Bug fix of images">
       <created>1667828032411</created>
@@ -203,7 +224,14 @@
       <option name="project" value="LOCAL" />
       <updated>1667828032411</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="Bug fixes">
+      <created>1674050852956</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1674050852956</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -505,6 +533,7 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Bug fix of images" />
-    <option name="LAST_COMMIT_MESSAGE" value="Bug fix of images" />
+    <MESSAGE value="Bug fixes" />
+    <option name="LAST_COMMIT_MESSAGE" value="Bug fixes" />
   </component>
 </project>

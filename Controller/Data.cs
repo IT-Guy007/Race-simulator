@@ -5,18 +5,18 @@ namespace Controller;
 
 public static class Data {
 
-    public static Competition currentCompetition { get; set; }
-    public static Race currentRace { get; set; }
+    public static Competition CurrentCompetition { get; set; }
+    public static Race CurrentRace { get; set; }
     private static Direction direction;
 
     public static void Initialize() {
-        currentCompetition = new Competition();
+        CurrentCompetition = new Competition();
         AddDrivers();
         AddTracks();
     }
 
     private static void AddDrivers() {
-        currentCompetition.Participants = new List<IParticipant>();
+        CurrentCompetition.Participants = new List<IParticipant>();
         AddDriver("Max Verstappen", TeamColors.Yellow, 01, new Car(80, 80, 80, false));
         AddDriver("Sergio Perez", TeamColors.Yellow, 33, new Car(80, 80, 80, false));
         AddDriver("Charles Leclerc", TeamColors.Red, 16, new Car(80, 80, 80, false));
@@ -28,22 +28,22 @@ public static class Data {
     }
 
     public static void NextRace() {
-        if (currentRace == null) {
-            if (currentCompetition.Tracks.Count == 0) {
+        if (CurrentRace == null) {
+            if (CurrentCompetition.Tracks.Count == 0) {
                 Console.WriteLine("No more races");
             } else {
-                currentRace?.Stop();
-                currentRace = new Race(currentCompetition.Tracks.Dequeue(), currentCompetition.Participants);
-                currentRace.PlaceDriversOnTrack();
-                currentRace.RandomEquipment();
-                Console.WriteLine("The next race is on " + currentRace.Track.name);
-                currentRace.Start();
+                CurrentRace?.Stop();
+                CurrentRace = new Race(CurrentCompetition.Tracks.Dequeue(), CurrentCompetition.Participants);
+                CurrentRace.PlaceDriversOnTrack();
+                CurrentRace.RandomEquipment();
+                Console.WriteLine("The next race is on " + CurrentRace.Track.name);
+                CurrentRace.Start();
             }
         }
     }
 
     private static void AddDriver(string name, TeamColors color, int driverNumber, IEquipment equipment) {
-        currentCompetition.Participants.Add(new Driver(name, color, driverNumber, equipment));
+        CurrentCompetition.Participants.Add(new Driver(name, color, driverNumber, equipment));
     }
 
     private static void AddTracks() {
@@ -182,9 +182,9 @@ public static class Data {
             
         };
 
-        currentCompetition.Tracks.Enqueue(new Track("Square", CreateSections(squareSections),Direction.East,1, Spectre.Console.Color.DarkSlateGray1, Microsoft.Maui.Graphics.Color.FromArgb("#2F4F4F"),6,0));
-        currentCompetition.Tracks.Enqueue(new Track("Zandvoort", CreateSections(zandvoortSections),Direction.North,1, Spectre.Console.Color.Orange3, Microsoft.Maui.Graphics.Color.FromArgb("#FFA500"),0,1));
-        currentCompetition.Tracks.Enqueue(new Track("Spa", CreateSections(spaSections), Direction.South, 1, Spectre.Console.Color.DarkGreen, Microsoft.Maui.Graphics.Color.FromArgb("#023020"),0,0));
+        CurrentCompetition.Tracks.Enqueue(new Track("Square", CreateSections(squareSections),Direction.East,1, Spectre.Console.Color.DarkSlateGray1, Microsoft.Maui.Graphics.Color.FromArgb("#2F4F4F"),6,0));
+        CurrentCompetition.Tracks.Enqueue(new Track("Zandvoort", CreateSections(zandvoortSections),Direction.North,1, Spectre.Console.Color.Orange3, Microsoft.Maui.Graphics.Color.FromArgb("#FFA500"),0,1));
+        CurrentCompetition.Tracks.Enqueue(new Track("Spa", CreateSections(spaSections), Direction.South, 1, Spectre.Console.Color.DarkGreen, Microsoft.Maui.Graphics.Color.FromArgb("#023020"),0,0));
 
     }
 
