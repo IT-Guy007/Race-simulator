@@ -1,4 +1,5 @@
 ﻿using System.Collections.ObjectModel;
+using System.Diagnostics;
 using System.Timers;
 using Model;
 using Timer = System.Timers.Timer;
@@ -128,10 +129,10 @@ public class Race {
                 int passedDistance = sectionData.Left.Equipment.Distance();
                 sectionData.DistanceLeft += passedDistance;
 
-                if (_random.Next(0, sectionData.Left.Equipment.Quality) == 0) {
+                if (_random.Next(0, sectionData.Left.Equipment.Quality + 100) == 0) {
                     sectionData.Left.Equipment.IsBroken = true;
                     Participants[Participants.IndexOf(sectionData.Left)].RaceStatus = "Crashed";
-                    Console.WriteLine(Participants[Participants.IndexOf(sectionData.Left)].Name + " is " + Participants[Participants.IndexOf(sectionData.Left)].RaceStatus);
+                    //Console.WriteLine(Participants[Participants.IndexOf(sectionData.Left)].Name + " is " + Participants[Participants.IndexOf(sectionData.Left)].RaceStatus);
                 }
 
                 if (!sectionData.Left.Equipment.IsBroken && sectionData.DistanceLeft > Section.SectionLength) {
@@ -169,7 +170,7 @@ public class Race {
 
                         if (_roundsCompleted.ContainsKey(sectionData.Left) && _roundsCompleted[sectionData.Left] == Track.laps) {
                             Participants[Participants.IndexOf(sectionData.Left)].RaceStatus = "Finished";
-                            Console.WriteLine(Participants[Participants.IndexOf(sectionData.Left)].Name + " is " + Participants[Participants.IndexOf(sectionData.Left)].RaceStatus);
+                            //Console.WriteLine(Participants[Participants.IndexOf(sectionData.Left)].Name + " is " + Participants[Participants.IndexOf(sectionData.Left)].RaceStatus);
                             sectionData.Left = null;
                         } else {
                             nextSectionData.Right = sectionData.Left;
@@ -187,10 +188,10 @@ public class Race {
                 sectionData.DistanceRight += passedDistance;
 
                 // break the car
-                if (_random.Next(0, sectionData.Right.Equipment.Quality) == 0) {
+                if (_random.Next(0, sectionData.Right.Equipment.Quality + 100) == 0) {
                     sectionData.Right.Equipment.IsBroken = true;
                     Participants[Participants.IndexOf(sectionData.Right)].RaceStatus = "Crashed";
-                    Console.WriteLine(Participants[Participants.IndexOf(sectionData.Right)].Name + " is " + Participants[Participants.IndexOf(sectionData.Right)].RaceStatus);
+                    //Console.WriteLine(Participants[Participants.IndexOf(sectionData.Right)].Name + " is " + Participants[Participants.IndexOf(sectionData.Right)].RaceStatus);
 
                 }
 
@@ -236,7 +237,7 @@ public class Race {
                         if (_roundsCompleted.ContainsKey(sectionData.Right) && _roundsCompleted[sectionData.Right] == Track.laps) {
 
                             Participants[Participants.IndexOf(sectionData.Right)].RaceStatus = "Finished";
-                            Console.WriteLine(Participants[Participants.IndexOf(sectionData.Right)].Name + " is " + Participants[Participants.IndexOf(sectionData.Right)].RaceStatus);
+                            //Console.WriteLine(Participants[Participants.IndexOf(sectionData.Right)].Name + " is " + Participants[Participants.IndexOf(sectionData.Right)].RaceStatus);
                             sectionData.Right = null;
                         } else {
                             // copy data to next section
@@ -276,6 +277,12 @@ public class Race {
             RaceEnded.Invoke(this, EventArgs.Empty);
 
         } else  {
+            //Console.WriteLine("-----");
+            //foreach (var m in Data.CurrentRace.DriversChanged.GetInvocationList()) {
+            //    Console.WriteLine(m.Method.Name);
+            //
+            //}
+            //Console.WriteLine("-----");
             DriversChanged.Invoke(this, new DriversChanged(Track));
         }
 

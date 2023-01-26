@@ -181,7 +181,6 @@ public static class Data {
             SectionTypes.StartGrid
             
         };
-
         CurrentCompetition.Tracks.Enqueue(new Track("Square", CreateSections(squareSections),Direction.East,1, Spectre.Console.Color.DarkSlateGray1, Microsoft.Maui.Graphics.Color.FromArgb("#2F4F4F"),6,0));
         CurrentCompetition.Tracks.Enqueue(new Track("Zandvoort", CreateSections(zandvoortSections),Direction.North,1, Spectre.Console.Color.Orange3, Microsoft.Maui.Graphics.Color.FromArgb("#FFA500"),0,1));
         CurrentCompetition.Tracks.Enqueue(new Track("Spa", CreateSections(spaSections), Direction.South, 1, Spectre.Console.Color.DarkGreen, Microsoft.Maui.Graphics.Color.FromArgb("#023020"),0,0));

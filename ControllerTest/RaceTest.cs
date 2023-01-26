@@ -19,13 +19,17 @@ internal class RaceTest {
     
     [Test]
     public void CheckRandomEquipment() {
-        foreach (IParticipant driver in Data.CurrentCompetition.Participants) {
-            if (driver.Equipment.Performance == 80 && driver.Equipment.Speed == 80 && driver.Equipment.Quality == 80) {
-                Assert.Fail();
+        for (int i = 0; i < 10; i++) {
+            foreach (IParticipant driver in Data.CurrentCompetition.Participants) {
+                if (driver.Equipment.Performance == 80 && driver.Equipment.Speed == 80 && driver.Equipment.Quality == 80) {
+                    Assert.Fail();
+                }
+
+                if (driver.Equipment.IsBroken) {
+                    Assert.Fail();
+                }
             }
-            if(driver.Equipment.IsBroken) {
-                Assert.Fail();
-            }
+            Data.Initialize();
         }
     }
 }
