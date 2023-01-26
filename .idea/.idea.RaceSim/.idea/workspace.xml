@@ -18,8 +18,12 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="74749e98-3fd5-4128-88ab-bc8cb0b9c985" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/Controller/RaceStatisticsViewModel.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ControllerTest/ViewModelTest.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.RaceSim/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.RaceSim/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/RaceSimulator/RaceStatisticsPage.xaml" beforeDir="false" afterPath="$PROJECT_DIR$/RaceSimulator/RaceStatisticsPage.xaml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/RaceSimulator/RaceSimulator.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/RaceSimulator/RaceSimulator.csproj" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/RaceSimulator/RaceStatisticsPage.xaml.cs" beforeDir="false" afterPath="$PROJECT_DIR$/RaceSimulator/RaceStatisticsPage.xaml.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/RaceSimulator/ViewModel/RaceStatisticsViewModel.cs" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -37,8 +41,6 @@
     <setting file="file://$USER_HOME$/.nuget/packages/microsoft.net.test.sdk/17.3.2/build/netcoreapp2.1/Microsoft.NET.Test.Sdk.Program.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/RaceSimulator/RaceSimulator.xaml.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/../Winder/Winder/StartPage.xaml.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/28e2a8086512473a9e63d287324e967cd0000/0d/3d7ce9b3/ElapsedEventArgs.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/8ea13f04457e47a38666110f4d2495b2b55800/c1/b9d60747/Random.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/46a322d26154b982566e1817203e5452c91223f93b0e392d9c5b4806696fdc1/Assert.cs" root0="SKIP_HIGHLIGHTING" />
   </component>
   <component name="InvalidFacetManager">
@@ -142,7 +144,6 @@
     <list>
       <item itemvalue=".NET Executable.Debug workaround" />
       <item itemvalue=".NET Project.Console" />
-      <item itemvalue="Xamarin.Android.RaceSimulator" />
       <item itemvalue="Xamarin.iOS.RaceSimulator" />
       <item itemvalue="Xamarin.Mac.RaceSimulator" />
     </list>
@@ -196,6 +197,7 @@
       <workItem from="1674307397037" duration="7860000" />
       <workItem from="1674652306981" duration="1530000" />
       <workItem from="1674654014980" duration="7031000" />
+      <workItem from="1674727214534" duration="663000" />
     </task>
     <task id="LOCAL-00001" summary="Bug fix of images">
       <created>1667828032411</created>

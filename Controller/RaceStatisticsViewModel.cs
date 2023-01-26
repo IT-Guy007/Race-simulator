@@ -2,7 +2,7 @@ using System.ComponentModel;
 using Controller;
 using Model;
 
-namespace MAUI.ViewModel;
+namespace Controller;
 
 public class RaceStatisticsViewModel : INotifyPropertyChanged {
     //The event that is fired when a property is changed
